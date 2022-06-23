@@ -14,8 +14,8 @@ class ProjectListsController extends Controller
      */
     public function index()
     {
-        $project_lists = project_lists::with('project')->paginate();
-        return view('project.project_list',['project_lists'=>$project_lists]);
+       $project_lists = project_lists:: all();
+       return view('project.project_list', compact(['project_lists']));
     }
 
     /**
@@ -25,7 +25,7 @@ class ProjectListsController extends Controller
      */
     public function create()
     {
-        //
+        return view('project.project_list');
     }
 
     /**
@@ -36,7 +36,8 @@ class ProjectListsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        project_lists::create($request->except(['_token','submit']));
+        return redirect ('project_list'); 
     }
 
     /**

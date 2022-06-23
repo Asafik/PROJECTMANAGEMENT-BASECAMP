@@ -10,17 +10,11 @@ class project_lists extends Model
     use HasFactory;
 
     protected $fillable= [
-        'tile','list_description'
+        'project_id','tile','list_description'
     ];
 
     protected $guarded =[
-        'id','project_id','created_at','updated_at'
+        'id','created_at','updated_at'
     ];
-
-    public function project(){
-        return $this->hasMany(projects::class);
-    }
-
-
     
 }

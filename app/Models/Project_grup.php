@@ -5,23 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class projects extends Model
+class Project_grup extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'project_name',
-        'project_grup_id',
-        'project_description'
+        'id',
+        'group_name',
+        'group_description'
     ];
 
     protected $guarded = [
-        'id',
         'created_at',
         'updated_at'
     ];
-    public function project_grup(){
-        return $this->belongsTo(project_grup::class);
+    public function project(){
+        return $this->hasMany(projects::class);
     }
-
-    
 }

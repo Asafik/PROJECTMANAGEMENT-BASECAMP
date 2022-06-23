@@ -14,7 +14,8 @@ class ProjectTasksController extends Controller
      */
     public function index()
     {
-        //
+        $project_tasks = project_tasks::all();
+        return view('project.project_list',compact('project_tasks'));
     }
 
     /**
@@ -24,7 +25,7 @@ class ProjectTasksController extends Controller
      */
     public function create()
     {
-        //
+        return view('project.project_list');
     }
 
     /**
@@ -35,7 +36,8 @@ class ProjectTasksController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       project_tasks::create($request->except(['_token','submit']));
+       return redirect('project_list');
     }
 
     /**

@@ -14,7 +14,7 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function index()
     {
-        //
+        return view('reqProject.projectReq_index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function create()
     {
-        //
+        return view('reqProject.projectReq_create');
     }
 
     /**

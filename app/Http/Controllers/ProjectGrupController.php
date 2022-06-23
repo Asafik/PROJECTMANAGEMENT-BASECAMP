@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\project as ModelsProject;
-use App\Models\projects;
-use  App\Models\Project_grup;
+use App\Models\Project_grup;
 use Illuminate\Http\Request;
-use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
-class ProjectsController extends Controller
+class ProjectGrupController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +14,7 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-       $project = projects::with('project_grup')->paginate();
-       return view('Project.index', compact(['project']));
-
+        //
     }
 
     /**
@@ -29,8 +24,7 @@ class ProjectsController extends Controller
      */
     public function create()
     {
-       
-      return view('project.index');
+        //
     }
 
     /**
@@ -41,17 +35,16 @@ class ProjectsController extends Controller
      */
     public function store(Request $request)
     {
-        projects::create($request->except(['_token','submit']));
-        return redirect ('project_list');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\projects  $projects
+     * @param  \App\Models\Project_grup  $project_grup
      * @return \Illuminate\Http\Response
      */
-    public function show(projects $projects)
+    public function show(Project_grup $project_grup)
     {
         //
     }
@@ -59,10 +52,10 @@ class ProjectsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\projects  $projects
+     * @param  \App\Models\Project_grup  $project_grup
      * @return \Illuminate\Http\Response
      */
-    public function edit(projects $projects)
+    public function edit(Project_grup $project_grup)
     {
         //
     }
@@ -71,10 +64,10 @@ class ProjectsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\projects  $projects
+     * @param  \App\Models\Project_grup  $project_grup
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, projects $projects)
+    public function update(Request $request, Project_grup $project_grup)
     {
         //
     }
@@ -82,10 +75,10 @@ class ProjectsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\projects  $projects
+     * @param  \App\Models\Project_grup  $project_grup
      * @return \Illuminate\Http\Response
      */
-    public function destroy(projects $projects)
+    public function destroy(Project_grup $project_grup)
     {
         //
     }

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('project_lists', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('project_id');
+            $table->bigInteger('project_id')->nullable();
             $table->char('tile',100);
             $table->text('list_description')->nullable();
             $table->timestamps();
