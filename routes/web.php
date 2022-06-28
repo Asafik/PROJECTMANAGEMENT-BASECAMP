@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\ProjectDiscussionsController;
 use App\Http\Controllers\ProjectListsController;
+use App\Http\Controllers\ProjectRequestSucessController;
 use App\Http\Controllers\ProjectRequirementDocumentsController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ProjectTasksController;
+use App\Http\Controllers\UsersController;
 use App\Models\projects;
 use Illuminate\Support\Facades\Route;
 
@@ -18,14 +21,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[UsersController::class,'index']);
 
-//route project
+//route project create
 Route::get('/project',[ProjectsController::class,'index']);
 Route::get('/create',[ProjectsController::class,'create']);
 Route::post('/store',[ProjectsController::class,'store']);
+Route::get('/project/{id}/edit',[ProjectsController::class,'edit']);
+Route::put('/project/{id}',[ProjectsController::class,'update']);
+Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
 
 //route project list
 Route::get('/project_list',[ProjectListsController::class,'index']);
@@ -37,4 +41,8 @@ Route::get('/store',[ProjectTasksController::class,'store']);
 
 //route project req
 Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index']);
+Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
+
+//route diskusi opd
+Route::get('/discussion',[ProjectDiscussionsController::class,'index']);
