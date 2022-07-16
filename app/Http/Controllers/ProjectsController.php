@@ -17,7 +17,7 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-       $project = projects::with('project_grup')->paginate();
+       $project = projects::with('project_grup')->latest()->paginate();
        return view('Project.index', compact(['project']));
 
     }
@@ -62,9 +62,10 @@ class ProjectsController extends Controller
      * @param  \App\Models\projects  $projects
      * @return \Illuminate\Http\Response
      */
-    public function edit(projects $projects)
+    public function edit($id)
     {
-        //
+        $project = projects::find($id);
+        return view('project.project_edit', compact(['peojects']));
     }
 
     /**
@@ -74,9 +75,11 @@ class ProjectsController extends Controller
      * @param  \App\Models\projects  $projects
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, projects $projects)
+    public function update($id, Request $request)
     {
-        //
+        $project = projects::find($id);
+        $project ->update ($request->except(['_token','submit']));
+        return redirect('/project.project_edit');
     }
 
     /**
@@ -85,8 +88,10 @@ class ProjectsController extends Controller
      * @param  \App\Models\projects  $projects
      * @return \Illuminate\Http\Response
      */
-    public function destroy(projects $projects)
+    public function destroy($id)
     {
-        //
+        $project = projects::find($id);
+        $project->delete();
+        return redirect('/project');
     }
 }

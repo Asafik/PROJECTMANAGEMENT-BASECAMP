@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('project_tasks', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('project_list_id');
-            $table->char('title_task');
+            $table->bigInteger('project_list_id')->nullable();
+            $table->char('title_task',100);
             $table->text('description_task')->nullable();
             $table->dateTime('start_date')->nullable();
             $table->dateTime('due_date')->nullable();
-            $table->enum('status',['no_progress','in_progres','complate'])->nullable();
+            $table->enum('status',['No Progress','In Progres','Complate'])->nullable();
             $table->enum('priority',['none','low','medium','high'])->nullable();
             $table->timestamps();
         });

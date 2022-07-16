@@ -14,7 +14,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        return view('Login.landingPage');
     }
 
     /**

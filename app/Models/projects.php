@@ -20,7 +20,7 @@ class projects extends Model
         'updated_at'
     ];
     public function project_grup(){
-        return $this->belongsTo(project_grup::class);
+        return $this->belongsTo(project_grup::class,'project_grups_id');
     }
 
     

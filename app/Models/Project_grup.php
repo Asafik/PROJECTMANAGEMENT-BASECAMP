@@ -19,6 +19,6 @@ class Project_grup extends Model
         'updated_at'
     ];
     public function project(){
-        return $this->hasMany(projects::class);
+        return $this->hasMany(projects::class,);
     }
 }

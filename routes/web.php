@@ -24,20 +24,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[UsersController::class,'index']);
 
 //route project create
+//Route::resource('/project',ProjectsController::class);
 Route::get('/project',[ProjectsController::class,'index']);
 Route::get('/create',[ProjectsController::class,'create']);
 Route::post('/store',[ProjectsController::class,'store']);
-Route::get('/project/{id}/edit',[ProjectsController::class,'edit']);
-Route::put('/project/{id}',[ProjectsController::class,'update']);
-Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
+Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit']);
+Route::put('/project_edit/{id}',[ProjectsController::class,'update']);
+Route::delete('/project/{id}',[ProjectsController::class,'destroy']); 
 
 //route project list
 Route::get('/project_list',[ProjectListsController::class,'index']);
+Route::get('/create',[ProjectListsController::class,'create']);
 
 //route project task
 Route::get('/project_list',[ProjectTasksController::class,'index']);
 Route::get('/create',[ProjectTasksController::class,'create']);
-Route::get('/store',[ProjectTasksController::class,'store']);
+Route::post('/storetask',[ProjectTasksController::class,'store']);
 
 //route project req
 Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index']);

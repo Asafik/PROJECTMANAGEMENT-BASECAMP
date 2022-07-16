@@ -14,7 +14,7 @@ class ProjectDiscussionsController extends Controller
      */
     public function index()
     {
-        //
+        return view('OpdReqProject.discussion');
     }
 
     /**

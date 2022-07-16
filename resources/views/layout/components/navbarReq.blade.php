@@ -5,7 +5,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="Page navigation example navbar-nav ms-auto mb-10 mb-lg-0">
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="HOME.html"><i class="bi bi-house" style="font-size:28px"></i></i></a></li>
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="/projectReq"><i class="bi bi-house" style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#!"><i class="bi bi-calendar3" style="font-size:28px"></i></i></a></li>
             </ul>
         </div>

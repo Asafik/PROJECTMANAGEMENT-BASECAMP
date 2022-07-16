@@ -1,4 +1,4 @@
-@extends('layout.masterReq') @section('content')
+@extends ('layout.masterReq') @section('content')
     
 <section class="pt-3">
     <div class="container px-lg-0">
@@ -6,7 +6,7 @@
         <div class="col-lg-12 mb-5 d-flex"> 
             <span class="h5 text-decoration-none text-black fw-bold me-2">Hallo Abcd!</span>
             <a class="h5 text-decoration-none text-secondary me-auto">Stay Healthy.</a>
-            <button class="btn btn-success me-3" style="background-color:#20B15A ;"> Add Request Project</button>
+            <a href="projectReq_create" class="btn btn-success me-3" style="background-color:#20B15A ;"> Add Request Project</a>
             <a class="h4 text-decoration-none text-black" href=""><i class="bi bi-gear-fill" style="color: #838492;"></i></a>
         </div>
     <!-- Page Content-->
@@ -20,10 +20,8 @@
                             <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><a href="requestopd.html"><span class=""style="color: #fff;"><strong>Request Project</strong></a></i></div>
                             <p class="fs-9 fw-bold text-start "><img src="images/requestprojecticon.svg" style="width: 5%; margin-right : 5%;">Panduan Request Project</p><img src="images/line.svg" style="width: 112%; margin-top:-10%;margin-left: -6%">
                             <p class="mb-0 text-start" style="margin-left: 9%;color: #83838A">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum laoreet eu morbi venenatis egestas sed. Integer non, non massa arcu ullamcorper pellentesque volutpat. Et eget cursus erat in vitae accumsan leo pharetra dolor. Consectetur habitasse sed nibh purus elit eget at......................................</br></br><p class="text-start" style="color :blue; margin-left: 9%; ">Updated on May, 30 2022</p>
-                        </br></br>
                             <p class="fs-9 fw-bold text-start "><img src="images/syaratdanketentuan.svg" style="width: 7%; margin-right : 5%;">Syarat dan Ketentuan</p><img src="images/line.svg" style="width: 112%; margin-top:-10%;margin-left: -6%">
                             <p class="mb-0 text-start" style="margin-left: 9%;color: #83838A">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum laoreet eu morbi venenatis egestas sed. Integer non, non massa arcu ullamcorper pellentesque volutpat. Et eget cursus erat in vitae accumsan leo pharetra dolor. Consectetur habitasse sed nibh purus elit eget at......................................</br></br><p class="text-start" style="color :blue; margin-left: 9%; ">Updated on May, 30 2022</p>
-                        </br></br>
                             <p class="text-center" style="color: #83838A;">Full Recap</p>
                         </div>
                     </div>

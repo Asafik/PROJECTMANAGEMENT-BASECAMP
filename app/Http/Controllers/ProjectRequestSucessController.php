@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\project_requirement_documents;
 use Illuminate\Http\Request;
 
-class ProjectRequirementDocumentsController extends Controller
+class ProjectRequestSucessController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function index()
     {
-        return view('OpdReqProject.projectReq_index');
+        return view('OpdReqProject.reqSuccess');
     }
 
     /**
@@ -24,7 +23,7 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function create()
     {
-        return view('OpdReqProject.projectReq_create');
+        //
     }
 
     /**
@@ -41,10 +40,10 @@ class ProjectRequirementDocumentsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\project_requirement_documents  $project_requirement_documents
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(project_requirement_documents $project_requirement_documents)
+    public function show($id)
     {
         //
     }
@@ -52,10 +51,10 @@ class ProjectRequirementDocumentsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\project_requirement_documents  $project_requirement_documents
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(project_requirement_documents $project_requirement_documents)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +63,10 @@ class ProjectRequirementDocumentsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\project_requirement_documents  $project_requirement_documents
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, project_requirement_documents $project_requirement_documents)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +74,10 @@ class ProjectRequirementDocumentsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\project_requirement_documents  $project_requirement_documents
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(project_requirement_documents $project_requirement_documents)
+    public function destroy($id)
     {
         //
     }
