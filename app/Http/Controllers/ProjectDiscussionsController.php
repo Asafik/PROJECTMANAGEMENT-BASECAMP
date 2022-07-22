@@ -24,7 +24,7 @@ class ProjectDiscussionsController extends Controller
      */
     public function create()
     {
-        //
+        return view('Diskominfos.discussion');
     }
 
     /**

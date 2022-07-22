@@ -14,7 +14,7 @@ class ExternalUsersController extends Controller
      */
     public function index()
     {
-        //
+        return view('Login.signup');
     }
 
     /**

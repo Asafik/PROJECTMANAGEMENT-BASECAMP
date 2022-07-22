@@ -16,7 +16,7 @@
                 <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-plus-circle"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-bookmark"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-bell"style="font-size:24px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
+                <li class="nav-item"><a class="nav-link " href="/discussion"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#!"><i class="bi bi-person" style="font-size:24px"></i></a></li>
                     <ul class="navbar-nav" style="margin-top:2%">
                       <li class="nav-item dropdown">

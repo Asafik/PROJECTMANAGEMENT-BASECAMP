@@ -14,7 +14,7 @@ class ProjectMilestonesController extends Controller
      */
     public function index()
     {
-        //
+        return view('OpdReqProject.milestone');
     }
 
     /**

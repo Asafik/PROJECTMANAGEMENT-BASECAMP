@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project_grup;
+use App\Models\projects;
 use Illuminate\Http\Request;
 
 class ProjectGrupController extends Controller
@@ -14,7 +15,8 @@ class ProjectGrupController extends Controller
      */
     public function index()
     {
-        //
+        $project_grup = Project_grup::all();
+        return view('project.index',compact('project_grup'));
     }
 
     /**
@@ -24,7 +26,7 @@ class ProjectGrupController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -35,7 +37,8 @@ class ProjectGrupController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Project_grup::create($request->except(['_token','submit']));
+       return redirect('index');
     }
 
     /**

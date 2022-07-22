@@ -61,7 +61,7 @@
                         <hr>
                           <h6 class="ml-5"><img src="img/lingkaran.svg"></i> {{ $project->project_name }}<a class="p-3"></a><i class=" btn bi bi-three-dots" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false"></i>
                             <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-                            <a href="/project {{ $project->id }}/project_edit" class="dropdown-item mb-3 " data-bs-toggle="modal" data-bs-target="#exampleModalEdit"><i class="bi bi-pencil-square"></i> Edit Project</a>
+                            <a class="btn" href="/project/{{ $project->id }}/project_edit" class="dropdown-item mb-3 " data-bs-toggle="modal" data-bs-target="#exampleModalEdit"><i class="bi bi-pencil-square"></i> Edit Project</a>
                             <form action="/project/{{ $project->id }}" method="POST">
                               @csrf 
                               @method("delete")
@@ -92,8 +92,8 @@
         <div class="row mb-3">
          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Group</label>
           <div class="col-sm-9">
-            <input type="text" name="project_grups_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-          <button type="button" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup" data-bs-whatever="@New project"></button>
+        <input type="text" name="project_grups_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+        <button type="button" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup" data-bs-whatever="@New project"></button>
         </div>
         </div>
         </div>

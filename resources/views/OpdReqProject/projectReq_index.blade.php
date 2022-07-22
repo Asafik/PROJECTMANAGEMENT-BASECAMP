@@ -44,7 +44,7 @@
                 <div class="col-lg-4 col-xxl-4 mb-5">
                     <div class="card bg-light border-0 h-100">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""><a href="monitoring.html"><span class="" style="color: #fff;"><strong>Monitoring Project</strong> </a></i></div>
+                            <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""><a href="/monitoring"><span class="" style="color: #fff;"><strong>Monitoring Project</strong> </a></i></div>
                                 <p class="fs-9  text-start"><img src="images/icon4.svg" style="width: 4%; margin-right : 5%;">Projects system attandance </p><img src="images/line.svg" style="width: 112%; margin-top:-10%; margin-left: -6%">
                                 <p class="fs-9 fw- text-start" style="margin-top: -5%; color: #838492;"><img src="images/icon5.svg" style="width: 5%; margin-right : 5%; ">in General Project</p>
                                 <p class="mb-0 text-start" style="margin-left: 9%;color: #83838A;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt aliquet semper augue diam pellentesque vel quis. Eu maecenas sit nulla molestie vestibulum aliquam feugiat gravida eget. Est nec rutrum vitae tincidunt nec sit donec risus mauris. Sit nullam vitae senectus leo leo, dignissim ultrices. Iaculis at orci lorem vitae. 
