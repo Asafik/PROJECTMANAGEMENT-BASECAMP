@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\users;
+use App\Models\pegawai;
 use Illuminate\Http\Request;
 
-class UsersController extends Controller
+class PegawaiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,9 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('Login.landingPage');
+        return view('SignMe.index')->with([
+            'pegawai'=>pegawai::all(),
+        ]);
     }
 
     /**
@@ -24,7 +26,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('SignMe.create');
     }
 
     /**
@@ -35,16 +37,17 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       pegawai::create($request->except(['_token','_submit']));
+       
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\users  $users
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(users $users)
+    public function show($id)
     {
         //
     }
@@ -52,10 +55,10 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\users  $users
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(users $users)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +67,10 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\users  $users
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, users $users)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,16 +78,11 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\users  $users
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(users $users)
+    public function destroy($id)
     {
         //
-    }
-
-    public function profile()
-    {
-        return view('User.user_profile');
     }
 }

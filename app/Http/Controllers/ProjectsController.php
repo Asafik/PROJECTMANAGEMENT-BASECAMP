@@ -65,7 +65,7 @@ class ProjectsController extends Controller
     public function edit($id)
     {
         $project = projects::find($id);
-        return view('project.project_edit', compact(['peojects']));
+        return view('project.project_edit', compact(['projects']));
     }
 
     /**
@@ -93,5 +93,11 @@ class ProjectsController extends Controller
         $project = projects::find($id);
         $project->delete();
         return redirect('/project');
+    }
+
+    public function general()
+    {
+        $project = projects::with('project_grup')->latest()->paginate();
+        return view('Project.general_project', compact(['project']));
     }
 }

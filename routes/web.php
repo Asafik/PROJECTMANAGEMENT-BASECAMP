@@ -1,20 +1,25 @@
 <?php
 
 use App\Models\projects;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\ProjectGrupController;
 use App\Http\Controllers\ConversationController;
-use App\Http\Controllers\ExternalUsersController;
-use App\Http\Controllers\HomeDiskominfosController;
-use App\Http\Controllers\MonitoringController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ProjectListsController;
 use App\Http\Controllers\ProjectTasksController;
+use App\Http\Controllers\ExternalUsersController;
+use App\Http\Controllers\HomeDiskominfosController;
 use App\Http\Controllers\ProjectMilestonesController;
 use App\Http\Controllers\ProjectDiscussionsController;
 use App\Http\Controllers\ProjectRequestSucessController;
 use App\Http\Controllers\ProjectRequirementDocumentsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +42,7 @@ Route::post('/store',[ProjectsController::class,'store']);
 Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit']);
 Route::put('/project_edit/{id}',[ProjectsController::class,'update']);
 Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
+Route::get('/general_project',[ProjectsController::class,'general']);
 
 //route project grup
 
@@ -66,11 +72,17 @@ Route::get('/signup',[ExternalUsersController::class,'index']);
 //route milestone
 Route::get('/milestone',[ProjectMilestonesController::class,'index']);
 
+//route notification
+Route::get('/notification',[NotificationController::class,'index']);
+
 //route conversation
 Route::get('/conversation',[ConversationController::class,'index']);
 
 //monitoring
 Route::get('/monitoring',[MonitoringController::class,'index']);
+
+//route user
+Route::get('/user_profile',[UsersController::class,'profile']);
 
 //diskominfos
 
@@ -78,3 +90,8 @@ Route::get('/homediskominfos',[HomeDiskominfosController::class,'index']);
 Route::get('/requestapprov',[HomeDiskominfosController::class,'create']);
 Route::get('/requestapprovsucess',[HomeDiskominfosController::class,'store']);
 Route::get('/discussion',[ProjectDiscussionsController::class,'create']);
+
+//sign up/login
+Route::get('pegawai',[PegawaiController::class,'index']);
+Route::get('pegawai/create',[PegawaiController::class,'create']);
+Route::post('pegawai/store',[PegawaiController::class,'store']);

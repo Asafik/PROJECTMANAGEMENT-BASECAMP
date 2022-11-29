@@ -4,10 +4,11 @@
     <div class="container px-lg-0">
         <!-- Page Features-->
         <div class="col-lg-12 mb-5 d-flex"> 
-            <span class="h5 text-decoration-none text-black fw-bold me-2">Hallo Abcd!</span>
-            <a class="h5 text-decoration-none text-secondary me-auto">Stay Healthy.</a>
-            <a href="projectReq_create" class="btn btn-success me-3" style="background-color:#20B15A ;"> Add Request Project</a>
-            <a class="h4 text-decoration-none text-black" href=""><i class="bi bi-gear-fill" style="color: #838492;"></i></a>
+            <p class="bi bi-funnel h5 text-decoration-none text-secondary me-auto"> Filter</p>
+            <!-- button modal new project -->
+            <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            </div>
         </div>
     <!-- Page Content-->
     <section class="pt-4">

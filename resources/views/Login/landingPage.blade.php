@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
@@ -24,7 +21,6 @@
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
-
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
@@ -33,10 +29,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
       <!-- Core theme CSS (includes Bootstrap)-->
       <link href="css/styles.css" rel="stylesheet" />
-
   </head>
-
-
   <body>
 
     <!-- ===============================================-->
@@ -62,9 +55,7 @@
               <button class="btn btn-warning btn-sm" type="submit" style="color: black;"><a href="/signup">Sign Up </button></a>
             </form>  
           </div>
-          
           </div>
-          
         </nav>
       <section class="pt-7">
         <div class="container">
@@ -73,7 +64,7 @@
               <p class="mb-3 fs-4 " style="color: darkblue; margin-top: 1%;">The first trully intelligent </br>request project</br>management system</br>in the government </p>
               <p class="mb-6 lead text-secondary"><br class="d-none d-xl-block" ><img src="img/garis.svg" height="" width="300" alt="logo" style="color: blue;"><br class="d-none d-xl-block" /></p>
               <div class="position-relative" style="width: 80%;">
-                <input class="form-control border-2 square-pill w-100 ps-4 pe-5 position-absolute" type="text" placeholder="Email Address" style="height: 50px; color:black;"><a href="home.html"></span>
+                <input class="form-control border-2 square-pill w-100 ps-4 pe-5 position-absolute" type="text" placeholder="Email Address" style="height: 50px; color:black;"><a href="/projectReq"></span>
                 <button type="button" class="btn btn-primary square-pill py-2 px-3 shadow-none position-absolute top-0 end-0  m-1"><strong>Start Now!</strong></button>
             
             </div>
@@ -96,35 +87,51 @@
               <div class="modal-body">
               <!-- form didalam new project -->
                  <!-- Responsive navbar-->
-        
+
+        <!-- LOGIN -->
         <nav class="navbar navbar-expand-lg navbar-light sticky top bg-light" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image : none; background-color: rgba(249, 250, 253, 0); transition: background-color 0s ease 0s, padding 0.35s ease 0s;">
           <div class="container px-lg-0">
-            <a class="navbar-brand" href="#!"><h3 class="navbar-brand"><img src="img/logo.svg" height="60" alt="logo" style="width: 100%; margin-left: 90%;"></h3></a></div></nav>
+            <a class="navbar-brand" href="#!">
+              <h3 class="navbar-brand">
+                <img src="img/logo.svg" height="60" alt="logo" style="width: 100%; margin-left: 90%;">
+              </h3>
+            </a>
+          </div>
+        </nav>
+
       <!--Content-->
-       <div class="text-center" style="color: #57575A;"><h1>Login</h1></div>
-       <input class="form-control form-control-lg" type="text" placeholder="Username" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 3%; background-color: #DDEBF6; color: #0064AF ;">
-       <input class="form-control form-control-lg" type="email" placeholder="Email" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%; background-color: #DDEBF6; color: #0064AF ;">
-       <input class="form-control form-control-lg" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%; background-color: #DDEBF6; color: #0064AF ;">
-       <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary btn-lg fw-bold" type="button"style="margin-top: 3%; width: 120%; margin-left: -10%; background-color: #0064AF;"><a href="/project"><span class=""style="color: #fff;">Sign Me Up</button></a>
-        <div class="form-check " style="margin-left: 28%;"> 
-        </div>
-        <span class="text-center"><img src="img/Line 1.svg"  style=" width: 30%; height: 3px;"> <span class="text-center">or login with<img src="img/Line 1.svg"  style=" width: 30%; height: 3px;">
+      <div class="text-center" style="color: #57575A;">
+        <h1>Login</h1>
+      </div>
+
+      <input class="form-control form-control-lg" type="text" placeholder="Username/Email" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 3%;">
+      <input class="form-control form-control-lg" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%;">
+      
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary btn-lg fw-bold" type="button"style="margin-top: 3%; width: 120%; margin-left: -10%; background-color: #0064AF;"><a href="/project"><span class=""style="color: #fff;">Login</button></a>
+        <div class="form-check " style="margin-left: 28%;"></div>
+        <span class="text-center"><img src="img/Line 1.svg"  style=" width: 30%; height: 3px;">
+          <span class="text-center" style="color: #57575A;">or login with<img src="img/Line 1.svg"  style=" width: 30%; height: 3px;"></span>
         </span>
 
+        <div class="text-center">
+          <a class="btn btn-outline shadow-4 border-1 ms-3 square-pill" href="#!">
+            <img src="img/google.svg" alt="" width="50" height="24">
+          <a class="btn btn-outline ms-3" href="#!">
+            <img src="img/fb.svg" alt="" width="70" height="24">
+        </div>
+
       <div class="" style="margin-top: 3%; margin-bottom: 5%;">
-         
         </div>
               </div>
           </div>
           </div>
            <style>
-                body {
-                                    
-                  background-color:#fff;
-                      background-size: 160% 140%;
-                          }
-                        </style>
+           body {
+            background-color:#fff;
+            background-size: 160% 140%;
+          }
+          </style>
       </section>
 
 

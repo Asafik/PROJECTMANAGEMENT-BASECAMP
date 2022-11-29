@@ -1,4 +1,4 @@
-@extends('layout.masterReq') @section('content')
+@extends('layout.master') @section('content')
 </header>
 <!-- Page Content-->
 <section class="pt-3">
@@ -40,7 +40,7 @@
             <div class="col-lg-18 col-xxl-4 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""><img src="images/checklist.svg" alt="" width="20" height="25" style="margin-left: -23%;"><a href="https://dewaayusuri.github.io/requestsuccessfull.github.io/" style="color: #fff; text-decoration: double; margin-left: -22%;"></a><strong>Request Project</strong></i></div>
+                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""></a><strong>Request Project</strong></i></div>
                             <div class="row">
                                 <div class="col-sm-6">
                                   <div class="card" style="border-color: #fff">

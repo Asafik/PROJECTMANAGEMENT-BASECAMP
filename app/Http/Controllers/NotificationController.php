@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\users;
+use App\Models\NotificationModel;
+use App\Models\projects;
 use Illuminate\Http\Request;
 
-class UsersController extends Controller
+class NotificationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('Login.landingPage');
+        return view('OpdReqProject.notification');
     }
 
     /**
@@ -41,10 +42,10 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\users  $users
+     * @param  \App\Models\NotificationModel  $notificationModel
      * @return \Illuminate\Http\Response
      */
-    public function show(users $users)
+    public function show(NotificationModel $notificationModel)
     {
         //
     }
@@ -52,10 +53,10 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\users  $users
+     * @param  \App\Models\NotificationModel  $notificationModel
      * @return \Illuminate\Http\Response
      */
-    public function edit(users $users)
+    public function edit(NotificationModel $notificationModel)
     {
         //
     }
@@ -64,10 +65,10 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\users  $users
+     * @param  \App\Models\NotificationModel  $notificationModel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, users $users)
+    public function update(Request $request, NotificationModel $notificationModel)
     {
         //
     }
@@ -75,16 +76,11 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\users  $users
+     * @param  \App\Models\NotificationModel  $notificationModel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(users $users)
+    public function destroy(NotificationModel $notificationModel)
     {
         //
-    }
-
-    public function profile()
-    {
-        return view('User.user_profile');
     }
 }

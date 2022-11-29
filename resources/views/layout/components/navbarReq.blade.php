@@ -6,7 +6,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="Page navigation example navbar-nav ms-auto mb-10 mb-lg-0">
                 <li class="nav-item"><a class="nav-link " aria-current="page" href="/projectReq"><i class="bi bi-house" style="font-size:28px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#!"><i class="bi bi-calendar3" style="font-size:28px"></i></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-calendar3" style="font-size:28px"></i></i></a></li>
             </ul>
         </div>
         
@@ -16,7 +16,7 @@
                 <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-plus-circle"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-bookmark"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link " href="#!"><i class="bi bi-bell"style="font-size:24px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link " href="/discussion"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
+                <li class="nav-item"><a class="nav-link " href="/"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#!"><i class="bi bi-person" style="font-size:24px"></i></a></li>
                     <ul class="navbar-nav" style="margin-top:2%">
                       <li class="nav-item dropdown">

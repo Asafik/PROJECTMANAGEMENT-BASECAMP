@@ -1,4 +1,4 @@
-@extends('layout.masterReq') @section('content')
+@extends('layout.master') @section('content')
 <!-- Page Content-->
 <section class="pt-3">
     <div class="container px-lg-0">
@@ -13,7 +13,7 @@
             <div class="col-lg-18 col-xxl-4 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""><a href="https://dewaayusuri.github.io/requestsuccessfull.github.io/" style="color: #fff; text-decoration: double; margin-left: 1%;"></a><strong>Monitoring</strong></i></div>
+                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""><a><strong>Monitoring</strong></i></div>
                           <p class="fs-9 fw- text-start" style="margin-top: 1%; color: #838492;"><img src="images/icon10.svg" style="width: 1%; margin-right : 2%; margin-left: 0%; "><strong>Project system attandance</strong> </p>
                           <p class="fs-9 fw- text-start" style="margin-top: 1%; color: #838492;"><img src="images/icon5.svg" style="width: 1%; margin-right : 2%; margin-left: 0%; ">in General Project</p>
                           <p class="" style="text-align: justify; margin-left: 3%;"> ipsum dolor sit amet, consectetur adipiscing elit. Cursus eget quam nunc rhoncus, mi molestie nec. A pellentesque lorem eget tellus. Faucibus massa facilisi aliquet nec adipiscing. Justo, velit vel eget sollicitudin. Consectetur interdum orci scelerisque auctor. Id habitant nulla vel odio. Morbi vel dignissim pulvinar posuere aenean sollicitudin urna. </p>
