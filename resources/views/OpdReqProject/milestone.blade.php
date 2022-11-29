@@ -1,4 +1,4 @@
-@extends('layout.masterReq') @section('content')
+@extends('layout.master') @section('content')
           
         <!-- Header-->
           <!-- Page Content-->
