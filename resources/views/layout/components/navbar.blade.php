@@ -17,11 +17,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-10 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"><i  class="bi bi-search"style="font-size:24px"></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="#!"><i class="bi bi-plus-circle"style="font-size:24px"></i></a></li>
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-plus-circle"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="#!"><i class="bi bi-bookmark"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/notification"><i class="bi bi-bell"style="font-size:24px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/conversation"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="#!"><i class="bi bi-person" style="font-size:24px"></i></a></li>
+                <li class="nav-item"><a class="nav-link active" href="/user_profile"><i class="bi bi-person" style="font-size:24px"></i></a></li>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="font-size:20px">abcd</a>
                     <div class="dropdown-menu rounded-0 m-0">

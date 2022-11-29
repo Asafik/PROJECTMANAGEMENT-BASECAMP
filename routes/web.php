@@ -10,6 +10,7 @@ use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\ProjectGrupController;
 use App\Http\Controllers\ConversationController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ProjectListsController;
 use App\Http\Controllers\ProjectTasksController;
 use App\Http\Controllers\ExternalUsersController;
@@ -79,6 +80,9 @@ Route::get('/conversation',[ConversationController::class,'index']);
 
 //monitoring
 Route::get('/monitoring',[MonitoringController::class,'index']);
+
+//route user
+Route::get('/user_profile',[UsersController::class,'profile']);
 
 //diskominfos
 

@@ -82,4 +82,9 @@ class UsersController extends Controller
     {
         //
     }
+
+    public function profile()
+    {
+        return view('User.user_profile');
+    }
 }
