@@ -5,12 +5,36 @@
     <div class="container px-lg-0">
         <!-- Page Features-->
         <div class="col-lg-12 mb-5 d-flex"> 
-            <p class="bi bi-funnel h5 text-decoration-none text-secondary me-auto"> Filter</p>
+          <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
+          </a>
             <!-- button modal new project -->
             <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             </div>
-        </div>
+            <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div><hr style="margin-top: -4%;">
+                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Page Features-->
     <div class="row gx-lg-6">
          <!--card Request  -->
@@ -76,51 +100,54 @@
                         </div>
                   </div>
               </div>
-  <!-- Modal create project -->
-  <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          
+<!-- Modal create project -->
+<div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
 <div class="container">
-    <form action="/store" method="POST" enctype="multipart/form-data">
-        @csrf
-        <div class="row mb-3">
-         <label for="inputPassword3" class="col-sm-3 col-form-label">Project Group</label>
-          <div class="col-sm-9">
-        <input type="text" name="project_grups_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-        <button type="button" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup" data-bs-whatever="@New project"></button>
+  <form action="/store" method="POST" enctype="multipart/form-data">
+      @csrf
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-3 col-form-label">Project Group</label>
+        <div class="col-sm-7">
+          <input type="text" name="project_grups_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
+        <div class="col-sm-2">
+          <button type="button" class="bi bi-plus-circle btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup" data-bs-whatever="@New project"></button>
         </div>
+    </div>
+    
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-3 col-form-label">Project Name</label>
+        <div class="col-sm-7">
+          <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <a href=""></a>
         </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Name</label>
-          <div class="col-sm-9">
-            <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <a href=""></a>
-          </div>
-        </div>
-        <div class="row mb-3" >
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Description</label>
-          <div class="col-sm-9">
-            <textarea type="text" name="project_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-          </div>
-        </div>
+      </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <a href="project_list"> <button type="submit" class="btn btn-primary">Create</button> </a>
+      <div class="row mb-3" >
+        <label for="inputPassword3" class="col-sm-3 col-form-label">Project Description</label>
+        <div class="col-sm-7">
+          <textarea type="text" name="project_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
         </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+      <a href="project_list"> <button type="submit" class="btn btn-primary">Create</button> </a>
       </div>
     </div>
   </div>
-    </div>
+</div>
   </div>
-  <!-- End Model -->
+</div>
+<!-- End Model -->
 
   <!--modal project grup-->
 <div class="modal fade" id="exampleModalProjectGrup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -144,7 +171,7 @@
               </div> 
           </form>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save</button>
       </div>
     </div>
