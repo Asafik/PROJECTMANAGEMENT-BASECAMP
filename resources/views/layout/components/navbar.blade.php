@@ -42,7 +42,7 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/user_profile">My Account</a></li>
                       <li><a class="dropdown-item" href="#">New Project</a></li>
-                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                      <li><a class="dropdown-item" href="/">Log Out</a></li>
                     </ul>
                   </div>
 
