@@ -100,4 +100,10 @@ class ProjectsController extends Controller
         $project = projects::with('project_grup')->latest()->paginate();
         return view('Project.general_project', compact(['project']));
     }
+
+    public function bookmark()
+    {
+        
+        return view('OpdReqProject.bookmark');
+    }
 }

@@ -47,9 +47,11 @@ Route::get('/general_project',[ProjectsController::class,'general']);
 //route project grup
 
 //route project list
-
 Route::get('/project_list',[ProjectListsController::class,'index']);
 Route::get('/create',[ProjectListsController::class,'create']);
+
+//route bookmark
+Route::get('/bookmark',[ProjectsController::class,'bookmark']);
 
 //route project task
 Route::get('/project_list',[ProjectTasksController::class,'index']);

@@ -71,9 +71,16 @@
             </a>
             </br>
             <div>
-            <h6 style="margin-left:8%; margin-top: 15%; color: black;"> or sign up with<a class="btn btn-outline shadow-4 border-1 ms-3 square-pill" href="#!"><img src="img/google.svg" alt="" width="50" height="24" style="border-color: #fff;"><a class="btn btn-outline ms-3" href="#!"><img src="img/fb.svg" alt="" width="70" height="24"></a></div>
-            </h2>
-            </h6>
+              <h6 style="margin-left:8%; margin-top: 15%; color: black;"> or sign up with
+                <a class="btn btn-outline shadow-4 border-1 ms-3 square-pill" href="#!">
+                  <img src="img/google.svg" alt="" width="50" height="24" style="border-color: #fff;">
+                </a>
+                <a class="btn btn-outline ms-3" href="#!">
+                  <img src="img/fb.svg" alt="" width="70" height="24">
+                </a>
+              </h6>
+            </div>
+            
             </div>
             <div class="col-md-6 text-end"><img class="pt-15 pt-md-0 img-fluid" src="images/logo.svg" alt="" /></div>
           </div>
