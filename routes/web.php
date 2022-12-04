@@ -48,7 +48,7 @@ Route::get('/general_project',[ProjectsController::class,'general']);
 
 //route project list
 Route::get('/project_list',[ProjectListsController::class,'index']);
-Route::get('/create',[ProjectListsController::class,'create']);
+Route::get('/create',[ProjectListsController::class,'crex`ate']);
 
 //route bookmark
 Route::get('/bookmark',[ProjectsController::class,'bookmark']);
