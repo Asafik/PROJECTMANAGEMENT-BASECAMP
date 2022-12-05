@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-        <p class="fw-bolder h5 me-auto mb-4">General Project</p>
+        <p class="fw-bolder h5 me-auto mb-4">discuss</p>
         <!-- Page Features-->
     <div class="row gx-lg-6">
          <!--card Request  -->
