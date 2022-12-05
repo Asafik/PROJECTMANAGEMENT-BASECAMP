@@ -50,6 +50,9 @@ Route::get('/general_project',[ProjectsController::class,'general']);
 Route::get('/project_list',[ProjectListsController::class,'index']);
 Route::get('/create',[ProjectListsController::class,'crex`ate']);
 
+//route discuss
+Route::get('/discuss',[ProjectsController::class,'discuss']);
+
 //route bookmark
 Route::get('/bookmark',[ProjectsController::class,'bookmark']);
 
