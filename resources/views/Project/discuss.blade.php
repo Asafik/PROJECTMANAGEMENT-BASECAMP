@@ -29,38 +29,91 @@
                   <div>
                     <form>
                       <div class="mb-3 row">
-
                         <div class="form-group row">
-                          <label for="SearchText" class="col-sm-2 col-form-label">Search Text</label>
-                          <div class="col-sm-10">
+                          <label for="SearchText" class="col-sm-4 col-form-label">Search Text</label>
+                          <div class="col-sm-8">
                             <input type="text" class="form-control" id="SearchText">
                           </div>
                         </div>
                       </div>
 
                       <div class="mb-3 row">
-                        
                         <div class="form-group row">
-                          <label for="SortBy" class="col-sm-2 col-form-label">Sort By</label>
-                          <div class="col-sm-5">
+                          <label for="SortBy" class="col-sm-4 col-form-label">Sort By</label>
+                          <div class="col-sm-4">
                             <input type="text" class="form-control" id="SortBy">
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-sm-4">
                             <input type="text" class="form-control" id="SortBy">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <div class="form-group row">
+                          <label for="CreateBy" class="col-sm-4 col-form-label">Create By</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="CreateBy">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <div class="form-group row">
+                          <label for="DateCreated" class="col-sm-4 col-form-label">Date Created</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="DateCreated">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <div class="form-group row">
+                          <label for="LastCommentBy" class="col-sm-4 col-form-label">Last Comment By</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="LastCommentBy">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <div class="form-group row">
+                          <label for="LastActivity" class="col-sm-4 col-form-label">Last Activity</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="LastActivity">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <div class="form-group row">
+                          <label for="Private" class="col-sm-4 col-form-label">Private</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="Private">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <div class="form-group row">
+                          <label for="Sticky" class="col-sm-4 col-form-label">Sticky</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="Sticky">
                           </div>
                         </div>
                       </div>
                     </form>
                   </div>
-                  <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  
+                  <div class="d-flex flex-row-reverse">
+                    <div class="p-2">
+                      <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="offcanvas" data-bs-target="#l"><i class="bi bi-funnel-fill"></i> Apply</button>
+                    </div>
+                    <div class="p-2">
+                      <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
+                        <i class="bi bi-file-earmark-fill"  style="color: #57575A;"> Saved Search & Apply</i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
