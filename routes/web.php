@@ -72,6 +72,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //route login
 //Auth::routes();
 Route::get('/signup',[ExternalUsersController::class,'index']);
+Route::post('/signup',[ExternalUsersController::class,'store']);
 
 //route milestone
 Route::get('/milestone',[ProjectMilestonesController::class,'index']);

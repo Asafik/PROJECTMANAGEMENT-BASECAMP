@@ -26,16 +26,51 @@
               <a href=""style="background-color:#ffff"><i class="bi bi-chevron-down me-3"  style="color: #57575A;"></i></a>
             </div>
 
-            <div class="card mb-2 mx-3 border-0" style="background-color:lightsteelblue">
-              <div class="card-body">
-                <div class="d-flex"> 
-                    <a class="btn btn-light me-5" href=""><i class="bi bi-calendar"></i> Calendar Event</a>
-                    <strong>General Project / Project System Attendance</strong>
-                    <h5 style="color: #57575A;">Meeting with Stakeholders</h5>
-                    <button class="btn btn-light">Mark as read</button>
+            <div class="col-lg-15 col-xxl-4 mb-3">
+              <div class="card mx-3 border-0" style="background-color:lightsteelblue">
+                <div class="card-body">
+                    <p class="fs-9 fw-bold text-start">
+                        <a class="btn btn-light me-6" href=""><i class="bi bi-calendar4-week"></i> Calendar Event</a>
+                        <strong style="color: #57575A; margin-left: 3.5%;">General Project / </strong>
+                        <strong>
+                          <a href="#" style="color: #0064af;">Project System Attendance</a>
+                        </strong>
+                        <button class="btn btn-light" style="margin-left: 32%;">Mark as read</button>
+                        <button class="btn btn-light"><i class="bi-box-arrow-right"></i></button>
+                        <div class="d-flex">
+                          <h5 style="color: #57575A; margin-left: 18%;"><strong>Meeting with Stakeholders</strong></h5>
+                          <a href="" style="margin-left: 42%;">Expand Details</a>
+                        </div>
+                        <div class="d-flex">
+                          <h6 style="color: #57575A; margin-left: 18%;">Created by Rara</h6>
+                          <h6 style="color: #57575A; margin-left: 5%;">Ends May 23 - 4:00 PM</h6>
+                        </div>
+                    </p>
                 </div>
               </div>
             </div>
+            <div class="col-lg-15 col-xxl-4 mb-5">
+              <div class="card mx-3 border-0" style="background-color:lightsteelblue">
+                <div class="card-body">
+                    <p class="fs-9 fw-bold text-start">
+                        <a class="btn btn-light me-6" href=""><i class="bi bi-calendar4-week"></i> Calendar Event</a>
+                        <strong style="color: #57575A; margin-left: 3.5%;">General Project / </strong>
+                        <strong><a href="#" style="color: #0064af;"> Project System Attendance</a></strong>
+                        <button class="btn btn-light" style="margin-left: 32%;">Mark as read</button>
+                        <button class="btn btn-light"><i class="bi-box-arrow-right"></i></button>
+                        <div class="d-flex">
+                          <h5 style="color: #57575A; margin-left: 18%;"><strong>Meeting with Stakeholders</strong></h5>
+                          <a href="" style="margin-left: 42%;">Expand Details</a>
+                        </div>
+                        <div class="d-flex">
+                          <h6 style="color: #57575A; margin-left: 18%;">Created by Rara</h6>
+                          <h6 style="color: #57575A; margin-left: 5%;">Ends May 23 - 4:00 PM</h6>
+                        </div>
+                    </p>
+                </div>
+              </div>
+            </div>
+        
         </div>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
