@@ -43,6 +43,8 @@ Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit']);
 Route::put('/project_edit/{id}',[ProjectsController::class,'update']);
 Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
 Route::get('/general_project',[ProjectsController::class,'general']);
+Route::get('/timeboard',[ProjectsController::class,'timeboard']);
+// Route::get('/searching',[ProjectsController::class,'search']);
 
 //route project grup
 
