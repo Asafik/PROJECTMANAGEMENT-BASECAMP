@@ -40,11 +40,20 @@
                       <div class="mb-3 row">
                         <div class="form-group row">
                           <label for="SortBy" class="col-sm-4 col-form-label">Sort By</label>
+                          
                           <div class="col-sm-4">
-                            <input type="text" class="form-control" id="SortBy">
+                            <select name="sort1" class="form-select col-lg-6" >
+                                <option value="">Sort 1</option>
+                                <option value="">Sort 2</option>
+                                <option value="">Sort 3</option>
+                            </select>
                           </div>
                           <div class="col-sm-4">
-                            <input type="text" class="form-control" id="SortBy">
+                            <select name="sort2" class="form-select col-lg-6" >
+                                <option value="">Sort 1</option>
+                                <option value="">Sort 2</option>
+                                <option value="">Sort 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -53,7 +62,11 @@
                         <div class="form-group row">
                           <label for="CreateBy" class="col-sm-4 col-form-label">Create By</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="CreateBy">
+                            <select name="CreateBy" class="form-select col-lg-6" >
+                                <option value="">Person 1</option>
+                                <option value="">Person 2</option>
+                                <option value="">Person 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -62,7 +75,12 @@
                         <div class="form-group row">
                           <label for="DateCreated" class="col-sm-4 col-form-label">Date Created</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="DateCreated">
+                          <!-- ganti pakek kalender -->
+                            <select name="DateCreated" class="form-select col-lg-6" >
+                                <option value="">Date 1</option>
+                                <option value="">Date 2</option>
+                                <option value="">Date 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -71,7 +89,11 @@
                         <div class="form-group row">
                           <label for="LastCommentBy" class="col-sm-4 col-form-label">Last Comment By</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="LastCommentBy">
+                            <select name="LastCommentBy" class="form-select col-lg-6" >
+                                <option value="">Person 1</option>
+                                <option value="">Person 2</option>
+                                <option value="">Person 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -80,7 +102,11 @@
                         <div class="form-group row">
                           <label for="LastActivity" class="col-sm-4 col-form-label">Last Activity</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="LastActivity">
+                            <select name="LastActivity" class="form-select col-lg-6" >
+                                <option value="">Activity 1</option>
+                                <option value="">Activity 2</option>
+                                <option value="">Activity 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -89,7 +115,11 @@
                         <div class="form-group row">
                           <label for="Private" class="col-sm-4 col-form-label">Private</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="Private">
+                            <select name="Private" class="form-select col-lg-6" >
+                                <option value="">Private 1</option>
+                                <option value="">Private 2</option>
+                                <option value="">Private 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -98,7 +128,11 @@
                         <div class="form-group row">
                           <label for="Sticky" class="col-sm-4 col-form-label">Sticky</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="Sticky">
+                            <select name="Sticky" class="form-select col-lg-6" >
+                                <option value="">Sticky 1</option>
+                                <option value="">Sticky 2</option>
+                                <option value="">Sticky 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
