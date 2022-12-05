@@ -106,4 +106,9 @@ class ProjectsController extends Controller
         
         return view('OpdReqProject.bookmark');
     }
+    public function timeboard()
+    {
+        $project = projects::with('project_grup')->latest()->paginate();
+        return view('Project.time_board', compact(['project']));
+    }
 }

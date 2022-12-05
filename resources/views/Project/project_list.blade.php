@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
             <!--card list & task-->
             <div class="col-lg-12 col-xxl-6 mb-3">
                 <div class="card bg-light border-0 h-100">
@@ -49,11 +49,11 @@
                           <ul>
                                 <p class="fs-9 fw-bold text-start "><p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%"><i class="bi bi-three-dots-vertical" style="margin-right:-2%;"></i><i class="bi bi-three-dots-vertical"style="margin-right: 1%"></i>{{$project_tasks ->title_task }} <mark style="background-color: #D0D9EE; color: #838492;">{{$project_tasks->status}}</mark><button type="button" class="btn btn-warning btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">{{ $project_tasks->priority }}</button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 30</mark><i class="bi bi-flag-fill btn" style="color : #3766DF"></i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
                             </ul>
-                            @endforeach 
+                            @endforeach
                         </div>
                     </div>
                 </div>
-            <a class="h6 text-decoration-none text-success mb-5" href="" data-bs-toggle="modal" data-bs-target="#exampleModalAddtask"><i class="bi bi-plus-circle-fill"></i> Add Task</a>           
+            <a class="h6 text-decoration-none text-success mb-5" href="" data-bs-toggle="modal" data-bs-target="#exampleModalAddtask"><i class="bi bi-plus-circle-fill"></i> Add Task</a>
             <!--end card list & task-->
   <!-- Modal Add List -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
@@ -74,7 +74,7 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Description</label>
                         <textarea type="text" name="list_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-                      </div> 
+                      </div>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -114,7 +114,7 @@
                 <div class="mb-3">
                     <label for="exampleInputText1" class="form-label">Description</label>
                     <textarea type="text" name="description_task" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-                  </div> 
+                  </div>
                   <div class="row">
                     <div class="col">
                       <label for="inputEmail4" class="form-label">Assigned To</label>
@@ -139,7 +139,7 @@
                         <option value="">In Progres</option>
                         <option value="">Complate</option>
                       </select>
-                    </div> 
+                    </div>
                     <div class="col">
                       <label for="inputEmail4" class="form-label">Priority</label>
                       <select name="priority" class="form-control">
@@ -148,7 +148,7 @@
                         <option value="">medium</option>
                         <option value="">high</option>
                       </select>
-                    </div> 
+                    </div>
                   </div>
                   <div class="row mb-3 mt-5">
                   <div class="col">
@@ -160,7 +160,7 @@
                     <input type="file" name="#" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                 </div>
-             </div> 
+             </div>
           </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
