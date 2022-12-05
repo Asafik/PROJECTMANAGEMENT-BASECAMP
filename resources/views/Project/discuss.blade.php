@@ -11,13 +11,13 @@
               <!-- <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Saved Searches</strong>
               </a> -->
-              <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Saved Searches</strong>
               </a>
               <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle"></i> Add List</button>
               <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddDiscussion"><i class="bi bi-plus-circle"></i> Add Discussion</button>
               <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 700px;">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -25,6 +25,32 @@
                 <div class="offcanvas-body">
                   <div><hr style="margin-top: -4%;">
                     Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                  </div>
+                  <div>
+                    <form>
+                      <div class="mb-3 row">
+
+                        <div class="form-group row">
+                          <label for="SearchText" class="col-sm-2 col-form-label">Search Text</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="SearchText">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        
+                        <div class="form-group row">
+                          <label for="SortBy" class="col-sm-2 col-form-label">Sort By</label>
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="SortBy">
+                          </div>
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="SortBy">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                   <div class="dropdown mt-3">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
