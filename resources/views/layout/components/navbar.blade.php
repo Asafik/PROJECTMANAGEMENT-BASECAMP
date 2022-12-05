@@ -18,41 +18,21 @@
             <ul class="navbar-nav ms-auto mb-10 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"><i  class="bi bi-search"style="font-size:24px"></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-plus-circle"style="font-size:24px"></i></a></li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link active" href="/bookmark">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
                         <i class="bi bi-bookmark" style="font-size:24px"></i>
                     </a>
-                </li> --}}
-                <div class="dropdown">
-                    <a class="nav-link active dropdown-toggle" href="/bookmark" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-bookmark" style="font-size:24px"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Bookmark this page</a></li>
-                    </ul>
-                </div>
+                </li>
                 <li class="nav-item"><a class="nav-link active" href="/notification"><i class="bi bi-bell"style="font-size:24px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/conversation"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
-                
-                
-                <div class="dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person" style="font-size:24px"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/user_profile">My Account</a></li>
-                      <li><a class="dropdown-item" href="#">New Project</a></li>
-                      <li><a class="dropdown-item" href="/">Log Out</a></li>
-                    </ul>
-                  </div>
-
-                {{-- <div class="nav-item dropdown">
-                    
+                <li class="nav-item"><a class="nav-link active" href="/user_profile"><i class="bi bi-person" style="font-size:24px"></i></a></li>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="font-size:20px">Agus</a>
                     <div class="dropdown-menu rounded-0 m-0">
-                        <a href="/" class="dropdown-item">Blog Grid</a>
-                        <a href="/" class="dropdown-item">Blog Detail</a>
+                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                        <a href="single.html" class="dropdown-item">Blog Detail</a>
                     </div>
-                </div> --}}
+                </div>
             </ul>
         </div>
     </div>
