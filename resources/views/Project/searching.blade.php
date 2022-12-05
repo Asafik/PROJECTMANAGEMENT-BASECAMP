@@ -18,8 +18,10 @@
                                         <div class="row mb-3">
                                             <label for="inputPassword3" class="col-sm-3 col-form-label">Time
                                                 Worked</label>
-                                            <input type="text" id="appt" name="appt" class="col-lg-6"
-                                                style="margin-left: -2%;">
+                                            <div class="col-lg-6">
+                                                <input type="text" id="appt" name="appt" class="form-control"
+                                                    style="margin-left: -8%;">
+                                            </div>
                                         </div>
                                         <div class="d-flex col-lg-6 mb-3">
                                             <label for="inputEmail4" class="form-label col-lg-5">Project Group</label>
