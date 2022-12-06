@@ -40,11 +40,20 @@
                       <div class="mb-3 row">
                         <div class="form-group row">
                           <label for="SortBy" class="col-sm-4 col-form-label">Sort By</label>
+                          
                           <div class="col-sm-4">
-                            <input type="text" class="form-control" id="SortBy">
+                            <select name="sort1" class="form-select col-lg-6" >
+                                <option value="">Sort 1</option>
+                                <option value="">Sort 2</option>
+                                <option value="">Sort 3</option>
+                            </select>
                           </div>
                           <div class="col-sm-4">
-                            <input type="text" class="form-control" id="SortBy">
+                            <select name="sort2" class="form-select col-lg-6" >
+                                <option value="">Sort 1</option>
+                                <option value="">Sort 2</option>
+                                <option value="">Sort 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -53,7 +62,11 @@
                         <div class="form-group row">
                           <label for="CreateBy" class="col-sm-4 col-form-label">Create By</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="CreateBy">
+                            <select name="CreateBy" class="form-select col-lg-6" >
+                                <option value="">Person 1</option>
+                                <option value="">Person 2</option>
+                                <option value="">Person 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -62,7 +75,12 @@
                         <div class="form-group row">
                           <label for="DateCreated" class="col-sm-4 col-form-label">Date Created</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="DateCreated">
+                          <!-- ganti pakek kalender -->
+                            <select name="DateCreated" class="form-select col-lg-6" >
+                                <option value="">Date 1</option>
+                                <option value="">Date 2</option>
+                                <option value="">Date 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -71,7 +89,11 @@
                         <div class="form-group row">
                           <label for="LastCommentBy" class="col-sm-4 col-form-label">Last Comment By</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="LastCommentBy">
+                            <select name="LastCommentBy" class="form-select col-lg-6" >
+                                <option value="">Person 1</option>
+                                <option value="">Person 2</option>
+                                <option value="">Person 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -80,7 +102,11 @@
                         <div class="form-group row">
                           <label for="LastActivity" class="col-sm-4 col-form-label">Last Activity</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="LastActivity">
+                            <select name="LastActivity" class="form-select col-lg-6" >
+                                <option value="">Activity 1</option>
+                                <option value="">Activity 2</option>
+                                <option value="">Activity 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -89,7 +115,11 @@
                         <div class="form-group row">
                           <label for="Private" class="col-sm-4 col-form-label">Private</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="Private">
+                            <select name="Private" class="form-select col-lg-6" >
+                                <option value="">Private 1</option>
+                                <option value="">Private 2</option>
+                                <option value="">Private 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -98,7 +128,11 @@
                         <div class="form-group row">
                           <label for="Sticky" class="col-sm-4 col-form-label">Sticky</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="Sticky">
+                            <select name="Sticky" class="form-select col-lg-6" >
+                                <option value="">Sticky 1</option>
+                                <option value="">Sticky 2</option>
+                                <option value="">Sticky 3</option>
+                            </select>
                           </div>
                         </div>
                       </div>
@@ -118,7 +152,9 @@
                 </div>
               </div>
             </div>
-        <p class="fw-bolder h5 me-auto mb-4">General Project</p>
+        <p class="fw-bolder h5 me-auto mb-4">discuss</p>
+
+        
         <!-- Page Features-->
     <div class="row gx-lg-6">
          <!--card Request  -->
@@ -141,120 +177,8 @@
                 </div>
             </div>
 
-            <!--card update-->
-            <div class="col-lg-4 col-xxl-5 mb-5">
-              <div class="card bg-light border-0 h-100">
-                  <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                      <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href="#"><span class="text-white"><strong>Project ABCD</strong></a></i></div>
-                        <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="mb-5 text-center">
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
-                      </div>
-                      </div>
-                  </div>
-              </div>
-
-            <!-- card project -->
-            <div class="col-lg-4 col-xxl-5 mb-5">
-              <div class="card bg-light border-0 h-100">
-                  <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                      <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href=""><span class="text-white"><strong>Project ABCD</strong></a></i></div>
-                        <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="mb-5 text-center">
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
-                      </div>
-                      </div>
-                  </div>
-              </div>
-  <!-- Modal create project -->
-  <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          
-<div class="container">
-    <form action="/store" method="POST" enctype="multipart/form-data">
-        @csrf
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Group</label>
-          <div class="col-sm-7">
-            <input type="text" name="project_grups_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="col-sm-2">
-            <button type="button" class="bi bi-plus-circle btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup" data-bs-whatever="@New project"></button>
-          </div>
-      </div>
-      
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Name</label>
-          <div class="col-sm-7">
-            <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <a href=""></a>
-          </div>
-        </div>
-
-        <div class="row mb-3" >
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Description</label>
-          <div class="col-sm-7">
-            <textarea type="text" name="project_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-        <a href="project_list"> <button type="submit" class="btn btn-primary">Create</button> </a>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
-  </div>
-  <!-- End Model -->
-
-  <!--modal project grup-->
-<div class="modal fade" id="exampleModalProjectGrup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Grup</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <form action="/store" method="POST" enctype="multipart/form-data">
-              @csrf
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Grup Name </label>
-                <input type="text" name="group_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Grup Description</label>
-                <textarea type="text" name="group_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-              </div> 
-          </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
-      </div>
-    </div>
-  </div>
-  <!--End Modal project grup-->
+            
+  
     </div>
     </div>
 </section>
