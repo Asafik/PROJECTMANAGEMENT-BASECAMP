@@ -54,6 +54,7 @@ Route::get('/create',[ProjectListsController::class,'crex`ate']);
 
 //route discuss
 Route::get('/discuss',[ProjectsController::class,'discuss']);
+Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
 
 //route bookmark
 Route::get('/bookmark',[ProjectsController::class,'bookmark']);
