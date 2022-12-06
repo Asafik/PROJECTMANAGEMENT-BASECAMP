@@ -21,7 +21,7 @@
                         </h6>
                         <div class="col-3 mt-3 ms-2" style="background:#6495ED;">
                             <h6 class="mt-2 me-auto">
-                                <center>40 Hourse</center>
+                                <center>40 Hours</center>
                             </h6>
                         </div>
                         <div class="col-3 mt-3 ms-2" style="background:#6495ED;">
@@ -67,7 +67,7 @@
                                                     id="delete"></a></button>
                                             <button type="button"
                                                 class="btn btn-outline-secondary me-md-2 btn btn-success"
-                                                style="color: #ffffff;">Complate</button>
+                                                style="color: #ffffff;">Complete</button>
                                         </div>
                                     </div>
                                 </div>
