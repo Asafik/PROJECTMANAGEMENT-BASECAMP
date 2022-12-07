@@ -15,13 +15,10 @@
                             <div class="modal-body">
                                 <div class="container">
                                     <form action="#" method="#" enctype="multipart/form-data">
-                                        <div class="row mb-3">
-                                            <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                                Worked</label>
-                                            <div class="col-lg-6">
-                                                <input type="text" id="appt" name="appt" class="form-control"
-                                                    style="margin-left: -8%;">
-                                            </div>
+                                        <div class="d-flex col-lg-6 mb-3">
+                                            <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
+                                            <input type="text" id="appt" name="appt" class="form-control col-lg-6"
+                                                style="margin-left: 3%;">
                                         </div>
                                         <div class="d-flex col-lg-6 mb-3">
                                             <label for="inputEmail4" class="form-label col-lg-5">Project Group</label>
