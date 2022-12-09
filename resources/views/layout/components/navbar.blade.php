@@ -26,18 +26,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-10 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"><i class="bi bi-search"
-                            style="font-size:24px"></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-plus-circle"
-                            style="font-size:24px"></i></a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"><i class="bi bi-search" style="font-size:24px"></i></a></li>
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-plus-circle" style="font-size:24px"></i></a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" "
+                    <a class="nav-link dropdown-toggle" href="#" 
                         data-bs-toggle="dropdown"><i class="bi bi-bookmark" style="font-size:24px"></i></a>
                     <ul class="dropdown-menu dropdown-menu">
-                        <a class="dropdown-item" href="#"><i class="bi bi-bookmark-star"></i> Notification</li>
+                        <a class="dropdown-item" href="#"><i class="bi bi-bookmark"></i> Bookmark this page  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-plus-square-fill" ><input type="text" class="form-control" placeholder="title"></input></i></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="bi bi-bookmark"></i> Bookmark this page  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-plus-square-fill" ><input type="text" class="form-control" placeholder="title"></input></i></a></a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-bookmark-star"></i> Notification</a>
                     </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link active" href="/notification"><i class="bi bi-bell" style="font-size:24px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/conversation"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link"></a></li>
@@ -57,11 +56,7 @@
 
                         </ul>
                     </li>
-                </ul>
                 </li>
-            </ul>
-
-
             </ul>
         </div>
     </div>
