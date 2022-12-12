@@ -114,6 +114,6 @@ class ProjectsController extends Controller
     public function timeboard()
     {
         $project = projects::with('project_grup')->latest()->paginate();
-        return view('OPdReqProject.time_board', compact(['project']));
+        return view('Project.time_board', compact(['project']));
     }
 }

@@ -1,4 +1,4 @@
-@extends('OpdReqProject.searching')
+@extends('project.searching')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container px-lg-0">
         <a class="navbar-brand" href="/project">
