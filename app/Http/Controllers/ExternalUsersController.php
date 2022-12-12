@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\external_users;
+use App\Models\users;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class ExternalUsersController extends Controller
 {
@@ -14,7 +17,7 @@ class ExternalUsersController extends Controller
      */
     public function index()
     {
-        return view('Login.signup');
+        return view('Login.landingPage');
     }
 
     /**
@@ -35,7 +38,19 @@ class ExternalUsersController extends Controller
      */
     public function store(Request $request)
     {
-        return request()->all();
+        $validatedData = $request->validate([
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'email:dns', 'unique:users'],
+            'phone' => ['required', 'unique:users', 'max:12'],
+            'password' => ['required', 'min:5', 'max:255'],
+            'nik' => ['required', 'unique:users', 'max:16'],
+        ]);
+
+        $validatedData['password'] = Hash::make($validatedData['password']);
+
+        users::create($validatedData);
+
+        return redirect('/login')->with('success', 'Registration successfull! Please login');
     }
 
     /**
@@ -81,5 +96,38 @@ class ExternalUsersController extends Controller
     public function destroy(external_users $external_users)
     {
         //
+    }
+
+    public function login()
+    {
+        return view('Login.login');
+    }
+
+    public function signup()
+    {
+        return view('Login.signup');
+    }
+
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email:dns'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('/project');
+        }
+
+        return back()->with('loginError', 'Login Failed!');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
     }
 }
