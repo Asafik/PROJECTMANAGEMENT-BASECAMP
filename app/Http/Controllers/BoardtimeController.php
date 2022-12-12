@@ -16,7 +16,7 @@ class BoardtimeController extends Controller
     public function index()
     {
         $timeboard = Timeboard::all();
-        return view('Project.time_board',compact('timeboard'));
+        return view('OpdReqProject.time_board',compact('timeboard'));
     }
 
     /**
@@ -26,7 +26,7 @@ class BoardtimeController extends Controller
      */
     public function create()
     {
-       return view('Project.time_board');
+       return view('OpdReqProject.time_board');
     }
 
     /**
