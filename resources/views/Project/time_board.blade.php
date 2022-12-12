@@ -1,4 +1,5 @@
-@extends('layout.master') @section('content')
+@extends('layout.master')
+@section('content')
 
 <!-- Page Content-->
 <section class="pt-2">
@@ -28,6 +29,7 @@
                             <h6 class="mt-2 me-auto">
                                 <center>21 Minutes</center>
                             </h6>
+
                         </div>
                     </div>
                     <div class="card me-md-2 col-lg-11 col-xxl-12 ms-5" style="background-color:#D0D9EE;">
@@ -89,11 +91,11 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="#" method="#" enctype="multipart/form-data">
-                    @csrf
+                {{-- <form action="/StoreTime" method="POST" enctype="multipart/form-data">
+                    @csrf --}}
                     <div class="modal-body">
                         <div class="container">
-                            <form action="#" method="#" enctype="multipart/form-data">
+                            {{-- <form action="/StoreTime" method="POST" enctype="multipart/form-data"> --}}
                                 <div class="row mb-3">
                                     <div class="col-5">
                                         <label for="inputEmail4" class="form-label">Group Or Project
@@ -129,6 +131,12 @@
             </div>
         </div>
     </div>
+    {{-- @foreach ($timeboard as $t)
+    <ul>
+   <p class="fs-9 fw-bold text-start "><p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%"><i class="bi bi-three-dots-vertical" style="margin-right:-2%;"></i><i class="bi bi-three-dots-vertical"style="margin-right: 1%"></i>{{$t->TimeWorked }} <mark style="background-color: #D0D9EE; color: #838492;">{{$t->Status}}</mark><button type="button" class="btn btn-warning btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">{{ $t->By }}</button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 30</mark><i class="bi bi-flag-fill btn" style="color : #3766DF"></i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
+</ul>
+@endforeach --}}
+
     <!-- akhir add Quick add -->
     <!-- add full add time record -->
     <div class="modal fade" id="exampleModalAddRecordFull" tabindex="-1" aria-labelledby="exampleModalAddRecordFull"
@@ -140,11 +148,11 @@
                         Record</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="#" method="#" enctype="multipart/form-data">
+                <form action="/store" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="container">
-                            <form action="#" method="#" enctype="multipart/form-data">
+                            <form action="/store" method="POST" enctype="multipart/form-data">
                                 <div class="row mb-3">
                                     <label for="inputPassword3" class="col-sm-3 col-form-label">Time
                                         Worked</label>
@@ -214,14 +222,13 @@
                         Record</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="#" method="#" enctype="multipart/form-data">
-                    @csrf
+                {{-- <form action="/Store" method="POST" enctype="multipart/form-data"> --}}
+                    {{-- @csrf --}}
                     <div class="modal-body">
                         <div class="container">
-                            <form action="#" method="#" enctype="multipart/form-data">
+                            {{-- <form action="/Store" method="POST" enctype="multipart/form-data"> --}}
                                 <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                        Worked</label>
+                                    <label for="inputPassword3" class="col-sm-3 col-form-label">TimeWorked</label>
                                     <input type="time" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
                                 </div>
                                 <div class="d-flex mb-3">

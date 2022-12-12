@@ -19,6 +19,7 @@ use App\Http\Controllers\ProjectMilestonesController;
 use App\Http\Controllers\ProjectDiscussionsController;
 use App\Http\Controllers\ProjectRequestSucessController;
 use App\Http\Controllers\ProjectRequirementDocumentsController;
+use App\Http\Controllers\BoardtimeController;
 
 
 /*
@@ -43,10 +44,20 @@ Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit']);
 Route::put('/project_edit/{id}',[ProjectsController::class,'update']);
 Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
 Route::get('/general_project',[ProjectsController::class,'general']);
-Route::get('/timeboard',[ProjectsController::class,'timeboard']);
+// Route::get('/timeboard',[ProjectsController::class,'timeboard']);
 // Route::get('/searching',[ProjectsController::class,'search']);
 
 //route project grup
+
+
+//route timeboard
+
+Route::get('/timeboard',[BoardtimeController::class,'index']);
+Route::get('/create',[BoardtimeController::class,'create']);
+Route::post('/store',[BoardtimeController::class,'store']);
+
+
+
 
 //route project list
 Route::get('/project_list',[ProjectListsController::class,'index']);
