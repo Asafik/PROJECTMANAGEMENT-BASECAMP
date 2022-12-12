@@ -29,7 +29,7 @@ class ProjectsController extends Controller
      */
     public function create()
     {
-       
+
       return view('project.index');
     }
 
@@ -108,7 +108,7 @@ class ProjectsController extends Controller
 
     public function bookmark()
     {
-        
+
         return view('OpdReqProject.bookmark');
     }
     public function timeboard()

@@ -36,20 +36,22 @@
                         <i class="bi bi-bookmark" style="font-size:24px"></i>
                     </a>
                 </li>
-                <li class="nav-item"><a class="nav-link active" href="/notification"><i class="bi bi-bell"
-                            style="font-size:24px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="/conversation"><i class="bi bi-chat-left-text"
-                            style="font-size:24px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="/user_profile"><i class="bi bi-person"
-                            style="font-size:24px"></i></a></li>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="font-size:20px">Agus</a>
+                <li class="nav-item"><a class="nav-link active" href="/notification"><i class="bi bi-bell"style="font-size:24px"></i></i></a></li>
+                <li class="nav-item"><a class="nav-link active" href="/conversation"><i class="bi bi-chat-left-text"style="font-size:24px"></i></i></a></li>
+                {{-- <li class="nav-item"><a class="nav-link active" href="/user_profile"><i class="bi bi-person" style="font-size:24px"></i></a></li> --}}
 
-                    <div class="dropdown-menu rounded-0 m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="single.html" class="dropdown-item">Blog Detail</a>
-                    </div>
-                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px">{{ auth()->user()->name }}</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/user_profile"><i class="bi bi-person"></i> My Account</a></li>
+                      <li>
+                        <form action="/logout" method="post">
+                            @csrf
+                            <button type="submit" class="dropdown-item"><i class="bi-box-arrow-right"></i> Logout</button>
+                        </form>
+                    </li>
+                    </ul>
+                  </div>
             </ul>
         </div>
     </div>

@@ -17,33 +17,70 @@
       <!-- Responsive navbar-->
       <nav class="navbar navbar-expand-lg navbar-light sticky top bg-light" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image : none; background-color: rgba(249, 250, 253, 0); transition: background-color 0s ease 0s, padding 0.35s ease 0s;">
         <div class="container px-lg-0">
-          <a class="navbar-brand" href="#!"><h3 class="navbar-brand"><img src="img/logospbe.svg" height="60" alt="logo" style="width: 100%;"></h3></a></div></nav>
+          <a class="navbar-brand" href="/"><h3 class="navbar-brand"><img src="img/logospbe.svg" height="60" alt="logo" style="width: 100%;"></h3></a></div></nav>
       <!--Content-->
       <form action="/signup" method="POST">
         @csrf
         <div class="text-center" style="color: #57575A;">
           <h1>Sign Up</h1>
         </div>
-          <input class="form-control form-control-lg" type="email" placeholder="Email" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%;" name="email" id="email">
-
-          <input class="form-control form-control-lg" type="text" placeholder="Username" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%;" name="username" id="username">
-
-          <input class="form-control form-control-lg" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%;" name="password" id="password">
+        <div>
+          <input class="form-control form-control-lg @error('name') is-invalid @enderror" type="text" placeholder="Nama" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 2%;" name="name" id="name" required value="{{ old('name') }}">
+          @error('name')
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 2%;">
+            {{ $message }}
+          </div>
+          @enderror
+        </div>
+        <div>
+          <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" placeholder="Email" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="email" id="email" required value="{{ old('email') }}">
+          @error('email')
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
+            {{ $message }}
+          </div>
+          @enderror
+        </div>
+        <div>
+          <input class="form-control form-control-lg @error('phone') is-invalid @enderror" type="text" placeholder="Phone" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="phone" id="phone" required value="{{ old('phone') }}">
+          @error('phone')
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
+            {{ $message }}
+          </div>
+          @enderror
+        </div>
+        <div>
+          <input class="form-control form-control-lg @error('password') is-invalid @enderror" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="password" id="password" required>
+          @error('password')
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
+            {{ $message }}
+          </div>
+          @enderror
+        </div>
+        <div>
+          <input class="form-control form-control-lg @error('nik') is-invalid @enderror" type="text" placeholder="NIK" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="nik" id="nik" required value="{{ old('nik') }}">
+          @error('nik')
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
+            {{ $message }}
+          </div>
+          @enderror
+          <button class="btn btn-primary btn-lg fw-bold" type="submit" style="width: 35%; margin-left: 33%; margin-top: 2%; background-color: #0064AF;"><span class=""style="color: #fff;">Sign Up</button>
+        </div>
       
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary btn-lg fw-bold" type="submit" style="margin-top: 3%; width: 120%; margin-left: -10%; background-color: #0064AF;"><a href="#"><span class=""style="color: #fff;">Sign Up</button></a>
-          <div class="form-check " style="margin-left: 28%;"></div>
-
+          <div style="margin-left: 28%; margin-top: 3%;"></div>
           <span class="text-center"><img src="img/Line 1.svg"  style=" width: 30%; height: 3px;">
             <span class="text-center">or sign up with<img src="img/Line 1.svg"  style=" width: 30%; height: 3px;"></span>
           </span>
 
           <div class="text-center">
             <a class="btn btn-outline shadow-4 border-1 ms-3 square-pill" href="#!">
-              <img src="img/google.svg" alt="" width="50" height="24" style="border-color: #fff;">
+              <img src="img/google.svg" alt="" width="50" height="24">
+            </a>
             <a class="btn btn-outline ms-3" href="#!">
               <img src="img/fb.svg" alt="" width="70" height="24">
+            </a>
           </div>
+          <p class="text-center" style="margin-top: 2%; color: #57575A;">Already have an account? <a href="/login">Login</a></p>
         </div>
       </form>
         
