@@ -3,16 +3,17 @@
 <!-- Page Content-->
 <section class="pt-3">
     <div class="container px-lg-0">
+      <h5><strong>General Project</strong></h5>
         <!-- Page Features-->
-        <div class="col-lg-12 mb-3 d-flex"> 
+        <div class="col-lg-12 mb-5 d-flex"> 
           <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
           </a>
             <!-- button modal new project -->
-            <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
+            <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             </div>
-            <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
             
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
@@ -36,7 +37,6 @@
               </div>
             </div>
         </div>
-        <p class="fw-bolder h5 me-auto mb-4">General Project</p>
         <!-- Page Features-->
     <div class="row gx-lg-6">
          <!--card Request  -->

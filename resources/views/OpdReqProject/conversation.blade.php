@@ -18,7 +18,7 @@
                                     
                                     </div>
                                     <div class="col text-end" style="margin-top: 4px;">
-                                      <button type="button" class="btn btn-success bi-plus-circle-fill" style="background-color: #20B15A;">  Add Conversation</button>
+                                      <button type="button" class="btn btn-success bi-plus-circle-fill border-0" style="background-color: #20B15A;">  Add Conversation</button>
                                     </div>
                                   </div> 
                                   <hr style="width:115%; margin-left: -8%;">
