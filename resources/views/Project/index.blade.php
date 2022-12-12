@@ -3,6 +3,7 @@
 <!-- Page Content-->
 <section class="pt-3">
     <div class="container px-lg-0">
+        <h5><strong>Welcome back, {{ auth()->user()->name }}!</strong></h5>
         <!-- Page Features-->
         <div class="col-lg-12 mb-5 d-flex">
             <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
@@ -14,6 +15,7 @@
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             </div>
             <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+            
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
