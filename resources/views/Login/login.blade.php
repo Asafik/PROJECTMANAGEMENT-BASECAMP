@@ -48,25 +48,26 @@
         </div>
 
         <div>
-          <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" placeholder="Email" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 3%;" name="email" id="email" required value="{{ old('email') }}">
+          <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" placeholder="Email" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 2%;" name="email" id="email" required value="{{ old('email') }}">
           @error('email')
-          <div class="invalid-feedback" style="width: 60%;margin-left: 20%; margin-top: 1%;">
+          <div class="invalid-feedback" style="width: 60%; margin-left: 20%; margin-top: 1%;">
             {{ $message }}
           </div>
           @enderror
         </div>
         <div>
-          <input class="form-control form-control-lg @error('password') is-invalid @enderror" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 60%;margin-left: 20%; margin-top: 1%;" name="password" id="password" required>
+          <input class="form-control form-control-lg @error('password') is-invalid @enderror" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="password" id="password" required>
           @error('password')
-          <div class="invalid-feedback" style="width: 60%;margin-left: 20%; margin-top: 1%;">
+          <div class="invalid-feedback" style="width: 60%;margin-left: 20%; margin-top: 2%;">
             {{ $message }}
           </div>
           @enderror
+          <button class="btn btn-primary btn-lg fw-bold" type="submit" style="width: 35%; margin-left: 33%; margin-top: 2%; background-color: #0064AF;"><span style="color: #fff;">Login</button>
         </div>
   
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary btn-lg fw-bold" type="submit"style="margin-top: 3%; width: 120%; margin-left: -10%; background-color: #0064AF;"><span style="color: #fff;">Login</button>
-          <div style="margin-left: 28%;"></div>
+          
+          <div style="margin-left: 28%; margin-top: 3%;"></div>
           <span class="text-center"><img src="img/Line 1.svg"  style=" width: 30%; height: 3px;">
             <span class="text-center">or login with<img src="img/Line 1.svg"  style=" width: 30%; height: 3px;"></span>
           </span>
@@ -79,7 +80,7 @@
               <img src="img/fb.svg" alt="" width="70" height="24">
             </a>
           </div>
-          <p class="text-center" style="color: #57575A;">Don't have an account? <a href="/signup">Sign Up</a></p>
+          <p class="text-center" style="margin-top: 2%; color: #57575A;">Don't have an account? <a href="/signup">Sign Up</a></p>
         <div style="margin-top: 3%; margin-bottom: 5%;"></div>
       </form>
         
