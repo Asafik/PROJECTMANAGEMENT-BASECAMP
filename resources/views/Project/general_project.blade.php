@@ -47,12 +47,12 @@
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="mb-5 text-center">
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button>
+                        <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a> 
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
+                        <a href="/projectfile"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
                         </div>
                     </div>
                     <!-- <hr size="10px" width="50%" style=""> -->
@@ -67,7 +67,7 @@
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="mb-5 text-center">
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button>
+                        <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a> 
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
@@ -86,7 +86,7 @@
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="mb-5 text-center">
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button>
+                        <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a> 
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
                         <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
@@ -119,61 +119,8 @@
           </div>
       </div>
       
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Name</label>
-          <div class="col-sm-7">
-            <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <a href=""></a>
-          </div>
-        </div>
-
-        <div class="row mb-3" >
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Description</label>
-          <div class="col-sm-7">
-            <textarea type="text" name="project_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-        <a href="project_list"> <button type="submit" class="btn btn-primary">Create</button> </a>
-        </div>
+    
       </div>
-    </div>
-  </div>
-    </div>
-  </div>
-  <!-- End Model -->
-
-  <!--modal project grup-->
-<div class="modal fade" id="exampleModalProjectGrup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Grup</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <form action="/store" method="POST" enctype="multipart/form-data">
-              @csrf
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Grup Name </label>
-                <input type="text" name="group_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Grup Description</label>
-                <textarea type="text" name="group_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-              </div> 
-          </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
-      </div>
-    </div>
-  </div>
-  <!--End Modal project grup-->
-    </div>
     </div>
 </section>
 @endsection

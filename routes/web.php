@@ -19,6 +19,8 @@ use App\Http\Controllers\ProjectMilestonesController;
 use App\Http\Controllers\ProjectDiscussionsController;
 use App\Http\Controllers\ProjectRequestSucessController;
 use App\Http\Controllers\ProjectRequirementDocumentsController;
+use App\Http\Controllers\TasksListController;
+use App\Http\Controllers\ProjectFilesController;
 
 
 /*
@@ -85,6 +87,13 @@ Route::get('/monitoring',[MonitoringController::class,'index']);
 
 //route user
 Route::get('/user_profile',[UsersController::class,'profile']);
+
+// route task_project
+Route::get('/task_list',[TasksListController::class,'index']);
+
+// route projectfile
+Route::get('/projectfile',[ProjectFilesController::class,'index']);
+
 
 //diskominfos
 
