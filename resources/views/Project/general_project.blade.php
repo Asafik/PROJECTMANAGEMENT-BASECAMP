@@ -51,7 +51,7 @@
             <div class="col-lg-4 col-xxl-5 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
+                        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
                                 href="#"><span class="text-white"><strong>Project ABCD</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -78,7 +78,7 @@
             <div class="col-lg-4 col-xxl-5 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
+                        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
                                 href="#"><span class="text-white"><strong>Project ABCD</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i>
                         </p>
@@ -105,7 +105,7 @@
             <div class="col-lg-4 col-xxl-5 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
+                        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
                                 href=""><span class="text-white"><strong>Project ABCD</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
