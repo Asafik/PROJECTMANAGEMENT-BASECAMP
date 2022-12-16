@@ -17,7 +17,7 @@
         <link href="css/suri.css" rel="stylesheet" />
     </head>
     <body>
-        @include('layout.components.navbarReq')
+        @include('layout.components.sidebarReq')
 
         <div class="mai">
         @yield('content')

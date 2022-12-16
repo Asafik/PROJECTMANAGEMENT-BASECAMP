@@ -227,10 +227,5 @@
   .dashboard-page nav.dashboard-menu ul li.active a {
     color: #fff;
     background-color: #5fa2db;
-  }
-
-
-    
-
-  
+  }  
 </style>
