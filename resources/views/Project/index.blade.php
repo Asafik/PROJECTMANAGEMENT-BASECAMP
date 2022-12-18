@@ -49,7 +49,7 @@
                           <a class="btn btn-outline-secondary me-md-2" href="/discuss" role="button"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></a>
                           <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-flag" style="font-size:20px mb-5"></i></a>
                           <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-clock" style="font-size:20px mb-5"></i></a>
-                          <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></a>
+                          <a class="btn btn-outline-secondary me-md-2" href="/calendar" role="button"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></a>
                           <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></a>
                         </div>
                     </div>
