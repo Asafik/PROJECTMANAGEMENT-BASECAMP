@@ -65,14 +65,14 @@
                             style="font-size:24px"></i></i></a></li>
                 </li>
 
-                {{-- <div class="nav-item dropdown">
-                    
+                <div class="nav-item dropdown">
+
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="/" class="dropdown-item">Blog Grid</a>
                         <a href="/" class="dropdown-item">Blog Detail</a>
                     </div>
-                </div> --}}
-                <div class="dropdown">
+                </div>
+                <div class="dropdown ms-3">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
                         style="font-size:20px">{{ auth()->user()->name }}</a>
                     <ul class="dropdown-menu">
