@@ -23,7 +23,7 @@
         </div>
     </nav>
       <!--Content-->
-      <div class="col-md-4" style="width: 60%; margin-left: 20%; margin-top: 1%;">
+      <div class="col-md-4" style="width: 35%; margin-left: 33%; margin-top: 1%;">
         @if (session()->has('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
@@ -32,7 +32,7 @@
         @endif
       </div>
 
-      <div class="col-md-4" style="width: 60%; margin-left: 20%; margin-top: 1%;">
+      <div class="col-md-4" style="width: 35%; margin-left: 33%; margin-top: 1%;">
         @if (session()->has('loginError'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             {{ session('loginError') }}
@@ -50,7 +50,7 @@
         <div>
           <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" placeholder="Email" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 2%;" name="email" id="email" required value="{{ old('email') }}">
           @error('email')
-          <div class="invalid-feedback" style="width: 60%; margin-left: 20%; margin-top: 1%;">
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
             {{ $message }}
           </div>
           @enderror
@@ -58,7 +58,7 @@
         <div>
           <input class="form-control form-control-lg @error('password') is-invalid @enderror" type="password" placeholder="Password" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="password" id="password" required>
           @error('password')
-          <div class="invalid-feedback" style="width: 60%;margin-left: 20%; margin-top: 2%;">
+          <div class="invalid-feedback" style="width: 60%;margin-left: 20%; margin-top: 1%;">
             {{ $message }}
           </div>
           @enderror
@@ -83,11 +83,11 @@
           <p class="text-center" style="margin-top: 2%; color: #57575A;">Don't have an account? <a href="/signup">Sign Up</a></p>
         <div style="margin-top: 3%; margin-bottom: 5%;"></div>
       </form>
-        
+{{--         
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
+      <script src="js/scripts.js"></script> --}}
   </body>
 </html>
 

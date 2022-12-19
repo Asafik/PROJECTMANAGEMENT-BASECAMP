@@ -42,11 +42,14 @@ class ExternalUsersController extends Controller
             'name' => ['required', 'max:255'],
             'email' => ['required', 'email:dns', 'unique:users'],
             'phone' => ['required', 'unique:users', 'max:12'],
-            'password' => ['required', 'min:5', 'max:255'],
+            'password' => ['required', 'min:5', 'max:35'],
+            'confirm_password' => ['required', 'min:5', 'max:35', 'same:password'],
             'nik' => ['required', 'unique:users', 'max:16'],
         ]);
 
+        // $validatedData['id'] = auth()->user()->id;
         $validatedData['password'] = Hash::make($validatedData['password']);
+        $validatedData['confirm_password'] = Hash::make($validatedData['confirm_password']);
 
         users::create($validatedData);
 
@@ -84,7 +87,30 @@ class ExternalUsersController extends Controller
      */
     public function update(Request $request, external_users $external_users)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => ['required', 'max:255'],
+            // 'email' => ['required', 'email:dns', 'unique:users'],
+            'phone' => ['required', 'unique:users', 'max:12'],
+            'password' => ['required', 'min:5', 'max:255'],
+            'nik' => ['required', 'unique:users', 'max:16'],
+        ]);
+
+        if ($request->email != $external_users->email) {
+            $rules['email'] = ['required', 'email:dns', 'unique:users'];
+        }
+
+        // if ($request->nik != $external_users->nik) {
+        //     $rules['nik'] = ['required', 'unique:users', 'max:16'];
+        // }
+
+        // $validatedData = $request->validate($rules);
+
+        // $validatedData['id'] = auth()->user()->id;
+        // $validatedData['password'] = Hash::make($validatedData['password']);
+
+        users::where('id', $external_users->id)->update($validatedData);
+
+        return redirect('/user_profile')->with('success', 'Profile has been updated!');
     }
 
     /**
@@ -117,7 +143,7 @@ class ExternalUsersController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/project');
+            return redirect()->intended('/projectReq');
         }
 
         return back()->with('loginError', 'Login Failed!');
