@@ -33,16 +33,18 @@
                         <div class="mb-5 text-center">
                             <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i
                                         class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                    class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
-                                    style="font-size:20px mb-5"></i></button>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
-                                    style="font-size:20px mb-5"></i></button>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4"
-                                    style="font-size:20px mb-5"></i></button>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                    class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
+                            <a href="/discuss"><button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-chat" style="font-size:20px mb-5"></i></button></a>
+                            <a href="/milestoneproject"><button type="button"
+                                    class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
+                                        style="font-size:20px mb-5"></i></button></a>
+                            <a href="/timeboardproject"><button type="button"
+                                    class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
+                                        style="font-size:20px mb-5"></i></button></a>
+                            <a href="#"> <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-calendar" style="font-size:20px mb-5"></i></button></a>
+                            <a href="/projectfile"> <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button></a>
                         </div>
                     </div>
                     <!-- <hr size="10px" width="50%" style=""> -->
@@ -60,13 +62,13 @@
                         <div class="mb-5 text-center">
                             <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i
                                         class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                    class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat"
+                                    style="font-size:20px mb-5"></i></button>
                             <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
                                     style="font-size:20px mb-5"></i></button>
                             <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
                                     style="font-size:20px mb-5"></i></button>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4"
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar"
                                     style="font-size:20px mb-5"></i></button>
                             <button type="button" class="btn btn-outline-secondary me-md-2"><i
                                     class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
@@ -86,13 +88,13 @@
                         <div class="mb-5 text-center">
                             <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i
                                         class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                    class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat"
+                                    style="font-size:20px mb-5"></i></button>
                             <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
                                     style="font-size:20px mb-5"></i></button>
                             <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
                                     style="font-size:20px mb-5"></i></button>
-                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4"
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar"
                                     style="font-size:20px mb-5"></i></button>
                             <button type="button" class="btn btn-outline-secondary me-md-2"><i
                                     class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
@@ -144,6 +146,10 @@
                     <form action="#" method="#" enctype="multipart/form-data">
                         <div class="d-flex mb-3">
                             <label for="inputEmail4" class="form-label col-sm-4 me-2">Sort by</label>
+                            <input type="email" id="appt" name="appt" class="form-control">
+                        </div>
+                        <div class="d-flex mb-3">
+                            <label for="inputEmail4" class="form-label col-sm-4 me-2">Project Name</label>
                             <input type="email" id="appt" name="appt" class="form-control">
                         </div>
                         <div class="d-flex mb-3">

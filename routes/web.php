@@ -66,6 +66,13 @@ Route::get('/create',[ProjectListsController::class,'crex`ate']);
 Route::get('/discuss',[ProjectsController::class,'discuss']);
 Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
 
+//route timeboard project
+Route::get('/timeboardproject',[ProjectsController::class,'timeboardproject']);
+
+//route milestone project
+//route timeboard project
+Route::get('/milestoneproject',[ProjectsController::class,'milestoneproject']);
+
 //route bookmark
 Route::get('/bookmark',[ProjectsController::class,'bookmark']);
 
@@ -100,6 +107,7 @@ Route::get('/notification',[NotificationController::class,'index']);
 
 //route conversation
 Route::get('/conversation',[ConversationController::class,'index']);
+Route::get('/conversationchat',[ConversationController::class,'conversationchat']);
 
 //monitoring
 Route::get('/monitoring',[MonitoringController::class,'index']);
@@ -120,6 +128,7 @@ Route::get('/homediskominfos',[HomeDiskominfosController::class,'index']);
 Route::get('/requestapprov',[HomeDiskominfosController::class,'create']);
 Route::get('/requestapprovsucess',[HomeDiskominfosController::class,'store']);
 Route::get('/discussion',[ProjectDiscussionsController::class,'create']);
+
 
 //sign up/login
 Route::get('pegawai',[PegawaiController::class,'index']);

@@ -1,4 +1,4 @@
-@extends('layout.master') @section('content')
+@extends('layout.masterProject') @section('content')
 
 <!-- Page Content-->
 <section class="pt-2">

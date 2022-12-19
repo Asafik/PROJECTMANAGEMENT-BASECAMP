@@ -1,4 +1,4 @@
-@extends('layout.master') @section('content')
+@extends('layout.masterProject') @section('content')
 
 <!-- Header-->
 <!-- Page Content-->

@@ -11,19 +11,27 @@
                 <i class="bi bi-funnel-fill" style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
             </a>
             <!-- button modal new project -->
-            <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" style="background-color:#20B15A ;"
+                class="bi bi-plus-circle btn btn-success me-3 border-0" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1" data-bs-whatever="@New project"> New project</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
             </div>
-            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
-            
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <div><hr style="margin-top: -4%;">
-                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill"
+                    style="color: #838492;"></i></button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"
+                            style="color: #57575A;"></i>&nbsp Filters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <hr style="margin-top: -4%;">
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                        images, lists, etc.
                     </div>
                     <div class="dropdown mt-3">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -50,13 +58,19 @@
                         </div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="mb-5">
-                        <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
+                        <div class="mb-5 ms-3">
+                            <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                    class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
                         </div>
                     </div>
                     <!-- <hr size="10px" width="50%" style=""> -->
