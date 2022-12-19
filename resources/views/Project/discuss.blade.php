@@ -5,10 +5,10 @@
   <div class="container px-lg-0">
     <div class="col-lg-12 mb-5 d-flex">
           <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
+            <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;"> Filter</strong>
           </a>
           <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
-            <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Saved Searches</strong>
+            <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;"> Saved Searches</strong>
           </a>
           <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddList"><i class="bi bi-plus-circle"></i> Add List</button>
           <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddDiscussion"><i class="bi bi-plus-circle"></i> Add Discussion</button>
@@ -145,7 +145,42 @@
           </div>
     </div>
     
-    <p class="fw-bolder h5 me-auto mb-4">discuss</p>
+    <div class="col-lg-12 d-flex">
+      <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
+      <h5>
+        <i class="bi bi-chevron-down"  style="color: #57575A;"></i> <strong style="color: #57575A;"> Project Attendance System</strong>
+      </h5>   
+      </a>
+          <h3><i class="bi bi-three-dots p-3" style="color: #838492; "></i></h3>
+    </div>
+    <div class="col-lg-12 mb-3 mx-7 d-flex">
+      <table class="table">
+        <thead>
+          <tr  class="table-light">
+            <th scope="col"></th>
+            <th scope="col">Title</th>
+            <th scope="col">Last Activity</th>
+            <th scope="col">Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  class="table-success ">
+            <th ><i class="bi bi-star-fill" style="color:#eba905;"></i></th>
+            <td>discussion</td>
+            <td>Mei 10, 2022 8:36pm <br> by Risma Klaudia</td>
+            <td><i class="bi bi-chat-square-dots"></i> 0</td>
+          </tr>
+          <tr  class="table-success ">
+            <th ><i class="bi bi-star-fill" style="color:#eba905;"></i></th>
+            <td>discussion</td>
+            <td>Mei 10, 2022 8:36pm <br> by Risma Klaudia</td>
+            <td><i class="bi bi-chat-square-dots"></i> 0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
 
     <!-- modal add list -->
       <div class="modal fade" id="exampleModalAddList" tabindex="-1" aria-labelledby="exampleModalAddList" aria-hidden="true">
@@ -239,8 +274,8 @@
                                   <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
                                     <head>
                                         <meta charset="utf-8">
-                                        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-                                        <!-- <title>Install and Use CKEditor In Laravel</title> -->
+                                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                                        <title>Install and Use CKEditor In Laravel</title>
                                         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
                                     </head>
                                     <body>
@@ -252,22 +287,6 @@
                                                             </div>
                                                         </form>
                                                     </div>
-
-
-                                        <!-- <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-7 offset-3 mt-4">
-                                                    <div class="card-body">
-                                                        <form method="post" action="" enctype="multipart/form-data">
-                                                            @csrf
-                                                            <div class="form-group">
-                                                                <textarea class="ckeditor form-control" name="wysiwyg-editor"></textarea>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </body>
                                     <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
                                     <script type="text/javascript">

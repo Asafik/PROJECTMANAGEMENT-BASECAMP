@@ -13,7 +13,10 @@
               <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Saved Searches</strong>
               </a>
-              <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="bi bi-stack"  style="color: #57575A;"></i><strong style="color: #57575A;">Group By</strong>
+              </a>
+              <a class="btn btn-secondary-outline" data-bs-toggle="modal" href="#ModalGroup" role="button" aria-controls="ExampleModalGroup">
                 <i class="bi bi-stack"  style="color: #57575A;"></i><strong style="color: #57575A;">Group By</strong>
               </a>
 
@@ -231,6 +234,40 @@
               </div>
             </div>  
 
+            <!-- modal Group By
+              <div class="modal fade" tabindex="-1" id="exampleModalGroup" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalGroup"> <i class="bi bi-stack"  style="color: #57575A;"></i>&nbsp Group By</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modalGroup" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                          <div class="container">
+                            <form action="/storetask" method="POST" enctype="multipart/form-data">
+                            @csrf
+                    
+                   
+
+                     
+
+
+              
+              
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-light me-auto btn" data-bs-dismiss="offcanvas" aria-label="Close"><strong style="color: gray;">Cancel</strong></button>
+                                      <a href="#" class="btn btn-success me-auto btn"> 
+                                        <i class="bi bi-funnel-fill"  style="color: white"></i><strong style="color: white;">Apply</strong>
+                                      </a>
+                                    </div>
+                            </form>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div> -->
+
+
             <!-- Modal Add List -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
               <div class="modal-dialog">
@@ -379,7 +416,7 @@
                     <div class="col-lg-15 col-xxl-4 mb-3"> <!--Ganti Ukuran-->
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body fs-6 text-sm-start p-8 p-lg-2 pt-0 pt-lg-0">
-                                <div style="width:1100px;" class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-start"><strong>Project System Attendance / Analyst and Documentation</strong></i></div>
+                                <div style="width:1100px;" class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-start"><img src="images/panahbawah.svg">&nbsp<strong>Project System Attendance / Analyst and Documentation</strong></img></div>
                                 <p class="fs-9 fw-bold text-start "><p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%"><i class="bi bi-three-dots-vertical" style="margin-right:-2%;"></i><i class="bi bi-three-dots-vertical"style="margin-right: 1%"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s>2/3 <mark style="background-color: #D0D9EE; color: #838492;">completed may 9 </mark><button type="button" class="btn btn-warning btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">medium</button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 30</mark><i class="bi bi-flag-fill btn" style="color : #3766DF"></i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
                                 
                                 <p class="" style="text-align: justify; margin-left: 3%; margin-right: 1%"><i class="bi bi-three-dots-vertical"style="margin-right:-2%"></i><i class="bi bi-three-dots-vertical" style="margin-right: 1%;"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s><mark style="background-color: #D0D9EE; color: #838492;">completed may 9 </mark><button type="button" class="btn btn-danger btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">&nbsp &nbsp high &nbsp &nbsp</button><i class="bi bi-person-circle btn fst-normal"> &nbspabcd</i><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 17</mark>&nbsp<a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
@@ -509,7 +546,7 @@
                     <div class="col-lg-15 col-xxl-4 mb-3"> <!--Ganti Ukuran-->
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body fs-6 text-sm-start p-8 p-lg-2 pt-0 pt-lg-0">
-                                <div style="width:1100px;" class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-start"><strong>Project System Attendance / Analyst and Documentation</strong></i></div>
+                                <div style="width:1100px;" class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-start"><img src="images/panahbawah.svg">&nbsp<strong>Project System Attendance / Analyst and Documentation</strong></i></div>
                                 <p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%"><i class="bi bi-three-dots-vertical" style="margin-right:-2%"></i><i class="bi bi-three-dots-vertical"style="margin-right: 1%"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s>2/4 <mark style="background-color: #D0D9EE; color: #838492;">completed may 9 </mark><button type="button" class="btn btn-warning btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">medium</button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 30</mark><i class="bi bi-flag-fill btn" style="color : #3766DF"></i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
                                 <p class="" style="text-align: justify; margin-left: 3%; margin-right: 1%"><i class="bi bi-three-dots-vertical"style="margin-right:-2%"></i><i class="bi bi-three-dots-vertical" style="margin-right: 1%;"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s><mark style="background-color: #D0D9EE; color: #838492;">completed may 9 </mark><button type="button" class="btn btn-danger btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">&nbsp &nbsp high &nbsp &nbsp</button><i class="bi bi-person-circle btn fst-normal"> &nbspabcd</i><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 17</mark>&nbsp<a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
                                 <p class="" style="text-align: justify; margin-left: 3%; margin-right: 1%"><i class="bi bi-three-dots-vertical"style="margin-right:-2%"></i><i class="bi bi-three-dots-vertical" style="margin-right: 1%;"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s><mark style="background-color: #D0D9EE; color: #838492;">completed may 20 </mark><button type="button" class="btn btn-danger btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">&nbsp &nbsp high &nbsp &nbsp</button><img src="images/fotoprofilgroup.svg" class="btn" height="50"></button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 25</mark><i class="bi bi-file-earmark btn fst-normal" style="color : #A3A4A7">1</i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;">&nbsp2</a></p>

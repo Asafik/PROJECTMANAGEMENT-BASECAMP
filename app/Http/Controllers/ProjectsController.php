@@ -105,6 +105,11 @@ class ProjectsController extends Controller
         // $project = projects::with('project_grup')->latest()->paginate();
         return view('Project.discuss');
     }
+    public function calendar()
+    {
+        // $project = projects::with('project_grup')->latest()->paginate();
+        return view('Project.calendar');
+    }
 
     public function bookmark()
     {

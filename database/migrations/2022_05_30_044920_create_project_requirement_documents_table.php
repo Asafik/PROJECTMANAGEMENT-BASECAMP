@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('project_requirement_documents', function (Blueprint $table) {
             $table->id();
+            $table->string('project_name');
+            $table->string('project_type');
+            $table->text('description');
+            $table->string('opd_name');
+            $table->string('project_files')->nullable();
             $table->timestamps();
         });
     }
