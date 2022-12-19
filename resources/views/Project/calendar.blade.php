@@ -20,7 +20,7 @@
             </div>
             <div class="offcanvas-body">
               <div><hr style="margin-top: -4%;">
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                Some text as placeholder. In real life you fes have the elements you have chosen. Like, text, images, lists, etc.
               </div>
               <div>
                 <form>
