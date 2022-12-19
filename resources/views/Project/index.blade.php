@@ -50,21 +50,29 @@
         <!-- Page Features-->
         <div class="row gx-lg-6">
             <!--card Request  -->
-            <div class="col-lg-4 col-xxl-4 mb-5">
+            <div class="col-lg-4 col-xxl-5 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
+                        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
                                 href="#"><span class="text-white"><strong>Project System Attendance</strong></a></i>
                         </div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="mb-5">
-                        <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></button>
-                        <a href="/projectfile"><button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
+                        <div class="mb-5 ms-3">
+                            <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
+                            <a href="/discuss"> <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-chat" style="font-size:20px mb-5"></i></button></a>
+                            <a href="/milestoneproject"><button type="button"
+                                    class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
+                                        style="font-size:20px mb-5"></i></button></a>
+                            <a href="/timeboardproject"><button type="button"
+                                    class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
+                                        style="font-size:20px mb-5"></i></button></a>
+                            <a href="#"><button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-calendar" style="font-size:20px mb-5"></i></button></a>
+                            <a href="/projectfile"> <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                        class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button></a>
                         </div>
                     </div>
                     <!-- <hr size="10px" width="50%" style=""> -->
@@ -72,10 +80,10 @@
             </div>
 
             <!--card update-->
-            <div class="col-lg-4 col-xxl-4 mb-5">
+            <div class="col-lg-4 col-xxl-5 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
+                        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
                                 href="#"><span class="text-white"><strong>Important Updates</strong></a></i></div>
                         <p class="fw-bolder"><i class="bi bi-bag-check-fill"></i> Completed 2 task backend</p>
                         <hr>
@@ -93,10 +101,10 @@
             </div>
 
             <!-- card project -->
-            <div class="col-lg-4 col-xxl-4 mb-5">
+            <div class="col-lg-4 col-xxl-5 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
+                        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
                                 href="#"><span class="text-white"><strong>Project</strong></a></i></div>
                         @foreach ($project as $project)
                         <hr>

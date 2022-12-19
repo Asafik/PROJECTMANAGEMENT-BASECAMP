@@ -118,6 +118,7 @@ Route::get('/notification',[NotificationController::class,'index'])->middleware(
 
 //route conversation
 Route::get('/conversation',[ConversationController::class,'index'])->middleware('auth');
+Route::get('/conversationchat',[ConversationController::class,'conversationchat']);
 
 //monitoring
 Route::get('/monitoring',[MonitoringController::class,'index'])->middleware('auth');
