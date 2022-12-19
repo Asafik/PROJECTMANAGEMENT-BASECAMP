@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\projectfile;
+use App\Models\Timeboard;
 use Illuminate\Http\Request;
+use Illuminate\Support\Timebox;
 
-class ProjectFilesController extends Controller
+class BoardtimeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,8 @@ class ProjectFilesController extends Controller
      */
     public function index()
     {
-        return view ('project.projectfile');
+        $timeboard = Timeboard::all();
+        return view('OpdReqProject.timeboardOpd',compact('timeboard'));
     }
 
     /**
@@ -24,7 +26,7 @@ class ProjectFilesController extends Controller
      */
     public function create()
     {
-        //
+       return view('Project.time_board');
     }
 
     /**
@@ -35,16 +37,17 @@ class ProjectFilesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Timeboard::create($request->except(['_token','submit']));
+        return redirect('timeboard');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\Timeboard  $timeboard
      * @return \Illuminate\Http\Response
      */
-    public function show(project_files $project_files)
+    public function show(Timeboard $timeboard)
     {
         //
     }
@@ -52,10 +55,10 @@ class ProjectFilesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\Timeboard  $timeboard
      * @return \Illuminate\Http\Response
      */
-    public function edit(project_files $project_files)
+    public function edit(Timeboard $timeboard)
     {
         //
     }
@@ -64,10 +67,10 @@ class ProjectFilesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\Timeboard  $timeboard
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, project_files $project_files)
+    public function update(Request $request, Timeboard $timeboard)
     {
         //
     }
@@ -75,10 +78,10 @@ class ProjectFilesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\Timeboard  $timeboard
      * @return \Illuminate\Http\Response
      */
-    public function destroy(project_files $project_files)
+    public function destroy(Timeboard $timeboard)
     {
         //
     }

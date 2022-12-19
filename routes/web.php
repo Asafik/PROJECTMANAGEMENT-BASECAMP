@@ -37,7 +37,7 @@ use App\Http\Controllers\ProjectFilesController;
 |
 */
 
-Route::get('/',[UsersController::class,'index']);
+Route::get('/',[UsersController::class,'index'])->middleware('guest');
 
 //route project create
 //
@@ -48,6 +48,15 @@ Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit']);
 Route::put('/project_edit/{id}',[ProjectsController::class,'update']);
 Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
 Route::get('/general_project',[ProjectsController::class,'general']);
+Route::get('/project',[ProjectsController::class,'index'])->middleware('auth');
+Route::get('/create',[ProjectsController::class,'create'])->middleware('auth');
+Route::post('/store',[ProjectsController::class,'store'])->middleware('auth');
+Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit'])->middleware('auth');
+Route::put('/project_edit/{id}',[ProjectsController::class,'update'])->middleware('auth');
+Route::delete('/project/{id}',[ProjectsController::class,'destroy'])->middleware('auth');
+Route::get('/general_project',[ProjectsController::class,'general'])->middleware('auth');
+Route::get('/timeboard',[ProjectsController::class,'timeboard'])->middleware('auth');
+// Route::get('/searching',[ProjectsController::class,'search']);
 
 //route project grup
 
@@ -60,28 +69,42 @@ Route::post('/store',[BoardtimeController::class,'store']);
 
 
 //route project list
-Route::get('/project_list',[ProjectListsController::class,'index']);
-Route::get('/create',[ProjectListsController::class,'crex`ate']);
+Route::get('/project_list',[ProjectListsController::class,'index'])->middleware('auth');
+Route::get('/create',[ProjectListsController::class,'crex`ate'])->middleware('auth');
 
 //route discuss
-Route::get('/discuss',[ProjectsController::class,'discuss']);
-Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
+Route::get('/discuss',[ProjectsController::class,'discuss'])->middleware('auth');
+Route::post('ckeditor/upload', 'CKEditorController@upload')->middleware('auth')->name('ckeditor.image-upload');
 
 //route calendar project
 Route::get('/calendar',[ProjectsController::class,'calendar']);
 
 //route bookmark
-Route::get('/bookmark',[ProjectsController::class,'bookmark']);
+Route::get('/bookmark',[ProjectsController::class,'bookmark'])->middleware('auth');
 
 //route project task
-Route::get('/project_list',[ProjectTasksController::class,'index']);
-Route::get('/create',[ProjectTasksController::class,'create']);
-Route::post('/storetask',[ProjectTasksController::class,'store']);
+Route::get('/project_list',[ProjectTasksController::class,'index'])->middleware('auth');
+Route::get('/create',[ProjectTasksController::class,'create'])->middleware('auth');
+Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('auth');
 
 //route project req
+
 Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
 Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
+
+Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');
+Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])->middleware('auth');
+Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create'])->middleware('auth');
+Route::post('/projectReq_store',[ProjectRequirementDocumentsController::class,'store'])->middleware('auth');
+Route::get('/projectReq_details/{id}',[ProjectRequirementDocumentsController::class,'show'])->middleware('auth');
+
+Route::get('/projectReq_edit/{id}',[ProjectRequirementDocumentsController::class,'edit'])->middleware('auth');
+Route::post('/projectReq_update/{id}',[ProjectRequirementDocumentsController::class,'update'])->middleware('auth');
+
+Route::get('/projectReq_all',[ProjectRequirementDocumentsController::class,'all'])->middleware('auth');
+Route::get('/projectReq_delete/{id}',[ProjectRequirementDocumentsController::class,'destroy'])->middleware('auth');
+
 
 //Auth::routes();
 
@@ -94,22 +117,27 @@ Route::get('/login',[ExternalUsersController::class,'login'])->name('login')->mi
 Route::post('/login',[ExternalUsersController::class,'authenticate']);
 Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('guest');
 Route::post('/signup',[ExternalUsersController::class,'store']);
+
 Route::post('/logout',[ExternalUsersController::class,'logout']);
 
+Route::post('/logout',[ExternalUsersController::class,'logout'])->middleware('auth');
+Route::post('/update',[ExternalUsersController::class,'update'])->middleware('auth');
+
+
 //route milestone
-Route::get('/milestone',[ProjectMilestonesController::class,'index']);
+Route::get('/milestone',[ProjectMilestonesController::class,'index'])->middleware('auth');
 
 //route notification
-Route::get('/notification',[NotificationController::class,'index']);
+Route::get('/notification',[NotificationController::class,'index'])->middleware('auth');
 
 //route conversation
-Route::get('/conversation',[ConversationController::class,'index']);
+Route::get('/conversation',[ConversationController::class,'index'])->middleware('auth');
 
 //monitoring
-Route::get('/monitoring',[MonitoringController::class,'index']);
+Route::get('/monitoring',[MonitoringController::class,'index'])->middleware('auth');
 
 //route user
-Route::get('/user_profile',[UsersController::class,'profile']);
+Route::get('/user_profile',[UsersController::class,'profile'])->middleware('auth');
 
 // route task_project
 Route::get('/task_list',[TasksListController::class,'index']);
@@ -117,15 +145,22 @@ Route::get('/task_list',[TasksListController::class,'index']);
 // route projectfile
 Route::get('/projectfile',[ProjectFilesController::class,'index']);
 
-
 //diskominfos
 
-Route::get('/homediskominfos',[HomeDiskominfosController::class,'index']);
-Route::get('/requestapprov',[HomeDiskominfosController::class,'create']);
+
+//diskominfos
+Route::get('/homediskominfos',[HomeDiskominfosController::class,'index'])->middleware('auth');
+Route::get('/requestapprov',[HomeDiskominfosController::class,'create'])->middleware('auth');
 Route::get('/requestapprovsucess',[HomeDiskominfosController::class,'store']);
-Route::get('/discussion',[ProjectDiscussionsController::class,'create']);
+Route::get('/discussion',[ProjectDiscussionsController::class,'create'])->middleware('auth');
 
 //sign up/login
 Route::get('pegawai',[PegawaiController::class,'index']);
 Route::get('pegawai/create',[PegawaiController::class,'create']);
+
 Route::post('pegawai/store',[PegawaiController::class,'store']);
+
+Route::post('pegawai/store',[PegawaiController::class,'store']);
+
+// Auth::routes(['verify'=>true]);
+

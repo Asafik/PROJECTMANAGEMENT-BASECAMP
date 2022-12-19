@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\projectfile;
+use App\Models\task_list;
 use Illuminate\Http\Request;
 
-class ProjectFilesController extends Controller
+class TasksListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ProjectFilesController extends Controller
      */
     public function index()
     {
-        return view ('project.projectfile');
+        return view('project.task_list');
     }
 
     /**
@@ -24,7 +24,7 @@ class ProjectFilesController extends Controller
      */
     public function create()
     {
-        //
+        // 
     }
 
     /**
@@ -35,16 +35,17 @@ class ProjectFilesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       task_list::create($request->except(['_token','submit']));
+       return redirect('task_list');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\task_list  $task_list
      * @return \Illuminate\Http\Response
      */
-    public function show(project_files $project_files)
+    public function show(task_list $task_list)
     {
         //
     }
@@ -52,10 +53,10 @@ class ProjectFilesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\task_list  $task_list
      * @return \Illuminate\Http\Response
      */
-    public function edit(project_files $project_files)
+    public function edit(task_list $task_list)
     {
         //
     }
@@ -64,10 +65,10 @@ class ProjectFilesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\task_list  $task_list
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, project_files $project_files)
+    public function update(Request $request, task_list $task_list)
     {
         //
     }
@@ -75,10 +76,10 @@ class ProjectFilesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\project_files  $project_files
+     * @param  \App\Models\task_list  $task_list
      * @return \Illuminate\Http\Response
      */
-    public function destroy(project_files $project_files)
+    public function destroy(task_list $task_list)
     {
         //
     }
