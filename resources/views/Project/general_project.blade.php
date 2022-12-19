@@ -47,7 +47,6 @@
                                         class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button></a>
                         </div>
                     </div>
-                    <!-- <hr size="10px" width="50%" style=""> -->
                 </div>
             </div>
 

@@ -26,7 +26,7 @@ class BoardtimeController extends Controller
      */
     public function create()
     {
-       return view('Project.time_board');
+       return view('OpdReqProject.time_board');
     }
 
     /**
