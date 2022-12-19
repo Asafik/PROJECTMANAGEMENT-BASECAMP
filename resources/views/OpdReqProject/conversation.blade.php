@@ -4,7 +4,7 @@
     <div class="container px-lg-0">
           <!-- Page Features-->
           <div class="row gx-lg-5">
-              <div class="col-lg-18 col-xxl-4 mb-5">
+              <div class="col-lg-18 mb-5">
                   <div class="card bg-light border-0 h-100">
                       <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                               <div class="card-body">
@@ -76,8 +76,3 @@
              
   </section>
   @endsection
-  
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="js/scripts.js"></script>

@@ -8,58 +8,64 @@
         <div class="col-lg-8 mb-5">
             <div class="card bg-light border-0">
                 <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                  <form action="" method="post">
+                    @if (session()->has('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session('success') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                  <form action="/update" method="POST">
                     @csrf
-                    <div style="width:715px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start text-center">
-                        <a href="#"><span class="text-white">
-                            <strong>User Profile & Setting</strong>
-                        </a>
+                    <div style="width:850px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start text-center">
+                        <span class="text-white">
+                        <strong>User Profile & Setting</strong>
                     </div>
                     <div class="row mb-2">
-                        <label for="inputPassword3" class="col-2 col-form-label">Nama</label>
-                        <div class="col-sm-8">
-                          <input type="text" name="project_grups_id" class="form-control" id="name" aria-describedby="emailHelp" value="{{ Auth::user()->name }}">
+                        <label for="name" class="col-2 col-form-label">Nama</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" aria-label=".form-control-lg example" type="text" value="{{ Auth::user()->name }}" name="name" id="name" required>
                         </div>
-                        <div class="col-sm-2">
-                          <button type="button" class="btn btn-secondary">Update</button>
-                        </div>
+                        {{-- <div class="col-sm-2">
+                          <button type="submit" class="btn btn-secondary">Update</button>
+                        </div> --}}
                     </div>
                     <div class="row mb-2">
-                        <label for="inputPassword3" class="col-2 col-form-label">Email</label>
-                        <div class="col-sm-8">
-                          <input type="text" name="project_grups_id" class="form-control" id="email" aria-describedby="emailHelp" value="{{ Auth::user()->email }}">
+                        <label for="email" class="col-2 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" aria-label=".form-control-lg example" type="text" value="{{ Auth::user()->email }}" name="email" id="email" required>
                         </div>
-                        <div class="col-sm-2">
-                          <button type="button" class="btn btn-secondary">Update</button>
-                        </div>
+                        {{-- <div class="col-sm-2">
+                          <button type="submit" class="btn btn-secondary">Update</button>
+                        </div> --}}
                     </div>
                     <div class="row mb-2">
-                        <label for="inputPassword3" class="col-2 col-form-label">Phone</label>
-                        <div class="col-sm-8">
-                          <input type="text" name="project_grups_id" class="form-control" id="phone" aria-describedby="emailHelp" value="{{ Auth::user()->phone }}">
+                        <label for="phone" class="col-2 col-form-label">Phone</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" aria-label=".form-control-lg example" type="text" value="{{ Auth::user()->phone }}" name="phone" id="phone" required>
                         </div>
-                        <div class="col-sm-2">
-                          <button type="button" class="btn btn-secondary">Update</button>
-                        </div>
+                        {{-- <div class="col-sm-2">
+                          <button type="submit" class="btn btn-secondary">Update</button>
+                        </div> --}}
                     </div>
                     <div class="row mb-2">
-                        <label for="inputPassword3" class="col-2 col-form-label">Password</label>
-                        <div class="col-sm-8">
-                          <input type="password" name="project_grups_id" class="form-control" id="password" aria-describedby="emailHelp" value="{{ Auth::user()->password }}">
+                        <label for="password" class="col-2 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" aria-label=".form-control-lg example" type="password" value="{{ Auth::user()->password }}" name="password" id="password" required>
                         </div>
-                        <div class="col-sm-2">
-                          <button type="button" class="btn btn-secondary">Update</button>
-                        </div>
+                        {{-- <div class="col-sm-2">
+                          <button type="submit" class="btn btn-secondary">Update</button>
+                        </div> --}}
                     </div>
                     <div class="row mb-2">
-                        <label for="inputPassword3" class="col-2 col-form-label">NIK</label>
-                        <div class="col-sm-8">
-                          <input type="text" name="project_grups_id" class="form-control" id="nik" aria-describedby="emailHelp" value="{{ Auth::user()->nik }}">
+                        <label for="nik" class="col-2 col-form-label">NIK</label>
+                        <div class="col-sm-9">
+                          <input class="form-control" aria-label=".form-control-lg example" type="text" value="{{ Auth::user()->nik }}" name="nik" id="nik" required>
                         </div>
-                        <div class="col-sm-2">
-                          <button type="button" class="btn btn-secondary">Update</button>
-                        </div>
+                        {{-- <div class="col-sm-2">
+                          <button type="submit" class="btn btn-secondary">Update</button>
+                        </div> --}}
                     </div>
+                    <button class="btn btn-primary btn-lg fw-bold justify-content-center" type="submit" style="width: 100%; margin-top: 2%; background-color: #0064AF;"><span style="color: #fff;">Update</button>
                 </div>
               </form>
             </div>

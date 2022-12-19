@@ -88,10 +88,10 @@
                     </div>
               
                 <div class="row gx-lg-5">
-                    <div class="col-lg-15 col-xxl-4 mb-5"> <!--Ganti Ukuran-->
+                    <div class="col-lg-15 mb-5"> <!--Ganti Ukuran-->
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n4 text-start"><strong>Project System Attendance / Analyst and Documentation</strong></i></div>
+                                <div style="width: 100%" class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n4 text-center"><strong>Project System Attendance / Analyst and Documentation</strong></i></div>
                                 <p class="fs-9 fw-bold text-start "><p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%"><i class="bi bi-three-dots-vertical" style="margin-right:-2%;"></i><i class="bi bi-three-dots-vertical"style="margin-right: 1%"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s>2/3 <mark style="background-color: #D0D9EE; color: #838492;">completed may 9 </mark><button type="button" class="btn btn-warning btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">medium</button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 30</mark><i class="bi bi-flag-fill btn" style="color : #3766DF"></i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
                                 <p class="" style="text-align: justify; margin-left: 3%; margin-right: 1%"><i class="bi bi-three-dots-vertical"style="margin-right:-2%"></i><i class="bi bi-three-dots-vertical" style="margin-right: 1%;"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s><mark style="background-color: #D0D9EE; color: #838492;">completed may 9 </mark><button type="button" class="btn btn-danger btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">&nbsp &nbsp high &nbsp &nbsp</button><i class="bi bi-person-circle btn fst-normal"> &nbspabcd</i><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 17</mark>&nbsp<a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;"></a></p>
                                 <p class="" style="text-align: justify; margin-left: 3%; margin-right: 1%"><i class="bi bi-three-dots-vertical"style="margin-right:-2%"></i><i class="bi bi-three-dots-vertical" style="margin-right: 1%;"></i><i class="bi bi-check-circle" style="color:#149347"></i> <s>ipsum dolor sit amet, consectetur adipiscing elit. </s><mark style="background-color: #D0D9EE; color: #838492;">completed may 20</mark><button type="button" class="btn btn-danger btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">&nbsp &nbsp high &nbsp &nbsp</button><img src="images/fotoprofilgroup.svg" class="btn" height="50" style="margin-left: -18%;margin-right: -18%;"><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 25</mark><i class="bi bi-file-earmark btn fst-normal" style="color : #A3A4A7">1</i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;">&nbsp2</a></p>
@@ -110,10 +110,10 @@
                         <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                          <div class="progress " role="progressbar" style="width: 30%; background-color:#838492; margin-top: -10%; margin-right: 10%;" aria-valuenow="30" height="5" aria-valuemin="0" aria-valuemax="100"></div>
                        </div></div></div></div> </div>
-                    <div class="col-lg-15 col-xxl-4 mb-5">
+                    <div class="col-lg-15 mb-5">
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start">
+                                <div style="width: 100%" class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-center">
                                     <a href="#">
                                       <span class="" style="color: #fff;">
                                         <strong>Project System Attendance/UI/UX Design</strong>

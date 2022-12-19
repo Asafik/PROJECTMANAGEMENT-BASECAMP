@@ -18,10 +18,12 @@ return new class extends Migration
             $table->bigInteger('unit_id')->nullable();
             $table->string('name');
             $table->string('email');
-            $table->string('phone')->nullable();
-            $table->string('pasword');
-            $table->string('email_verified_at');
-            $table->string('nik')->nullable();
+            $table->string('phone', 12);
+            $table->string('password');
+            $table->string('confirm_password');
+            $table->string('email_verified_at')->nullable();
+            $table->string('nik', 16);
+            $table->string('remember_token')->nullable();
             $table->timestamps();
         });
     }

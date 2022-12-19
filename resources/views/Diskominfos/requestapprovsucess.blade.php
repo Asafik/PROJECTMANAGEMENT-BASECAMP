@@ -49,12 +49,12 @@
     </div>
 </section>
 @endsection
-<!-- Bootstrap core JS Popover -->
+{{-- <!-- Bootstrap core JS Popover -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script> --}}
 
  <script>
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));

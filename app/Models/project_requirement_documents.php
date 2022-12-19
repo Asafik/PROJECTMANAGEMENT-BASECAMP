@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class project_requirement_documents extends Model
 {
     use HasFactory;
+
+    protected $guarded=['id'];
 }
