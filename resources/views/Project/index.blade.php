@@ -14,8 +14,28 @@
             <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             </div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill"
+                    style="color: #838492;"></i></button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"
+                            style="color: #57575A;"></i>&nbsp Filters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <hr style="margin-top: -4%;">
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                        images, lists, etc.
+=======
             <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
             
+=======
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+>>>>>>> parent of 9b40e0c (perubahan file timeboard,search dan menambah conversation)
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
@@ -24,6 +44,10 @@
               <div class="offcanvas-body">
                 <div><hr style="margin-top: -4%;">
                   Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+<<<<<<< HEAD
+>>>>>>> 86aaec0a03fbaccbbf4354a79b2e9e4326f6dc9a
+=======
+>>>>>>> parent of 9b40e0c (perubahan file timeboard,search dan menambah conversation)
                     </div>
                     <div class="dropdown mt-3">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
