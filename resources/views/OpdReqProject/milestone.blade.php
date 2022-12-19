@@ -351,11 +351,12 @@
                 </div>
 
                 <div class="row gx-lg-5">
-                    <div class="col-lg-15 col-xxl-4 mb-5">
+                    <div class="col-lg-15 mb-5">
                         <!--Ganti Ukuran-->
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n4 text-start">
+                                <div style="width: 100%"
+                                    class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n4 text-center">
                                     <strong>Project System Attendance / Analyst and Documentation</strong></i>
                                 </div>
                                 <p class="fs-9 fw-bold text-start ">
@@ -497,14 +498,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-15 col-xxl-4 mb-5">
+            <div class="col-lg-15 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start">
-                            <a href="#">
-                                <span class="" style="color: #fff;">
-                                    <strong>Project System Attendance/UI/UX Design</strong>
-                            </a>
+                        <div style="width: 100%"
+                            class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-center">
+                            <span class="" style="color: #fff;">
+                                <strong>Project System Attendance/UI/UX Design</strong>
                         </div>
                         <p class="fs-9 fw-bold text-start ">
                         <p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%">

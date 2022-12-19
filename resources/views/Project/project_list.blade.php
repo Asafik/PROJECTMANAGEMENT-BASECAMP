@@ -210,7 +210,7 @@
                 <!-- end fitur filter -->
             </div>
             <!--card list & task-->
-            <div class="col-lg-12 col-xxl-6 mb-3">
+            <div class="col-lg-12 mb-3">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-8 p-lg-2 pt-0 pt-lg-0">
                         <div style="width:1100px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a

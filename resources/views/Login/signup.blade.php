@@ -57,6 +57,14 @@
           @enderror
         </div>
         <div>
+          <input class="form-control form-control-lg @error('confirm_password') is-invalid @enderror" type="password" placeholder="Confirm Password" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="confirm_password" id="confirm_password" required>
+          @error('confirm_password')
+          <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
+            {{ $message }}
+          </div>
+          @enderror
+        </div>
+        <div>
           <input class="form-control form-control-lg @error('nik') is-invalid @enderror" type="text" placeholder="NIK" aria-label=".form-control-lg example" style="width: 35%; margin-left: 33%; margin-top: 1%;" name="nik" id="nik" required value="{{ old('nik') }}">
           @error('nik')
           <div class="invalid-feedback" style="width: 35%; margin-left: 33%; margin-top: 1%;">
@@ -83,11 +91,11 @@
           <p class="text-center" style="margin-top: 2%; color: #57575A;">Already have an account? <a href="/login">Login</a></p>
         </div>
       </form>
-        
+{{--         
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
+      <script src="js/scripts.js"></script> --}}
   </body>
 </html>
 
