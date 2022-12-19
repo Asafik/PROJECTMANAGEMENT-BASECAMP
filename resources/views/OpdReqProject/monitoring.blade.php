@@ -6,14 +6,14 @@
         <div class="col-lg-12 mb-5 d-flex" > 
             <span class="h7 text-decoration-none  fw-bold me-2 text-secondary btn btn-" ><i class="bi bi-funnel-fill"  style="color: #57575A;"></i> Filter</span>
             <a class="h7 text-decoration-none fw-bold text-secondary me-auto btn"><img src="images/Foldersearch.svg" style="width: 13%; margin-top: -5%;color: #57575A"> Saved Searches</a>
-            <button class="btn btn-success me-3 " style="background-color:#20B15A"><i class="bi bi-plus-circle-fill"></i> Add Request Project</button>
-            <a class="h4 text-decoration-none " href=""><i class="bi bi-gear-fill" style="color: #838492;"></i></a>
+            <button class="btn btn-success me-3 border-0" style="background-color:#20B15A"><i class="bi bi-plus-circle-fill"></i> Add Request Project</button>
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
         </div>
         <div class="row gx-lg-5">
-            <div class="col-lg-18 col-xxl-4 mb-5">
+            <div class="col-lg-18 mb-5">
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-start"><span class=""><a><strong>Monitoring</strong></i></div>
+                        <div style="width: 100%" class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-center"><span class=""><a><strong>Monitoring</strong></i></div>
                           <p class="fs-9 fw- text-start" style="margin-top: 1%; color: #838492;"><img src="images/icon10.svg" style="width: 1%; margin-right : 2%; margin-left: 0%; "><strong>Project system attandance</strong> </p>
                           <p class="fs-9 fw- text-start" style="margin-top: 1%; color: #838492;"><img src="images/icon5.svg" style="width: 1%; margin-right : 2%; margin-left: 0%; ">in General Project</p>
                           <p class="" style="text-align: justify; margin-left: 3%;"> ipsum dolor sit amet, consectetur adipiscing elit. Cursus eget quam nunc rhoncus, mi molestie nec. A pellentesque lorem eget tellus. Faucibus massa facilisi aliquet nec adipiscing. Justo, velit vel eget sollicitudin. Consectetur interdum orci scelerisque auctor. Id habitant nulla vel odio. Morbi vel dignissim pulvinar posuere aenean sollicitudin urna. </p>
@@ -42,9 +42,3 @@
                     </div>
                          </section>
                          @endsection
-
-
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>

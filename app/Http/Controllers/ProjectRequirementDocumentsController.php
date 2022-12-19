@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\project_requirement_documents;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProjectRequirementDocumentsController extends Controller
 {
@@ -14,7 +15,8 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function index()
     {
-        return view('OpdReqProject.projectReq_index');
+        $data = project_requirement_documents::paginate(1);
+        return view('OpdReqProject.projectReq_index', ['data' => $data]);
     }
 
     /**
@@ -35,7 +37,17 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'project_name'  => ['required', 'max:255'],
+            'project_type'  => ['required', 'min:5', 'max:35'],
+            'description'   => ['required'],
+            'opd_name'      => ['required', 'min:5', 'max:35'],
+            // 'project_files' => ['required'],
+        ]);
+
+        project_requirement_documents::create($validatedData);
+
+        return redirect('/projectReqSuccess')->with('success', 'Request project added successfully');
     }
 
     /**
@@ -44,9 +56,10 @@ class ProjectRequirementDocumentsController extends Controller
      * @param  \App\Models\project_requirement_documents  $project_requirement_documents
      * @return \Illuminate\Http\Response
      */
-    public function show(project_requirement_documents $project_requirement_documents)
+    public function show($id)
     {
-        //
+        $data = project_requirement_documents::find($id);
+        return view('OpdReqProject.projectReqDetails', ['data' => $data]);
     }
 
     /**
@@ -55,9 +68,12 @@ class ProjectRequirementDocumentsController extends Controller
      * @param  \App\Models\project_requirement_documents  $project_requirement_documents
      * @return \Illuminate\Http\Response
      */
-    public function edit(project_requirement_documents $project_requirement_documents)
+    public function update(Request $request, $id)
     {
-        //
+        $data = project_requirement_documents::find($id);
+        $data->update($request->all());
+
+        return redirect('/projectReqSuccess')->with('success', 'Request Project Has Been Updated!');
     }
 
     /**
@@ -67,9 +83,10 @@ class ProjectRequirementDocumentsController extends Controller
      * @param  \App\Models\project_requirement_documents  $project_requirement_documents
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, project_requirement_documents $project_requirement_documents)
+    public function edit($id)
     {
-        //
+        $data = project_requirement_documents::find($id);
+        return view('OpdReqProject.projectReq_edit', ['data' => $data]);
     }
 
     /**
@@ -78,8 +95,16 @@ class ProjectRequirementDocumentsController extends Controller
      * @param  \App\Models\project_requirement_documents  $project_requirement_documents
      * @return \Illuminate\Http\Response
      */
-    public function destroy(project_requirement_documents $project_requirement_documents)
+    public function destroy($id)
     {
-        //
+        $data = project_requirement_documents::find($id);
+        $data->delete();
+        return redirect('/projectReqSuccess')->with('success', 'Request Project Has Been Deleted!');
+    }
+
+    public function all()
+    {
+        $data = project_requirement_documents::all();
+        return view('OpdReqProject.projectReqAll', ['data' => $data]);
     }
 }

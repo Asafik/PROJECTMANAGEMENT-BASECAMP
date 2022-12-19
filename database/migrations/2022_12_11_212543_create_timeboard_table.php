@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('project_requirement_documents', function (Blueprint $table) {
+        Schema::create('timeboard', function (Blueprint $table) {
             $table->id();
-            $table->string('project_name');
-            $table->string('project_type');
-            $table->text('description');
-            $table->string('opd_name');
-            $table->string('project_files')->nullable();
+            $table->dateTime('Time Worked')->nullable();
+            $table->text('Doing')->nullable();
+            $table->dateTime('Date')->nullable();
+            $table->enum('By',['User 1','User 2','User 3'])->nullable();
+            $table->enum('Status',['Not Started','Started','Complated'])->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('project_requirement_documents');
+        Schema::dropIfExists('timeboard');
     }
 };

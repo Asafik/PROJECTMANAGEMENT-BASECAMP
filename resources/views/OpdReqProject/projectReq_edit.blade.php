@@ -10,7 +10,7 @@
           <div class="card border-0 h-100">
             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
               <div class="btn bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4 text-center" style="width:100%;">
-                <strong>Request Project</strong>
+                <strong>Edit Request Project</strong>
               </div>
 
               <div class="row">
@@ -33,12 +33,12 @@
                   <p style="margin-top: 2%;"><strong>Syarat dan Ketentuan</strong></p>
                 </div>
 
-                  <form action="/projectReq_store" method="POST">
+                  <form action="" method="POST">
                     @csrf
                     <div class="row">
                       <div class="col-sm-4">
                         <div class="form-floating">
-                          <input class="form-control form-control-lg @error('project_name') is-invalid @enderror" type="text" placeholder="project name" aria-label=".form-control-lg example" name="project_name" id="floatingTextarea" required value="{{ old('project_name') }}">
+                          <input class="form-control form-control-lg @error('project_name') is-invalid @enderror" type="text" placeholder="project name" aria-label=".form-control-lg example" name="project_name" id="floatingTextarea" required value="{{ $data->project_name}}">
                           <label for="floatingTextarea">Project Name</label>
                           @error('project_name')
                           <div class="invalid-feedback">
@@ -50,7 +50,7 @@
 
                       <div class="col-sm-4">
                         <div class="form-floating">
-                          <input class="form-control form-control-lg @error('project_type') is-invalid @enderror" type="project_type" placeholder="project type" aria-label=".form-control-lg example" name="project_type" id="floatingTextarea" required value="{{ old('project_type') }}">
+                          <input class="form-control form-control-lg @error('project_type') is-invalid @enderror" type="project_type" placeholder="project type" aria-label=".form-control-lg example" name="project_type" id="floatingTextarea" required value="{{ $data->project_type}}">
                           <label for="floatingTextarea">Project Type</label>
                           @error('project_type')
                           <div class="invalid-feedback">
@@ -62,7 +62,7 @@
 
                       <div class="col-sm-4">
                         <div class="form-floating">
-                          <input class="form-control form-control-lg @error('opd_name') is-invalid @enderror" type="opd_name" placeholder="OPD Name" aria-label=".form-control-lg example" name="opd_name" id="floatingTextarea" required value="{{ old('opd_name') }}">
+                          <input class="form-control form-control-lg @error('opd_name') is-invalid @enderror" type="opd_name" placeholder="OPD Name" aria-label=".form-control-lg example" name="opd_name" id="floatingTextarea" required value="{{ $data->opd_name}}">
                           <label for="floatingTextarea">OPD Name</label>
                           @error('opd_name')
                           <div class="invalid-feedback">
@@ -74,7 +74,7 @@
 
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <textarea style="margin-top: 7%; margin-bottom: 3%; height: 203px;" class="form-control form-control-lg @error('description') is-invalid @enderror" type="text" placeholder="description" aria-label=".form-control-lg example" name="description" id="floatingTextarea" required value="{{ old('description') }}"></textarea>
+                          <input style="margin-top: 7%; margin-bottom: 3%; height: 203px;" class="form-control form-control-lg @error('description') is-invalid @enderror" type="text" placeholder="description" aria-label=".form-control-lg example" name="description" id="floatingTextarea" required value="{{ $data->description}}">
                           <label for="floatingTextarea">Project Description</label>
                           @error('description')
                           <div class="invalid-feedback">
@@ -95,7 +95,7 @@
                       </div>
                       
                      </div> {{--tutup row dalam form --}}
-                    <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;"><span style="color: #fff;">Send Your Request</button>
+                    <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;"><span style="color: #fff;">Edit Your Request</button>
                     </form>
                </div> {{--tutup row --}}
             </div>

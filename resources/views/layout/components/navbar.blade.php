@@ -1,3 +1,4 @@
+@extends('OpdReqProject.SearchingOpd')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container px-lg-0">
         <a class="navbar-brand" href="/project">
@@ -19,6 +20,7 @@
                 <li class="nav-item"><a class="nav-link active" href="/calendar"><i class="bi bi-calendar3"
                             style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/timeboard"><i class="bi bi-clock"
+                <li class="nav-item"><a class="nav-link active" href="/timeboardOpd"><i class="bi bi-clock"
                             style="font-size:28px"></i></i></a></li>
             </ul>
         </div>
@@ -31,10 +33,25 @@
                             style="font-size:24px"></i></a></li>
                 {{-- <li class="nav-item">
                     <a class="nav-link active" href="/bookmark">
+                 <li class="nav-item"><a class="nav-link active" aria-current="page" data-bs-toggle="modal"
+                        data-bs-target="#SearchOpd"><i class="bi bi-search" style="font-size:24px"></i></a>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-plus-circle"
+                            style="font-size:24px"></i></a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">   
+                
                         <i class="bi bi-bookmark" style="font-size:24px"></i>
                     </a>
-                </li> --}}
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="/notification"><i class="bi bi-bell"
+                            style="font-size:24px"></i></i></a></li>
+                <li class="nav-item"><a class="nav-link active" href="/conversation"><i class="bi bi-chat-left-text"
+                            style="font-size:24px"></i></i></a></li>
+                {{-- <li class="nav-item"><a class="nav-link active" href="/user_profile"><i class="bi bi-person" style="font-size:24px"></i></a></li> --}}
+
                 <div class="dropdown">
+
                     <a class="nav-link active dropdown-toggle" href="/bookmark" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <i class="bi bi-bookmark" style="font-size:24px"></i>
@@ -70,6 +87,22 @@
                         <a href="/" class="dropdown-item">Blog Detail</a>
                     </div>
                 </div> --}}
+
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="font-size:20px">{{ auth()->user()->name }}</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/user_profile"><i class="bi bi-person"></i> My Account</a>
+                        </li>
+                        <li>
+                            <form action="/logout" method="post">
+                                @csrf
+                                <button type="submit" class="dropdown-item"><i class="bi-box-arrow-right"></i>
+                                    Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
             </ul>
         </div>
     </div>
