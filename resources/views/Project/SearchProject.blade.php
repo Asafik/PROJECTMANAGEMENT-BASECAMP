@@ -1,12 +1,11 @@
     <!-- Searching -->
     <section class="pt-2">
         <div class="container ">
-            <div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalSearch"
-                aria-hidden="true">
+            <div class="modal fade" id="SearchProject" tabindex="-1" aria-labelledby="SearchProject" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalSearch">Search</h5> <i class="bi bi-search ms-1"
+                            <h5 class="modal-title" id="SearchProject">Search</h5> <i class="bi bi-search ms-1"
                                 style="font-size:24px"></i>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -15,13 +14,10 @@
                             <div class="modal-body">
                                 <div class="container">
                                     <form action="#" method="#" enctype="multipart/form-data">
-                                        <div class="row mb-3">
-                                            <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                                Worked</label>
-                                            <div class="col-lg-6">
-                                                <input type="text" id="appt" name="appt" class="form-control"
-                                                    style="margin-left: -8%;">
-                                            </div>
+                                        <div class="d-flex col-lg-6 mb-3">
+                                            <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
+                                            <input type="text" id="appt" name="appt" class="form-control col-lg-6"
+                                                style="margin-left: 3%;">
                                         </div>
                                         <div class="d-flex col-lg-6 mb-3">
                                             <label for="inputEmail4" class="form-label col-lg-5">Project Group</label>
@@ -165,5 +161,6 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- Searching -->

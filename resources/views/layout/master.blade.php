@@ -43,7 +43,7 @@
 
                 //alert
                 Swal.fire({
-                    title: "Are you sure, this action will reset the timer to 0",
+                    title: "Are you sure riset time ?",
                     type: "info",
                     showCancelButton: true,
                     confirmButtonText: "Reset it",

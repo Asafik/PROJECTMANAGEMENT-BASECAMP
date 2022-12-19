@@ -20,6 +20,9 @@ use App\Http\Controllers\ProjectMilestonesController;
 use App\Http\Controllers\ProjectDiscussionsController;
 use App\Http\Controllers\ProjectRequestSucessController;
 use App\Http\Controllers\ProjectRequirementDocumentsController;
+use App\Http\Controllers\BoardtimeController;
+use App\Http\Controllers\TasksListController;
+use App\Http\Controllers\ProjectFilesController;
 
 
 /*
@@ -47,6 +50,14 @@ Route::get('/timeboard',[ProjectsController::class,'timeboard'])->middleware('au
 // Route::get('/searching',[ProjectsController::class,'search']);
 
 //route project grup
+
+
+//route timeboard
+
+Route::get('/timeboardOpd',[BoardtimeController::class,'index']);
+Route::get('/create',[BoardtimeController::class,'create']);
+Route::post('/store',[BoardtimeController::class,'store']);
+
 
 //route project list
 Route::get('/project_list',[ProjectListsController::class,'index'])->middleware('auth');
@@ -106,6 +117,13 @@ Route::get('/monitoring',[MonitoringController::class,'index'])->middleware('aut
 
 //route user
 Route::get('/user_profile',[UsersController::class,'profile'])->middleware('auth');
+
+// route task_project
+Route::get('/task_list',[TasksListController::class,'index']);
+
+// route projectfile
+Route::get('/projectfile',[ProjectFilesController::class,'index']);
+
 
 //diskominfos
 Route::get('/homediskominfos',[HomeDiskominfosController::class,'index'])->middleware('auth');

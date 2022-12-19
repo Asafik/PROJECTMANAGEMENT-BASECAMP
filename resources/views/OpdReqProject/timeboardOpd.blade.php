@@ -6,11 +6,15 @@
         <!-- Page Features-->
         <div class="row ">
             <div class="col-lg-12 mb-4 d-flex">
-                <a class="bi bi-funnel h5 text-decoration-none text-secondary me-3"> Filter</a>
-                <a class="bi bi-folder-fill h5 text-decoration-none text-secondary me-3 me-auto"> Saved Searches</a>
+                <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-funnel-fill" style="color: #57575A;"></i><strong
+                        style="color: #57575A;">Filter</strong>
+                </a>
                 <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModalAddrecord"><i
                         class="bi bi-plus-circle "></i> Add Time</button>
-                <a class="h4 text-decoration-none text-black" href=""><i class="bi bi-gear"></i></a>
+                <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i
+                        class="bi bi-gear-fill" style="color: #838492;"></i></button>
             </div>
             <!--card list & task-->
             <div class=" me-md-2 col-lg-12 col-xxl-12 mb-5">
@@ -31,7 +35,7 @@
                         </div>
                     </div>
                     <div class="card me-md-2 col-lg-11 col-xxl-12 ms-5" style="background-color:#D0D9EE;">
-                        <!-- RIWAYAT TIME RICORD -->
+                        <!-- RIWAYAT TIME RECORD -->
                         <div class="record" style="border-bottom: 1px solid darkgrey">
                             <div class="records me-md-2 col-lg-11 mb-1 ms-5">
                                 <div class="time col-lg-5 mt-3 d-flex">
@@ -67,13 +71,13 @@
                                                     id="delete"></a></button>
                                             <button type="button"
                                                 class="btn btn-outline-secondary me-md-2 btn btn-success"
-                                                style="color: #ffffff;">Complate</button>
+                                                style="color: #ffffff;">Complete</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- END RIWAYAT RICORD -->
+                        <!-- END RIWAYAT RECORD -->
                     </div>
                 </div>
             </div>
@@ -85,7 +89,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" style="text-align: center;" id="exampleModalAddrecord">Add Time Ricord
+                    <h5 class="modal-title" style="text-align: center;" id="exampleModalAddrecord">Add Time Record
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -145,31 +149,31 @@
                     <div class="modal-body">
                         <div class="container">
                             <form action="#" method="#" enctype="multipart/form-data">
-                                <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                        Worked</label>
-                                    <input type="time" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Doing</label>
-                                    <div class="col-lg-6 ms-5">
-                                        <textarea class="form-control" style="margin-left: 19%;"
-                                            id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
-                                    <input type="Date" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
+                                    <input type="time" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;">
                                 </div>
                                 <div class="d-flex col-lg-6 mb-3">
-                                    <label for="inputEmail4" class="form-label">By</label>
-                                    <select name="status" class="form-select col-lg-6" style="margin-left: 39%;">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
+                                    <textarea type="text" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;"></textarea>
+                                </div>
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Date</label>
+                                    <input type="date" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;">
+                                </div>
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">By</label>
+                                    <select name="status" class="form-select col-lg-6" style="margin-left: 3%;">
+                                        <option selected>Pilih User</option>
                                         <option value="">User 1</option>
                                         <option value="">User 2</option>
                                         <option value="">User 3</option>
                                     </select>
                                 </div>
-                                <div class="radio d-flex">
+                                <div class="radio d-flex mb-3">
                                     <label for="inputEmail4" class="form-label">Status</label>
                                     <div class="form-check ms-5">
                                         <input class="form-check-input ms-5" type="radio" name="flexRadioDefault"
@@ -189,15 +193,17 @@
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault2" checked>
                                         <label class="form-check-label" for="flexRadioDefault2">
-                                            Complated
+                                            Completed
                                         </label>
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="Submit" class="btn btn-primary">Create</button>
+                                </div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="Submit" class="btn btn-primary">Create</button>
                     </div>
                 </form>
             </div>
@@ -219,31 +225,31 @@
                     <div class="modal-body">
                         <div class="container">
                             <form action="#" method="#" enctype="multipart/form-data">
-                                <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                        Worked</label>
-                                    <input type="time" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Doing</label>
-                                    <div class="col-lg-6 ms-5">
-                                        <textarea class="form-control" style="margin-left: 19%;"
-                                            id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
-                                    <input type="Date" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
+                                    <input type="time" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;">
                                 </div>
                                 <div class="d-flex col-lg-6 mb-3">
-                                    <label for="inputEmail4" class="form-label">By</label>
-                                    <select name="status" class="form-select col-lg-6" style="margin-left: 39%;">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
+                                    <textarea type="text" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;"></textarea>
+                                </div>
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Date</label>
+                                    <input type="date" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;">
+                                </div>
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">By</label>
+                                    <select name="status" class="form-select col-lg-6" style="margin-left: 3%;">
+                                        <option selected>Pilih User</option>
                                         <option value="">User 1</option>
                                         <option value="">User 2</option>
                                         <option value="">User 3</option>
                                     </select>
                                 </div>
-                                <div class="radio d-flex">
+                                <div class="radio d-flex mb-3">
                                     <label for="inputEmail4" class="form-label">Status</label>
                                     <div class="form-check ms-5">
                                         <input class="form-check-input ms-5" type="radio" name="flexRadioDefault"
@@ -263,20 +269,84 @@
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault2" checked>
                                         <label class="form-check-label" for="flexRadioDefault2">
-                                            Complated
+                                            Completed
                                         </label>
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="Submit" class="btn btn-primary">Update</button>
+                                </div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="Submit" class="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- end full full edit time record -->
+    <!-- fitur filter -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"
+                    style="color: #57575A;"></i>&nbsp Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form action="#" method="#" enctype="multipart/form-data">
+                <div class="d-flex mb-3">
+                    <label for="inputEmail4" class="form-label col-sm-4 me-2">Sort by</label>
+                    <input type="email" id="appt" name="appt" class="form-control">
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="inputEmail4" class="form-label col-sm-4">User</label>
+                    <select name="status" class="form-select" style="margin-left: 3%;">
+                        <option selected>Pilih Group</option>
+                        <option value="">User 1</option>
+                        <option value="">User 2</option>
+                        <option value="">User 3</option>
+                    </select>
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="inputEmail4" class="form-label col-sm-4 me-2">Date</label>
+                    <input type="date" id="appt" name="appt" class="form-control">
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="inputEmail4" class="form-label col-sm-4">Project Group</label>
+                    <select name="status" class="form-select" style="margin-left: 3%;">
+                        <option selected>Pilih Group</option>
+                        <option value="">General Project 1</option>
+                        <option value="">General Project 2</option>
+                        <option value="">General Project 3</option>
+                    </select>
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="inputEmail4" class="form-label col-sm-4">Project</label>
+                    <select name="selectproject" class="form-control" style="margin-left: 3%;">
+                        <option selected>Pilih Project</option>
+                        <option class="form-select " aria-label="Disabled select example" disabled>
+                            DINKES
+                        <option value="">Project ABCD</option>
+                        </option>
+                        <option class="form-select" aria-label="Disabled select example" disabled>
+                            DISBUDPAR
+                        <option value="">Project DEFG</option>
+                        <option value="">Project EFGH</option>
+                        </option>
+                    </select>
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label col-sm-4 me-2">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Cencel</button>
+                    <button type="Submit" class="btn btn-success bi bi-funnel-fill">Apply</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end fitur filter -->
 </section>
 @endsection

@@ -1,5 +1,5 @@
 @extends('layout.master') @section('content')
-    
+
 <section class="pt-3">
     <div class="container px-lg-0">
         <!-- Page Features-->
