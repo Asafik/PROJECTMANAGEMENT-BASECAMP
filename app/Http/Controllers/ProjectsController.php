@@ -15,6 +15,7 @@ class ProjectsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
        $project = projects::with('project_grup')->latest()->paginate();
@@ -116,6 +117,11 @@ class ProjectsController extends Controller
         // $project = projects::with('project_grup')->latest()->paginate();
         return view('Project.milestoneProject');
     }
+    public function calendar()
+    {
+        // $project = projects::with('project_grup')->latest()->paginate();
+        return view('Project.calendar');
+    }
 
     public function bookmark()
     {
@@ -126,5 +132,5 @@ class ProjectsController extends Controller
     // {
     //     $project = projects::with('project_grup')->latest()->paginate();
     //     return view('Project.time_board', compact(['project']));
-    // }
+        // }
 }

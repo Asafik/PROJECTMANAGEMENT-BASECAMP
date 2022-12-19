@@ -2,46 +2,36 @@
 
 <!-- Page Content-->
 <section class="pt-3">
-    <div class="container px-lg-0">
-        <div class="col-lg-12 mb-5 d-flex">
-            <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                aria-controls="offcanvasExample">
-                <i class="bi bi-funnel-fill" style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
-            </a>
-            <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button"
-                aria-controls="offcanvasExample">
-                <i class="bi bi-folder-fill" style="color: #57575A;"></i><strong style="color: #57575A;">Saved
-                    Searches</strong>
-            </a>
-            <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal"
-                data-bs-target="#exampleModalAddList"><i class="bi bi-plus-circle"></i> Add List</button>
-            <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal"
-                data-bs-target="#exampleModalAddDiscussion"><i class="bi bi-plus-circle"></i> Add Discussion</button>
-            <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill"
-                    style="color: #838492;"></i></button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel" style="width: 700px;">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"
-                            style="color: #57575A;"></i>&nbsp Filters</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        <hr style="margin-top: -4%;">
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
-                        images, lists, etc.
+  <div class="container px-lg-0">
+    <div class="col-lg-12 mb-5 d-flex">
+          <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
+          </a>
+          <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
+            <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Saved Searches</strong>
+          </a>
+          <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddList"><i class="bi bi-plus-circle"></i> Add List</button>
+          <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddDiscussion"><i class="bi bi-plus-circle"></i> Add Discussion</button>
+          <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 700px;">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div><hr style="margin-top: -4%;">
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div>
+                <form>
+                  <div class="mb-3 row">
+                    <div class="form-group row">
+                      <label for="SearchText" class="col-sm-4 col-form-label">Search Text</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="SearchText">
+                      </div>
                     </div>
-                    <div>
-                        <form>
-                            <div class="mb-3 row">
-                                <div class="form-group row">
-                                    <label for="SearchText" class="col-sm-4 col-form-label">Search Text</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="SearchText">
-                                    </div>
-                                </div>
-                            </div>
+                  </div>
 
                             <div class="mb-3 row">
                                 <div class="form-group row">
@@ -126,39 +116,36 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3 row">
-                                <div class="form-group row">
-                                    <label for="Sticky" class="col-sm-4 col-form-label">Sticky</label>
-                                    <div class="col-sm-8">
-                                        <select name="Sticky" class="form-select col-lg-6">
-                                            <option value="">Sticky 1</option>
-                                            <option value="">Sticky 2</option>
-                                            <option value="">Sticky 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                  <div class="mb-3 row">
+                    <div class="form-group row">
+                      <label for="Sticky" class="col-sm-4 col-form-label">Sticky</label>
+                      <div class="col-sm-8">
+                        <select name="Sticky" class="form-select col-lg-6" >
+                            <option value="">Sticky 1</option>
+                            <option value="">Sticky 2</option>
+                            <option value="">Sticky 3</option>
+                        </select>
+                      </div>
                     </div>
-
-                    <div class="d-flex flex-row-reverse">
-                        <div class="p-2">
-                            <button class="btn btn-success me-3" style="background-color:#20B15A"
-                                data-bs-toggle="offcanvas" data-bs-target="#l"><i class="bi bi-funnel-fill"></i>
-                                Apply</button>
-                        </div>
-                        <div class="p-2">
-                            <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#" role="button"
-                                aria-controls="offcanvasExample">
-                                <i class="bi bi-file-earmark-fill" style="color: #57575A;"> Saved Search & Apply</i>
-                            </a>
-                        </div>
-                    </div>
+                  </div>
+                </form>
+              </div>
+              
+              <div class="d-flex flex-row-reverse">
+                <div class="p-2">
+                  <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="offcanvas" data-bs-target="#l"><i class="bi bi-funnel-fill"></i> Apply</button>
                 </div>
+                <div class="p-2">
+                  <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-file-earmark-fill"  style="color: #57575A;"> Saved Search & Apply</i>
+                  </a>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <p class="fw-bolder h5 me-auto mb-4">discuss</p>
+          </div>
+    </div>
+    
+    <p class="fw-bolder h5 me-auto mb-4">discuss</p>
 
         <!-- modal add list -->
         <div class="modal fade" id="exampleModalAddList" tabindex="-1" aria-labelledby="exampleModalAddList"
@@ -252,30 +239,26 @@
                                         </div>
                                     </div>
 
-                                    <div class="mb-0 row">
-                                        <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-                                        <head>
-                                            <meta charset="utf-8">
-                                            <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-                                            <!-- <title>Install and Use CKEditor In Laravel</title> -->
-                                            <link rel="stylesheet"
-                                                href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-                                        </head>
-
-                                        <body>
-                                            <div class="card-body">
-                                                <form method="post" action="" enctype="multipart/form-data">
-                                                    @csrf
-                                                    <div class="form-group">
-                                                        <textarea class="ckeditor form-control"
-                                                            name="wysiwyg-editor"></textarea>
+                                <div class="mb-0 row">
+                                  <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+                                    <head>
+                                        <meta charset="utf-8">
+                                        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+                                        <!-- <title>Install and Use CKEditor In Laravel</title> -->
+                                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                                    </head>
+                                    <body>
+                                      <div class="card-body">
+                                                        <form method="post" action="" enctype="multipart/form-data">
+                                                            @csrf
+                                                            <div class="form-group">
+                                                                <textarea class="ckeditor form-control" name="wysiwyg-editor"></textarea>
+                                                            </div>
+                                                        </form>
                                                     </div>
-                                                </form>
-                                            </div>
 
 
-                                            <!-- <div class="container">
+                                        <!-- <div class="container">
                                             <div class="row">
                                                 <div class="col-md-7 offset-3 mt-4">
                                                     <div class="card-body">
@@ -289,10 +272,10 @@
                                                 </div>
                                             </div>
                                         </div> -->
-                                        </body>
-                                        <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
-                                        <script type="text/javascript">
-                                        $(document).ready(function() {
+                                    </body>
+                                    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
                                             $('.ckeditor').ckeditor();
                                         });
                                         </script>
