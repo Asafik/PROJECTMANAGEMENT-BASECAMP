@@ -20,6 +20,7 @@ use App\Http\Controllers\ProjectMilestonesController;
 use App\Http\Controllers\ProjectDiscussionsController;
 use App\Http\Controllers\ProjectRequestSucessController;
 use App\Http\Controllers\ProjectRequirementDocumentsController;
+use App\Http\Controllers\ProjectCalendarController;
 use App\Http\Controllers\BoardtimeController;
 use App\Http\Controllers\TasksListController;
 use App\Http\Controllers\ProjectFilesController;
@@ -39,6 +40,14 @@ use App\Http\Controllers\ProjectFilesController;
 Route::get('/',[UsersController::class,'index'])->middleware('guest');
 
 //route project create
+//
+Route::get('/project',[ProjectsController::class,'index'])->middleware('auth');
+Route::get('/create',[ProjectsController::class,'create']);
+Route::post('/store',[ProjectsController::class,'store']);
+Route::get('/project/{id}/project_edit',[ProjectsController::class,'edit']);
+Route::put('/project_edit/{id}',[ProjectsController::class,'update']);
+Route::delete('/project/{id}',[ProjectsController::class,'destroy']);
+Route::get('/general_project',[ProjectsController::class,'general']);
 Route::get('/project',[ProjectsController::class,'index'])->middleware('auth');
 Route::get('/create',[ProjectsController::class,'create'])->middleware('auth');
 Route::post('/store',[ProjectsController::class,'store'])->middleware('auth');
@@ -67,6 +76,9 @@ Route::get('/create',[ProjectListsController::class,'crex`ate'])->middleware('au
 Route::get('/discuss',[ProjectsController::class,'discuss'])->middleware('auth');
 Route::post('ckeditor/upload', 'CKEditorController@upload')->middleware('auth')->name('ckeditor.image-upload');
 
+//route calendar project
+Route::get('/calendar',[ProjectsController::class,'calendar']);
+
 //route bookmark
 Route::get('/bookmark',[ProjectsController::class,'bookmark'])->middleware('auth');
 
@@ -76,6 +88,11 @@ Route::get('/create',[ProjectTasksController::class,'create'])->middleware('auth
 Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('auth');
 
 //route project req
+
+Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
+Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
+Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
+
 Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');
 Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])->middleware('auth');
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create'])->middleware('auth');
@@ -97,8 +114,12 @@ Route::get('/login',[ExternalUsersController::class,'login'])->name('login')->mi
 Route::post('/login',[ExternalUsersController::class,'authenticate']);
 Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('guest');
 Route::post('/signup',[ExternalUsersController::class,'store']);
+
+Route::post('/logout',[ExternalUsersController::class,'logout']);
+
 Route::post('/logout',[ExternalUsersController::class,'logout'])->middleware('auth');
 Route::post('/update',[ExternalUsersController::class,'update'])->middleware('auth');
+
 
 //route milestone
 Route::get('/milestone',[ProjectMilestonesController::class,'index'])->middleware('auth');
@@ -121,6 +142,8 @@ Route::get('/task_list',[TasksListController::class,'index']);
 // route projectfile
 Route::get('/projectfile',[ProjectFilesController::class,'index']);
 
+//diskominfos
+
 
 //diskominfos
 Route::get('/homediskominfos',[HomeDiskominfosController::class,'index'])->middleware('auth');
@@ -131,6 +154,10 @@ Route::get('/discussion',[ProjectDiscussionsController::class,'create'])->middle
 //sign up/login
 Route::get('pegawai',[PegawaiController::class,'index']);
 Route::get('pegawai/create',[PegawaiController::class,'create']);
+
+Route::post('pegawai/store',[PegawaiController::class,'store']);
+
 Route::post('pegawai/store',[PegawaiController::class,'store']);
 
 // Auth::routes(['verify'=>true]);
+

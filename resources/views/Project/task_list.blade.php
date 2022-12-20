@@ -13,7 +13,10 @@
               <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Saved Searches</strong>
               </a>
-              <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="bi bi-stack"  style="color: #57575A;"></i><strong style="color: #57575A;">Group By</strong>
+              </a>
+              <a class="btn btn-secondary-outline" data-bs-toggle="modal" href="#ModalGroup" role="button" aria-controls="ExampleModalGroup">
                 <i class="bi bi-stack"  style="color: #57575A;"></i><strong style="color: #57575A;">Group By</strong>
               </a>
 
@@ -230,6 +233,40 @@
                 </div>
               </div>
             </div>  
+
+            <!-- modal Group By
+              <div class="modal fade" tabindex="-1" id="exampleModalGroup" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalGroup"> <i class="bi bi-stack"  style="color: #57575A;"></i>&nbsp Group By</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modalGroup" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                          <div class="container">
+                            <form action="/storetask" method="POST" enctype="multipart/form-data">
+                            @csrf
+                    
+                   
+
+                     
+
+
+              
+              
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-light me-auto btn" data-bs-dismiss="offcanvas" aria-label="Close"><strong style="color: gray;">Cancel</strong></button>
+                                      <a href="#" class="btn btn-success me-auto btn"> 
+                                        <i class="bi bi-funnel-fill"  style="color: white"></i><strong style="color: white;">Apply</strong>
+                                      </a>
+                                    </div>
+                            </form>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div> -->
+
 
             <!-- Modal Add List -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
