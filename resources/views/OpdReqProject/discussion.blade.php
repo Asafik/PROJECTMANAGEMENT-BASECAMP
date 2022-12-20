@@ -1,4 +1,4 @@
-@extends('layout.master') @section('content')
+@extends('layout.masterReq') @section('content')
 <!-- Page Content-->
      <section class="pt-3">
         <div class="container px-lg-0">

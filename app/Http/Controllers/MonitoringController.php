@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\project_requirement_documents;
 use Illuminate\Http\Request;
 
 class MonitoringController extends Controller
@@ -13,7 +13,8 @@ class MonitoringController extends Controller
      */
     public function index()
     {
-        return view('OpdReqProject.monitoring');
+        $data = project_requirement_documents::paginate(1);
+        return view('OpdReqProject.monitoring', ['data' => $data]);
     }
 
     /**

@@ -81,13 +81,11 @@ Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create'])->middleware('auth');
 Route::post('/projectReq_store',[ProjectRequirementDocumentsController::class,'store'])->middleware('auth');
 Route::get('/projectReq_details/{id}',[ProjectRequirementDocumentsController::class,'show'])->middleware('auth');
-
 Route::get('/projectReq_edit/{id}',[ProjectRequirementDocumentsController::class,'edit'])->middleware('auth');
 Route::post('/projectReq_update/{id}',[ProjectRequirementDocumentsController::class,'update'])->middleware('auth');
-
 Route::get('/projectReq_all',[ProjectRequirementDocumentsController::class,'all'])->middleware('auth');
 Route::get('/projectReq_delete/{id}',[ProjectRequirementDocumentsController::class,'destroy'])->middleware('auth');
-
+Route::get('/generalReq',[ProjectRequirementDocumentsController::class,'generalReq'])->middleware('auth');
 
 //Auth::routes();
 
@@ -95,7 +93,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //route login
 //Auth::routes();
-// Route::get('/landingpage',[ExternalUsersController::class,'index']);
 Route::get('/login',[ExternalUsersController::class,'login'])->name('login')->middleware('guest');
 Route::post('/login',[ExternalUsersController::class,'authenticate']);
 Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('guest');
