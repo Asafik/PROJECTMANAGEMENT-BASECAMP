@@ -93,19 +93,11 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-<<<<<<< HEAD:resources/views/OpdReqProject/timeboardOpd.blade.php
-                <form action="#" method="#" enctype="multipart/form-data">
-                    @csrf
-                    <div class="modal-body">
-                        <div class="container">
-                            <form action="#" method="#" enctype="multipart/form-data">
-=======
                 <form action="/StoreTime" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="container">
                             <form action="/StoreTime" method="POST" enctype="multipart/form-data">
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb:resources/views/Project/time_board.blade.php
                                 <div class="row mb-3">
                                     <div class="col-5">
                                         <label for="inputEmail4" class="form-label">Group Or Project
@@ -157,12 +149,6 @@
                     <div class="modal-body">
                         <div class="container">
                             <form action="#" method="#" enctype="multipart/form-data">
-<<<<<<< HEAD:resources/views/OpdReqProject/timeboardOpd.blade.php
-                                <div class="d-flex col-lg-6 mb-3">
-                                    <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
-                                    <input type="time" id="appt" name="appt" class="form-control col-lg-6"
-                                        style="margin-left: 3%;">
-=======
                                 <div class="row mb-3">
                                     <label for="inputPassword3" class="col-sm-3 col-form-label">Time
                                         Worked</label>
@@ -178,7 +164,6 @@
                                 <div class="mb-3 row">
                                     <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
                                     <input type="Date" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb:resources/views/Project/time_board.blade.php
                                 </div>
                                 <div class="d-flex col-lg-6 mb-3">
                                     <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
@@ -246,25 +231,16 @@
                         Record</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-<<<<<<< HEAD:resources/views/OpdReqProject/timeboardOpd.blade.php
-                <form action="#" method="#" enctype="multipart/form-data">
-=======
                 <form action="/Store" method="POST" enctype="multipart/form-data">
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb:resources/views/Project/time_board.blade.php
                     @csrf
                     <div class="modal-body">
                         <div class="container">
                             <form action="#" method="#" enctype="multipart/form-data">
-<<<<<<< HEAD:resources/views/OpdReqProject/timeboardOpd.blade.php
-=======
-<<<<<<< HEAD:resources/views/OpdReqProject/time_board.blade.php
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb:resources/views/Project/time_board.blade.php
                                 <div class="d-flex col-lg-6 mb-3">
                                     <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
                                     <input type="time" id="appt" name="appt" class="form-control col-lg-6"
                                         style="margin-left: 3%;">
-<<<<<<< HEAD:resources/views/OpdReqProject/timeboardOpd.blade.php
-=======
+
                                     <form action="" method="POST" enctype="multipart/form-data">
                                         <div class="row mb-3">
                                             <label for="inputPassword3"
@@ -335,7 +311,6 @@
                                     </form>
                                 </div>
                         </div>
-=======
                                 <div class="row mb-3">
                                     <label for="inputPassword3" class="col-sm-3 col-form-label">Time
                                         Worked</label>
@@ -351,7 +326,6 @@
                                 <div class="mb-3 row">
                                     <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
                                     <input type="Date" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb:resources/views/Project/time_board.blade.php
                                 </div>
                                 <div class="d-flex col-lg-6 mb-3">
                                     <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
@@ -404,14 +378,10 @@
                             </form>
                         </div>
                     </div>
-<<<<<<< HEAD:resources/views/OpdReqProject/timeboardOpd.blade.php
-=======
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="Submit" class="btn btn-primary">Update</button>
                     </div>
->>>>>>> parent of 9b40e0c (perubahan file timeboard,search dan menambah conversation):resources/views/Project/time_board.blade.php
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb:resources/views/Project/time_board.blade.php
                 </form>
             </div>
         </div>
@@ -472,7 +442,7 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Cencel</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Cancel</button>
                     <button type="Submit" class="btn btn-success bi bi-funnel-fill">Apply</button>
                 </div>
             </form>

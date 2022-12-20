@@ -16,11 +16,7 @@ class BoardtimeController extends Controller
     public function index()
     {
         $timeboard = Timeboard::all();
-<<<<<<< HEAD
         return view('OpdReqProject.timeboardOpd',compact('timeboard'));
-=======
-        return view('OpdReqProject.time_board',compact('timeboard'));
->>>>>>> db95d8e24fbaa7a5c7222f49bea3c14c5e6dc7cb
     }
 
     /**
