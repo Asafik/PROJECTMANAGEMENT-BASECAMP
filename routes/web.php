@@ -89,9 +89,9 @@ Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('a
 
 //route project req
 
-Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
-Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
-Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
+// Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
+// Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
+// Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
 
 Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');
 Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])->middleware('auth');
