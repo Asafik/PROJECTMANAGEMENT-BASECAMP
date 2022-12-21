@@ -17,7 +17,7 @@
                             style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/milestone"><i class="bi bi-flag"
                             style="font-size:28px"></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="/calendar"><i class="bi bi-calendar"
+                <li class="nav-item"><a class="nav-link active" href="/full-calender"><i class="bi bi-calendar3"
                             style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/timeboardOpd"><i class="bi bi-clock"
                             style="font-size:28px"></i></i></a></li>

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\ProjectGrupController;
@@ -85,6 +86,10 @@ Route::get('/milestoneproject',[ProjectsController::class,'milestoneproject']);
 //route calendar project
 Route::get('/calendar',[ProjectsController::class,'calendar']);
 
+//route discuss
+Route::get('/discuss',[ProjectsController::class,'discuss']);
+Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
+
 //route bookmark
 Route::get('/bookmark',[ProjectsController::class,'bookmark'])->middleware('auth');
 
@@ -162,6 +167,7 @@ Route::get('pegawai/create',[PegawaiController::class,'create']);
 
 Route::post('pegawai/store',[PegawaiController::class,'store']);
 
-Route::post('pegawai/store',[PegawaiController::class,'store']);
-
-// Auth::routes(['verify'=>true]);
+//fullCalendar
+Route::get('/full-calender', [FullCalendarController::class, 'getEvent']);
+Route::post('/createevent', [FullCalendarController::class, 'createEvent'])->name('createevent');
+Route::post('/deleteevent', [FullCalendarController::class, 'deleteEvent'])->name('deleteevent');
