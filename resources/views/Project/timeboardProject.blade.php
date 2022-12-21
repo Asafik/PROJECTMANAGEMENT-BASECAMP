@@ -11,8 +11,8 @@
                     <i class="bi bi-funnel-fill" style="color: #57575A;"></i><strong
                         style="color: #57575A;">Filter</strong>
                 </a>
-                <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModalAddrecord"><i
-                        class="bi bi-plus-circle "></i> Add Time</button>
+                <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddrecord"><i
+                        class="bi bi-plus-circle"></i> Add Time</button>
                 <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff" data-bs-toggle="modal"
                     data-bs-target="#settingtimeboard"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
             </div>
@@ -71,7 +71,7 @@
                                                     id="delete"></a></button>
                                             <button type="button"
                                                 class="btn btn-outline-secondary me-md-2 btn btn-success"
-                                                style="color: #ffffff;">Complete</button>
+                                                style="color: #ffffff; background-color:#20B15A;">Complete</button>
                                         </div>
                                     </div>
                                 </div>

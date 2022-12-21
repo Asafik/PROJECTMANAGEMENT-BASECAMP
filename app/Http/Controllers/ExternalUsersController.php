@@ -73,9 +73,10 @@ class ExternalUsersController extends Controller
      * @param  \App\Models\external_users  $external_users
      * @return \Illuminate\Http\Response
      */
-    public function edit(external_users $external_users)
+    public function edit(external_users $external_users, $id)
     {
-        //
+        $data = users::find($id);
+        return view('User.user_profile', ['data' => $data]);
     }
 
     /**
@@ -85,30 +86,10 @@ class ExternalUsersController extends Controller
      * @param  \App\Models\external_users  $external_users
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, external_users $external_users)
+    public function update(Request $request, external_users $external_users, $id)
     {
-        $validatedData = $request->validate([
-            'name' => ['required', 'max:255'],
-            // 'email' => ['required', 'email:dns', 'unique:users'],
-            'phone' => ['required', 'unique:users', 'max:12'],
-            'password' => ['required', 'min:5', 'max:255'],
-            'nik' => ['required', 'unique:users', 'max:16'],
-        ]);
-
-        if ($request->email != $external_users->email) {
-            $rules['email'] = ['required', 'email:dns', 'unique:users'];
-        }
-
-        // if ($request->nik != $external_users->nik) {
-        //     $rules['nik'] = ['required', 'unique:users', 'max:16'];
-        // }
-
-        // $validatedData = $request->validate($rules);
-
-        // $validatedData['id'] = auth()->user()->id;
-        // $validatedData['password'] = Hash::make($validatedData['password']);
-
-        users::where('id', $external_users->id)->update($validatedData);
+        $data = users::find($id);
+        $data->update($request->all());
 
         return redirect('/user_profile')->with('success', 'Profile has been updated!');
     }
@@ -145,7 +126,6 @@ class ExternalUsersController extends Controller
             $request->session()->regenerate();
             return redirect()->intended('/projectReq');
         }
-
         return back()->with('loginError', 'Login Failed!');
     }
 

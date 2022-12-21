@@ -16,11 +16,11 @@
             </a>
 
             <!-- button modal new project -->
-            <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal"
+            <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal"
                 data-bs-target="#exampleModal"></i> New Folder</button>
-            <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal"
+            <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal"
                 data-bs-target="#exampleModalAddtask"></i> Upload</button>
-            <button class="btn btn-secondary me-3" style="background-color:#ffff" data-bs-toggle="modal"
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff" data-bs-toggle="modal"
                 data-bs-target="#exampleModalsetting"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -64,7 +64,7 @@
                 <!--Ganti Ukuran-->
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body fs-6 text-sm-start p-8 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width:1100px;"
+                        <div style="width:100%;"
                             class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-start">
                             <strong><i class="bi bi-file-earmark-text"></i> File</strong></i>
                         </div>

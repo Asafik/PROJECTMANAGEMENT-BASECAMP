@@ -95,7 +95,7 @@ Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('a
 
 //route project req
 
-// Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
+Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
 // Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
 // Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
 
@@ -119,11 +119,9 @@ Route::get('/login',[ExternalUsersController::class,'login'])->name('login')->mi
 Route::post('/login',[ExternalUsersController::class,'authenticate']);
 Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('guest');
 Route::post('/signup',[ExternalUsersController::class,'store']);
-
 Route::post('/logout',[ExternalUsersController::class,'logout']);
-
 Route::post('/logout',[ExternalUsersController::class,'logout'])->middleware('auth');
-Route::post('/update',[ExternalUsersController::class,'update'])->middleware('auth');
+Route::post('/update/{id}',[ExternalUsersController::class,'update'])->middleware('auth');
 
 
 //route milestone

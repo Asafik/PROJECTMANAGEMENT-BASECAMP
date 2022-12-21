@@ -66,18 +66,19 @@
                 <li class="nav-item"><a class="nav-link"></a></li>
                 <ul class="navbar-nav" style="margin-top:1.5%">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">Abcd</a>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink"
-                            style="width:1%">
-                            <li><a class="dropdown-item" href="/user_profile"><i class="bi bi-person-square"></i> My
-                                    Account</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear-fill"></i> Manage System</a></li>
-                            <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="/home"><i class="bi bi-box-arrow-left"></i> Log Out</a>
-                            </li>
-
-                        </ul>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="font-size:20px">{{ auth()->user()->name }}</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/user_profile"><i class="bi bi-person"></i> My Account</a>
+                        </li>
+                        <li>
+                            <form action="/logout" method="post">
+                                @csrf
+                                <button type="submit" class="dropdown-item"><i class="bi-box-arrow-right"></i>
+                                    Logout</button>
+                            </form>
+                        </li>
+                    </ul>
                     </li>
                     </li>
                 </ul>

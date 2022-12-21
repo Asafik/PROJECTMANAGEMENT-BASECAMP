@@ -22,11 +22,11 @@
             </a>
 
 
-            <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal"
+            <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal"
                 data-bs-target="#exampleModal"><i class="bi bi-plus-circle"></i> Add List</button>
-            <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal"
+            <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal"
                 data-bs-target="#exampleModalAddtask"><i class="bi bi-plus-circle"></i> Add Task</button>
-            <button class="btn btn-secondary me-3" style="background-color:#ffff" data-bs-toggle="modal"
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff" data-bs-toggle="modal"
                 data-bs-target="#exampleModalsetting"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
 
             <!-- modal filter -->
@@ -400,8 +400,8 @@
                     <!--Ganti Ukuran-->
                     <div class="card bg-light border-0 h-100">
                         <div class="card-body fs-6 text-sm-start p-8 p-lg-2 pt-0 pt-lg-0">
-                            <div style="width:1100px;"
-                                class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-start">
+                            <div style="width:100%;"
+                                class="btn bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3 text-center">
                                 <strong>Project System Attendance / Analyst and Documentation</strong></i>
                             </div>
                             <p class="fs-9 fw-bold text-start ">
@@ -624,12 +624,12 @@
                       </div>
                       
                      
-                      <div class="col-md-4"></div>
+                      {{-- <div class="col-md-4"></div>
                       <div class="col-md-10 ms-auto"> <div class="col-md-4 offset-md-8 "><div class="progress-bar bg-success fs-9 fw-" role="progressbar" style="width: 60%; margin-left: 30%; margin-bottom: 10% ;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                          <div class="progress-bar" role="progressbar" style="width: 30%; background-color:#838492; margin-top: -10%; margin-right: 10%;" aria-valuenow="30" height="5" aria-valuemin="0" aria-valuemax="100"></div>
                        </div></div></div></div> </div>
-                    </div>
+                    </div> --}}
                     <!-- kedua -->
                     <div class="container">
                     <div class="row">

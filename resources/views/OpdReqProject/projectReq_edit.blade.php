@@ -33,7 +33,7 @@
                   <p style="margin-top: 2%;"><strong>Syarat dan Ketentuan</strong></p>
                 </div>
 
-                  <form action="" method="POST">
+                  <form action="/projectReq_update/{{ $data->id }}" method="POST">
                     @csrf
                     <div class="row">
                       <div class="col-sm-4">

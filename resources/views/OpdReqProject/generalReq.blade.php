@@ -19,7 +19,7 @@
             <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill"
                     style="color: #838492;"></i></button>
         </div>
-        <p class="fw-bolder h5 me-auto mb-4">General Project</p>
+        <p class="fw-bolder h5 me-auto mb-5">General Project</p>
         <!-- Page Features-->
     <div class="row gx-lg-6">
          <!--card Request  -->
@@ -27,7 +27,7 @@
             <div class="card bg-light border-0 h-100">
                 <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
                     @foreach ($data as $item)
-                    <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="/projectReq_details/{{ $item->id }}"><span class="text-white"><strong>{{ $item['project_name'] }}</strong></a></i></div>
+                    <div style="margin-left:30%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="/projectReq_details/{{ $item->id }}"><span class="text-white"><strong>{{ $item['project_name'] }}</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">{{ $item['description'] }}</p>
                         <div class="mb-5 text-center">

@@ -6,17 +6,18 @@
     <div class="row gx-lg-6">
          <!--card Request  -->
         <div class="col-lg-8 mb-5">
+            @if (session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+            <br>
             <div class="card bg-light border-0">
                 <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                    @if (session()->has('success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{ session('success') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
-                  <form action="/update" method="POST">
+                  <form action="/update/{{ Auth::user()->id }}" method="POST">
                     @csrf
-                    <div style="width:850px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start text-center">
+                    <div style="width:100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start text-center">
                         <span class="text-white">
                         <strong>User Profile & Setting</strong>
                     </div>
