@@ -3,11 +3,13 @@
 <section class="pt-3">
     <div class="container px-lg-0">
         <!-- Page Features-->
-        <div class="col-lg-12 mb-5 d-flex"> 
+        <div class="col-lg-12 mb-5 d-flex">
             <span class="h5 text-decoration-none text-black fw-bold me-2">Hello, {{ auth()->user()->name }}!</span>
             <a class="h5 text-decoration-none text-secondary me-auto">Stay Healthy.</a>
-            <a href="/projectReq_create" class="btn btn-success me-3 border-0" style="background-color:#20B15A;"> Add Request Project</a>
-            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+            <a href="/projectReq_create" class="btn btn-success me-3 border-0" style="background-color:#20B15A;"> Add
+                Request Project</a>
+            <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill"
+                    style="color: #838492;"></i></button>
         </div>
     <!-- Page Content-->
     <section class="pt-4">
@@ -36,8 +38,28 @@
                                 <div class="col-4">
                                     <p class="text-start" style="color: #0064AF;margin-top: -5%;">{{ $item['project_type'] }}</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-start" style="color: #0064AF;margin-top: -5%; margin-left:-40%;">{{ $item['opd_name'] }}</p>
+                                @foreach ($data as $item)
+                                <p class="fs-9 fw-bold text-start"><img src="images/icon.svg"
+                                        style="width: 7%; margin-right : 4%;">{{ $item['project_name'] }}</p><img
+                                    src="images/line.svg" style="width: 112%; margin-top:-10%;margin-left: -6%">
+                                <p class="fs-9 fw- text-start" style="margin-top: -5%; color: #83838A;">
+                                    {{ $item['description'] }}</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start" style="color: #0064AF;margin-top: -5%;">
+                                            {{ $item['project_type'] }}</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-start" style="color: #0064AF;margin-top: -5%; margin-left:-40%;">
+                                            {{ $item['opd_name'] }}</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="/projectReq_details/{{ $item->id }}">
+                                            <p class="text-center" style="color: #0064AF;margin-top: -5%; ">See Details
+                                            </p>
+                                        </a>
+                                    </div>
+
                                 </div>
                                 <div class="col-4">
                                     <a href="/projectReq_details/{{ $item->id }}"><p class="text-center" style="color: #0064AF;margin-top: -5%; ">See Details</p></a>
@@ -73,6 +95,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    @endsection
+        </section>
+        @endsection

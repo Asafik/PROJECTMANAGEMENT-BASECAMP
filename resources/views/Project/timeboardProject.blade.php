@@ -1,4 +1,4 @@
-@extends('layout.master') @section('content')
+@extends('layout.masterProject') @section('content')
 
 <!-- Page Content-->
 <section class="pt-2">
@@ -25,7 +25,7 @@
                         </h6>
                         <div class="col-3 mt-3 ms-2" style="background:#6495ED;">
                             <h6 class="mt-2 me-auto">
-                                <center>40 Hours</center>
+                                <center>40 Hourse</center>
                             </h6>
                         </div>
                         <div class="col-3 mt-3 ms-2" style="background:#6495ED;">
@@ -93,11 +93,11 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="/StoreTime" method="POST" enctype="multipart/form-data">
+                <form action="#" method="#" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="container">
-                            <form action="/StoreTime" method="POST" enctype="multipart/form-data">
+                            <form action="#" method="#" enctype="multipart/form-data">
                                 <div class="row mb-3">
                                     <div class="col-5">
                                         <label for="inputEmail4" class="form-label">Group Or Project
@@ -149,21 +149,10 @@
                     <div class="modal-body">
                         <div class="container">
                             <form action="#" method="#" enctype="multipart/form-data">
-                                <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                        Worked</label>
-                                    <input type="time" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Doing</label>
-                                    <div class="col-lg-6 ms-5">
-                                        <textarea class="form-control" style="margin-left: 19%;"
-                                            id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
-                                    <input type="Date" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
+                                <div class="d-flex col-lg-6 mb-3">
+                                    <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
+                                    <input type="time" id="appt" name="appt" class="form-control col-lg-6"
+                                        style="margin-left: 3%;">
                                 </div>
                                 <div class="d-flex col-lg-6 mb-3">
                                     <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
@@ -231,7 +220,7 @@
                         Record</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="/Store" method="POST" enctype="multipart/form-data">
+                <form action="#" method="#" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="container">
@@ -240,92 +229,6 @@
                                     <label for="inputEmail4" class="form-label col-lg-5">Time Worked</label>
                                     <input type="time" id="appt" name="appt" class="form-control col-lg-6"
                                         style="margin-left: 3%;">
-
-                                    <form action="" method="POST" enctype="multipart/form-data">
-                                        <div class="row mb-3">
-                                            <label for="inputPassword3"
-                                                class="col-sm-3 col-form-label">TimeWorked</label>
-                                            <input type="time" id="appt" name="appt" class="col-lg-6"
-                                                style="margin-left: -2%;">
-                                        </div>
-                                        <div class="d-flex mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Doing</label>
-                                            <div class="col-lg-6 ms-5">
-                                                <textarea class="form-control" style="margin-left: 19%;"
-                                                    id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
-                                            <input type="Date" id="appt" name="appt" class="col-lg-6"
-                                                style="margin-left: -2%;">
-                                        </div>
-                                        <div class="d-flex col-lg-6 mb-3">
-                                            <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
-                                            <textarea type="text" id="appt" name="appt" class="form-control col-lg-6"
-                                                style="margin-left: 3%;"></textarea>
-                                        </div>
-                                        <div class="d-flex col-lg-6 mb-3">
-                                            <label for="inputEmail4" class="form-label col-lg-5">Date</label>
-                                            <input type="date" id="appt" name="appt" class="form-control col-lg-6"
-                                                style="margin-left: 3%;">
-                                        </div>
-                                        <div class="d-flex col-lg-6 mb-3">
-                                            <label for="inputEmail4" class="form-label col-lg-5">By</label>
-                                            <select name="status" class="form-select col-lg-6" style="margin-left: 3%;">
-                                                <option selected>Pilih User</option>
-                                                <option value="">User 1</option>
-                                                <option value="">User 2</option>
-                                                <option value="">User 3</option>
-                                            </select>
-                                        </div>
-                                        <div class="radio d-flex mb-3">
-                                            <label for="inputEmail4" class="form-label">Status</label>
-                                            <div class="form-check ms-5">
-                                                <input class="form-check-input ms-5" type="radio"
-                                                    name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    Not Started
-                                                </label>
-                                            </div>
-                                            <div class="form-check ms-3">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault2" checked>
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    Started
-                                                </label>
-                                            </div>
-                                            <div class="form-check ms-3">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault2" checked>
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    Complated
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="Submit" class="btn btn-primary">Update</button>
-                                        </div>
-                                    </form>
-                                </div>
-                        </div>
-                                <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Time
-                                        Worked</label>
-                                    <input type="time" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Doing</label>
-                                    <div class="col-lg-6 ms-5">
-                                        <textarea class="form-control" style="margin-left: 19%;"
-                                            id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Date</label>
-                                    <input type="Date" id="appt" name="appt" class="col-lg-6" style="margin-left: -2%;">
                                 </div>
                                 <div class="d-flex col-lg-6 mb-3">
                                     <label for="inputEmail4" class="form-label col-lg-5">Doing</label>
@@ -377,10 +280,6 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="Submit" class="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>

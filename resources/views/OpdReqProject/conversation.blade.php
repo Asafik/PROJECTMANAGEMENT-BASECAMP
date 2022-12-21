@@ -28,20 +28,21 @@
                             <div class="row row-cols-1 row-cols-md-2 g-4">
                                 <div class="col">
                                     <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-start"><button type="button"
-                                                    class="btn btn-warning position-relative"
-                                                    style="border-radius: 50% ;">
-                                                    D
-                                                    <span
-                                                        class="position-absolute top-4 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
-                                                        <span class="visually-hidden">New alerts</span>
-                                                    </span>
-                                                </button>&nbsp Dewi</h5>
-                                            <p class="" style="margin-top: -6%; margin-left: 70%;"><i
-                                                    class="bi bi-star-fill text-end"
-                                                    style="color: #FEA21F; margin-left: 10%;"></i><i
-                                                    class="bi bi-three-dots btn" style="margin-left: 10%;"></i></p>
+                                        <div class="card-body"> <a class="nav-link active" href="/conversationchat">
+                                                <h5 class="card-title text-start"><button type="button"
+                                                        class="btn btn-warning position-relative"
+                                                        style="border-radius: 50% ;">
+                                                        D
+                                                        <span
+                                                            class="position-absolute top-4 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                                            <span class="visually-hidden">New alerts</span>
+                                                        </span>
+                                                    </button>&nbsp Dewi</h5>
+                                                <p class="" style="margin-top: -6%; margin-left: 70%;"><i
+                                                        class="bi bi-star-fill text-end"
+                                                        style="color: #FEA21F; margin-left: 10%;"></i><i
+                                                        class="bi bi-three-dots btn" style="margin-left: 10%;"></i></p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,8 +127,7 @@
                             <button type="button" class="border btn btn-light col-sm-3"
                                 style="background-color: #F0F8FF;"
                                 data-bs-target="#exampleModalAddConversation">Conversation</button>
-                            <button type="button" class="border btn btn-default border-dark col-sm-3"
-                                style="background-color: #FFFFFF;" data-bs-toggle="modal"
+                            <button type="button" class="border btn btn-default col-sm-3" data-bs-toggle="modal"
                                 data-bs-target="#exampleModalAddPersonal">Personal</button>
                         </div>
                         <div class="container">
@@ -178,7 +178,7 @@
                             <button type="button" class="border btn btn-light col-sm-3"
                                 style="background-color: #FFFFFF;" data-bs-toggle="modal"
                                 data-bs-target="#exampleModalAddConversation">Conversation</button>
-                            <button type="button" class="border btn btn-default border-dark col-sm-3"
+                            <button type="button" class="border btn btn-default col-sm-3"
                                 style="background-color: #F0F8FF;" data-bs-toggle="modal"
                                 data-bs-target="#exampleModalAddPersonal">Personal</button>
                         </div>

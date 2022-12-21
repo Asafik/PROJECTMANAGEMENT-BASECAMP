@@ -76,6 +76,12 @@ Route::get('/create',[ProjectListsController::class,'crex`ate'])->middleware('au
 Route::get('/discuss',[ProjectsController::class,'discuss'])->middleware('auth');
 Route::post('ckeditor/upload', 'CKEditorController@upload')->middleware('auth')->name('ckeditor.image-upload');
 
+//route timeboard project
+Route::get('/timeboardproject',[ProjectsController::class,'timeboardproject']);
+
+//route milestone project
+//route timeboard project
+Route::get('/milestoneproject',[ProjectsController::class,'milestoneproject']);
 //route calendar project
 Route::get('/calendar',[ProjectsController::class,'calendar']);
 
@@ -93,7 +99,6 @@ Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('a
 // Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
 // Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
 
-Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');
 Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])->middleware('auth');
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create'])->middleware('auth');
 Route::post('/projectReq_store',[ProjectRequirementDocumentsController::class,'store'])->middleware('auth');
@@ -129,6 +134,7 @@ Route::get('/notification',[NotificationController::class,'index'])->middleware(
 
 //route conversation
 Route::get('/conversation',[ConversationController::class,'index'])->middleware('auth');
+Route::get('/conversationchat',[ConversationController::class,'conversationchat']);
 
 //monitoring
 Route::get('/monitoring',[MonitoringController::class,'index'])->middleware('auth');
@@ -151,6 +157,7 @@ Route::get('/requestapprov',[HomeDiskominfosController::class,'create'])->middle
 Route::get('/requestapprovsucess',[HomeDiskominfosController::class,'store']);
 Route::get('/discussion',[ProjectDiscussionsController::class,'create'])->middleware('auth');
 
+
 //sign up/login
 Route::get('pegawai',[PegawaiController::class,'index']);
 Route::get('pegawai/create',[PegawaiController::class,'create']);
@@ -160,4 +167,3 @@ Route::post('pegawai/store',[PegawaiController::class,'store']);
 Route::post('pegawai/store',[PegawaiController::class,'store']);
 
 // Auth::routes(['verify'=>true]);
-
