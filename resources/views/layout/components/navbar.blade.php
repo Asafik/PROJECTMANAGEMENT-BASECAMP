@@ -16,7 +16,7 @@
                             style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/milestone"><i class="bi bi-flag"
                             style="font-size:28px"></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="/calendar"><i class="bi bi-calendar3"
+                <li class="nav-item"><a class="nav-link active" href="/full-calender"><i class="bi bi-calendar3"
                             style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/timeboard"><i class="bi bi-clock"
                             style="font-size:28px"></i></i></a></li>
@@ -59,8 +59,20 @@
                         <li><a class="dropdown-item" href="/">Log Out</a></li>
                     </ul>
                 </div>
-
-                {{-- <div class="nav-item dropdown">
+                <li class="nav-item"><a class="nav-link"></a></li>
+                    <ul class="navbar-nav" style="margin-top:1.5%">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="margin-left:10%">yourname &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink" style="width:1%">
+                                <li><a class="dropdown-item" href="/user_profile"><i class="bi bi-person-square"></i> My Account</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-gear-fill"></i> Manage System</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="/home"><i class="bi bi-box-arrow-left"></i> Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                 {{-- <div class="nav-item dropdown">
                     
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="/" class="dropdown-item">Blog Grid</a>

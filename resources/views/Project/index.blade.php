@@ -45,12 +45,12 @@
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="mb-5">
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></button>
-                        <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
+                          <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-check-circle" style="font-size:20px mb-5"></i></a>
+                          <a class="btn btn-outline-secondary me-md-2" href="/discuss" role="button"><i class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></a>
+                          <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-flag" style="font-size:20px mb-5"></i></a>
+                          <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-clock" style="font-size:20px mb-5"></i></a>
+                          <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-calendar4" style="font-size:20px mb-5"></i></a>
+                          <a class="btn btn-outline-secondary me-md-2" href="#" role="button"><i class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></a>
                         </div>
                     </div>
                     <!-- <hr size="10px" width="50%" style=""> -->
