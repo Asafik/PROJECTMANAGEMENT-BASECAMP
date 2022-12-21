@@ -1,4 +1,4 @@
-@extends('layout.master') @section('content')
+@extends('layout.masterProject') @section('content')
     <section class="pt-3">
         <div class="container ">
             <!-- Page Features-->
@@ -20,8 +20,7 @@
                             style="color: #57575A;"></strong>
                     </a>
 
-                    <button class="btn btn-success mt-2 me-3" style="height: 80%" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalAddCalendar"><i class="bi bi-plus-circle"></i> Add List</button>
+                    <button class="btn btn-success mt-2 me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddCalendar"><i class="bi bi-plus-circle"></i> Add List</button>
                     <button class="btn btn-secondary me-3"
                         style="background-color:#d0d9ee; border-style: none; font-size: 30px;"><i class="bi bi-gear"
                             style="color: #838492;"></i></button>

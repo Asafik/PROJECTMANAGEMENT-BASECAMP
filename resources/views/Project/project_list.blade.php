@@ -17,9 +17,9 @@
               <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-stack"  style="color: #57575A;"></i><strong style="color: #57575A;">Group By</strong>
               </a>
-              <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle"></i> Add List</button>
-              <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddtask"><i class="bi bi-plus-circle"></i> Add Task</button>
-              <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
+              <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle"></i> Add List</button>
+              <button class="btn btn-success me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddtask"><i class="bi bi-plus-circle"></i> Add Task</button>
+              <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>

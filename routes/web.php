@@ -41,7 +41,6 @@ use App\Http\Controllers\ProjectFilesController;
 Route::get('/',[UsersController::class,'index'])->middleware('guest');
 
 //route project create
-//
 Route::get('/project',[ProjectsController::class,'index'])->middleware('auth');
 Route::get('/create',[ProjectsController::class,'create']);
 Route::post('/store',[ProjectsController::class,'store']);
@@ -59,11 +58,7 @@ Route::get('/general_project',[ProjectsController::class,'general'])->middleware
 Route::get('/timeboard',[ProjectsController::class,'timeboard'])->middleware('auth');
 // Route::get('/searching',[ProjectsController::class,'search']);
 
-//route project grup
-
-
 //route timeboard
-
 Route::get('/timeboardOpd',[BoardtimeController::class,'index']);
 Route::get('/create',[BoardtimeController::class,'create']);
 Route::post('/store',[BoardtimeController::class,'store']);
@@ -81,17 +76,12 @@ Route::post('ckeditor/upload', 'CKEditorController@upload')->middleware('auth')-
 Route::get('/timeboardproject',[ProjectsController::class,'timeboardproject']);
 
 //route milestone project
-//route timeboard project
 Route::get('/milestoneproject',[ProjectsController::class,'milestoneproject']);
-//route calendar project
-Route::get('/calendar',[ProjectsController::class,'calendar']);
+
 
 //route discuss
 Route::get('/discuss',[ProjectsController::class,'discuss']);
 Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
-
-//route bookmark
-Route::get('/bookmark',[ProjectsController::class,'bookmark'])->middleware('auth');
 
 //route project task
 Route::get('/project_list',[ProjectTasksController::class,'index'])->middleware('auth');
@@ -99,11 +89,7 @@ Route::get('/create',[ProjectTasksController::class,'create'])->middleware('auth
 Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('auth');
 
 //route project req
-
 Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
-// Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
-// Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
-
 Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])->middleware('auth');
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create'])->middleware('auth');
 Route::post('/projectReq_store',[ProjectRequirementDocumentsController::class,'store'])->middleware('auth');
@@ -115,11 +101,9 @@ Route::get('/projectReq_delete/{id}',[ProjectRequirementDocumentsController::cla
 Route::get('/generalReq',[ProjectRequirementDocumentsController::class,'generalReq'])->middleware('auth');
 
 //Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //route login
-//Auth::routes();
 Route::get('/login',[ExternalUsersController::class,'login'])->name('login')->middleware('guest');
 Route::post('/login',[ExternalUsersController::class,'authenticate']);
 Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('guest');
@@ -127,7 +111,6 @@ Route::post('/signup',[ExternalUsersController::class,'store']);
 Route::post('/logout',[ExternalUsersController::class,'logout']);
 Route::post('/logout',[ExternalUsersController::class,'logout'])->middleware('auth');
 Route::post('/update/{id}',[ExternalUsersController::class,'update'])->middleware('auth');
-
 
 //route milestone
 Route::get('/milestone',[ProjectMilestonesController::class,'index'])->middleware('auth');
@@ -152,9 +135,6 @@ Route::get('/task_list',[TasksListController::class,'index']);
 Route::get('/projectfile',[ProjectFilesController::class,'index']);
 
 //diskominfos
-
-
-//diskominfos
 Route::get('/homediskominfos',[HomeDiskominfosController::class,'index'])->middleware('auth');
 Route::get('/requestapprov',[HomeDiskominfosController::class,'create'])->middleware('auth');
 Route::get('/requestapprovsucess',[HomeDiskominfosController::class,'store']);
@@ -164,10 +144,10 @@ Route::get('/discussion',[ProjectDiscussionsController::class,'create'])->middle
 //sign up/login
 Route::get('pegawai',[PegawaiController::class,'index']);
 Route::get('pegawai/create',[PegawaiController::class,'create']);
-
 Route::post('pegawai/store',[PegawaiController::class,'store']);
 
 //fullCalendar
 Route::get('/full-calender', [FullCalendarController::class, 'getEvent']);
 Route::post('/createevent', [FullCalendarController::class, 'createEvent'])->name('createevent');
 Route::post('/deleteevent', [FullCalendarController::class, 'deleteEvent'])->name('deleteevent');
+Route::get('/calendar',[FullCalendarController::class, 'calendar']);

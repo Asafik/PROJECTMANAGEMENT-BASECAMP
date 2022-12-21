@@ -14,10 +14,7 @@
                 <hr class="" style="width: 93%;">
             </div>
             <div class="col-10 ms-3 p-1 mb-3">
-                <button class="bi bi-reply btn btn-dark ms-4 border-0 d-flex"
-                    style="background-color:green; width:80%; font-size:20px; border-radius:5px;">
-                    <div class="col" style="text-align:center; font-size: 15px; margin-left:-5px;">Back to Conversation
-                    </div>
+                <button class="btn btn-success ms-4 border-0 d-flex" style="background-color:green; width:80%; border-radius:5px;"><a href="/conversation" style="color: #ffff; margin-left:10%; text-decoration:none"><i class="bi bi-reply"></i>Back to Conversation</a>
                 </button>
             </div>
             <div class="col-10 ms-3 p-1">
@@ -76,14 +73,15 @@
                     </div>
 
                 </div>
+                <br>
                 <p>Lorem Lorem Lorem lorem</p>
                 <p>Lorem Lorem Lorem lorem</p>
                 <p>Lorem Lorem Lorem lorem</p>
+                {{-- <p>Lorem Lorem Lorem lorem</p>
                 <p>Lorem Lorem Lorem lorem</p>
                 <p>Lorem Lorem Lorem lorem</p>
                 <p>Lorem Lorem Lorem lorem</p>
-                <p>Lorem Lorem Lorem lorem</p>
-                <p>Lorem Lorem Lorem lorem</p>
+                <p>Lorem Lorem Lorem lorem</p> --}}
                 <form action="#" method="#" enctype="multipart/form-data">
                     <div class="d-flex mb-5 col-sm-10">
                         <button class="btn btn-light" style="background-color:lightgray;"><i

@@ -28,4 +28,9 @@ class FullCalendarController extends Controller
         $event = Event::find($request->id);
         return $event->delete();
     }
+
+    public function calendar()
+    {
+        return view('Project.calendar');
+    }
 }

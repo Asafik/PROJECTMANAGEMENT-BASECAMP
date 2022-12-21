@@ -46,63 +46,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-start"><button type="button"
-                                                    class="btn btn-warning position-relative"
-                                                    style="border-radius: 50% ;">
-                                                    D
-                                                    <span
-                                                        class="position-absolute top-4 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
-                                                        <span class="visually-hidden">New alerts</span>
-                                                    </span>
-                                                </button>&nbsp Dewi</h5>
-                                            <p class="" style="margin-top: -6%; margin-left: 70%;"><i
-                                                    class="bi bi-star-fill text-end"
-                                                    style="color: #FEA21F; margin-left: 10%;"></i><i
-                                                    class="bi bi-three-dots btn" style="margin-left: 10%;"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-start"><button type="button"
-                                                    class="btn btn-warning position-relative"
-                                                    style="border-radius: 50% ;">
-                                                    D
-                                                    <span
-                                                        class="position-absolute top-4 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
-                                                        <span class="visually-hidden">New alerts</span>
-                                                    </span>
-                                                </button>&nbsp Dewi</h5>
-                                            <p class="" style="margin-top: -6%; margin-left: 70%;"><i
-                                                    class="bi bi-star-fill text-end"
-                                                    style="color: #FEA21F; margin-left: 10%;"></i><i
-                                                    class="bi bi-three-dots btn" style="margin-left: 10%;"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-start"><button type="button"
-                                                    class="btn btn-warning position-relative"
-                                                    style="border-radius: 50% ;">
-                                                    D
-                                                    <span
-                                                        class="position-absolute top-4 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
-                                                        <span class="visually-hidden">New alerts</span>
-                                                    </span>
-                                                </button>&nbsp Dewi</h5>
-                                            <p class="" style="margin-top: -6%; margin-left: 70%;"><i
-                                                    class="bi bi-star-fill text-end"
-                                                    style="color: #FEA21F; margin-left: 10%;"></i><i
-                                                    class="bi bi-three-dots btn" style="margin-left: 10%;"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>

@@ -117,17 +117,7 @@ class ProjectsController extends Controller
         // $project = projects::with('project_grup')->latest()->paginate();
         return view('Project.milestoneProject');
     }
-    public function calendar()
-    {
-        // $project = projects::with('project_grup')->latest()->paginate();
-        return view('Project.calendar');
-    }
 
-    public function bookmark()
-    {
-
-        return view('OpdReqProject.bookmark');
-    }
     // public function timeboard()
     // {
     //     $project = projects::with('project_grup')->latest()->paginate();

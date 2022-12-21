@@ -112,7 +112,8 @@
                     style="font-size:24px"></i></a>
         </li>
         <li>
-            <a class="has-subnav"><i class="fa fa-calendar-o  fa-2x p-3" style="font-size:24px"></i></a>
+            <a class="has-subnav" href="/full-calender"><i class="fa fa-calendar-o  fa-2x p-3"
+                style="font-size:24px"></i></a>
         </li>
         <li>
             <a class="has-subnav" href="/projectfile"><i class="fa fa-file-text-o fa-2x p-3 text-center"

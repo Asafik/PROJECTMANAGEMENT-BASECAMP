@@ -1,343 +1,215 @@
 @extends('layout.master') @section('content')
+    <section class="pt-3">
+        <div class="container ">
+            <!-- Page Features-->
+            <div class="row ">
+                <div class="col-lg-12 mb-4 d-flex">
+                    <a class="btn btn-secondary-outline mt-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="bi" style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
+                    </a>
+                    <input class="form-control ms-1 me-1" type="text" placeholder="Choose"
+                        aria-label=".form-control-lg example" style="width: 15%;margin-left: 20%; margin-top: 1%;">
+                    <input class="form-control ms-1 me-1" type="text" placeholder="Contain text"
+                        aria-label=".form-control-lg example" style="width: 15%;margin-left: 20%; margin-top: 1%;">
+                    <input class="form-control ms-1 me-1" type="text" placeholder="Save Search"
+                        aria-label=".form-control-lg example" style="width: 15%;margin-left: 20%; margin-top: 1%;">
+                    <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href=""
+                        role="button" aria-controls="offcanvasExample">
+                        <i class="bi bi-folder-fill" style="color: #57575A; font-size: 30px;"></i><strong
+                            style="color: #57575A;"></strong>
+                    </a>
 
-<!-- Page Content-->
-<section class="pt-3">
-  <div class="container px-lg-0">
-    <div class="col-lg-12 mb-5 d-flex">
-          <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;"> Filter</strong>
-          </a>
-          <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
-            <i class="bi bi-folder-fill"  style="color: #57575A;"></i><strong style="color: #57575A;"> Saved Searches</strong>
-          </a>
-          <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddList"><i class="bi bi-plus-circle"></i> Add List</button>
-          <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddDiscussion"><i class="bi bi-plus-circle"></i> Add Discussion</button>
-          <button class="btn btn-secondary me-3" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 700px;">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill"  style="color: #57575A;"></i>&nbsp Filters</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div><hr style="margin-top: -4%;">
-                adcasujdbaus, etc.
-              </div>
-              <div>
-                <form>
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="SearchText" class="col-sm-4 col-form-label">Search Text</label>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="SearchText">
-                      </div>
-                    </div>
-                  </div>
+                    <button class="btn btn-success mt-2 me-3 border-0" style="background-color:#20B15A" data-bs-toggle="modal" data-bs-target="#exampleModalAddCalendar"><i class="bi bi-plus-circle"></i> Add List</button>
+                    <button class="btn btn-secondary me-3"
+                        style="background-color:#d0d9ee; border-style: none; font-size: 30px;"><i class="bi bi-gear"
+                            style="color: #838492;"></i></button>
 
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="SortBy" class="col-sm-4 col-form-label">Sort By</label>
-                      
-                      <div class="col-sm-4">
-                        <select name="sort1" class="form-select col-lg-6" >
-                            <option value="">Sort 1</option>
-                            <option value="">Sort 2</option>
-                            <option value="">Sort 3</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-4">
-                        <select name="sort2" class="form-select col-lg-6" >
-                            <option value="">Sort 1</option>
-                            <option value="">Sort 2</option>
-                            <option value="">Sort 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="CreateBy" class="col-sm-4 col-form-label">Create By</label>
-                      <div class="col-sm-8">
-                        <select name="CreateBy" class="form-select col-lg-6" >
-                            <option value="">Person 1</option>
-                            <option value="">Person 2</option>
-                            <option value="">Person 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="DateCreated" class="col-sm-4 col-form-label">Date Created</label>
-                      <div class="col-sm-8">
-                      <!-- ganti pakek kalender -->
-                        <input type="date" class="form-control" id="DateCreated">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="LastCommentBy" class="col-sm-4 col-form-label">Last Comment By</label>
-                      <div class="col-sm-8">
-                        <select name="LastCommentBy" class="form-select col-lg-6" >
-                            <option value="">Person 1</option>
-                            <option value="">Person 2</option>
-                            <option value="">Person 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="LastActivity" class="col-sm-4 col-form-label">Last Activity</label>
-                      <div class="col-sm-8">
-                        <select name="LastActivity" class="form-select col-lg-6" >
-                            <option value="">Activity 1</option>
-                            <option value="">Activity 2</option>
-                            <option value="">Activity 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="Private" class="col-sm-4 col-form-label">Private</label>
-                      <div class="col-sm-8">
-                        <select name="Private" class="form-select col-lg-6" >
-                            <option value="">Private 1</option>
-                            <option value="">Private 2</option>
-                            <option value="">Private 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row">
-                    <div class="form-group row">
-                      <label for="Sticky" class="col-sm-4 col-form-label">Sticky</label>
-                      <div class="col-sm-8">
-                        <select name="Sticky" class="form-select col-lg-6" >
-                            <option value="">Sticky 1</option>
-                            <option value="">Sticky 2</option>
-                            <option value="">Sticky 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              
-              <div class="d-flex flex-row-reverse">
-                <div class="p-2">
-                  <button class="btn btn-success me-3" style="background-color:#20B15A" data-bs-toggle="offcanvas" data-bs-target="#l"><i class="bi bi-funnel-fill"></i> Apply</button>
-                </div>
-                <div class="p-2">
-                  <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
-                    <i class="bi bi-file-earmark-fill"  style="color: #57575A;"> Saved Search & Apply</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-    
-    <div class="col-lg-12 d-flex">
-      <a class="btn btn-secondary-outline me-auto btn" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
-      <h5>
-        <i class="bi bi-chevron-down"  style="color: #57575A;"></i> <strong style="color: #57575A;"> Project Attendance System</strong>
-      </h5>   
-      </a>
-          <h3><i class="bi bi-three-dots p-3" style="color: #838492; "></i></h3>
-    </div>
-    <div class="col-lg-12 mb-3 mx-7 d-flex">
-      <table class="table">
-        <thead>
-          <tr  class="table-light">
-            <th scope="col"></th>
-            <th scope="col">Title</th>
-            <th scope="col">Last Activity</th>
-            <th scope="col">Comment</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr  class="table-success ">
-            <th ><i class="bi bi-star-fill" style="color:#eba905;"></i></th>
-            <td>discussion</td>
-            <td>Mei 10, 2022 8:36pm <br> by Risma Klaudia</td>
-            <td><i class="bi bi-chat-square-dots"></i> 0</td>
-          </tr>
-          <tr  class="table-success ">
-            <th ><i class="bi bi-star-fill" style="color:#eba905;"></i></th>
-            <td>discussion</td>
-            <td>Mei 10, 2022 8:36pm <br> by Risma Klaudia</td>
-            <td><i class="bi bi-chat-square-dots"></i> 0</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-
-
-    <!-- modal add list -->
-      <div class="modal fade" id="exampleModalAddList" tabindex="-1" aria-labelledby="exampleModalAddList" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <div class="container">
-                        <div class="row align-items-start">
-                          <div class="col-auto me-auto">
-                            <h5 class="modal-title" id="exampleModalAddList">Add List
-                          </div>
-                          <div class="col-auto">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="height: 30px;"></button>
-                          </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header
+        
+                            <h5 class="offcanvas-title"
+                            id="offcanvasExampleLabel"> <i class="bi bi-funnel-fill" style="color: #57575A;"></i>&nbsp
+                            Filters</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-                      </div>
-                  </div>
-                  <form action="#" method="#" enctype="multipart/form-data">
-                      @csrf
-                      <div class="modal-body">
-                          <div class="container">
-                              <div class="mb-3 row">
-                                <div class="mb-3 row">
-                                  <label for="Title" class="col-sm-4 col-form-label">Title</label>
-                                  <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="Title">
-                                  </div>
-                                </div>
-
-                                <div class="mb-3 row">
-                                  <label for="Description" class="col-sm-4 col-form-label">Description</label>
-                                  <div class="col-sm-8">
-                                    <textarea class="form-control" id="Description" rows="3"></textarea>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="Submit" class="btn btn-success me-3" style="background-color:#20B15A">Save</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-    <!-- end modal add list -->
-
-    <!-- modal add discussion -->
-      <div class="modal fade" id="exampleModalAddDiscussion" tabindex="-1" aria-labelledby="exampleModalAddDiscussion" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <div class="container">
-                        <div class="row align-items-start">
-                          <div class="col-auto me-auto">
-                            <h5 class="modal-title" id="exampleModalAddDiscussion">Add Discussion
-                          </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <hr style="margin-top: -4%;">
+                                Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                                text, images, lists, etc.
+                            </div>
+                            <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-                  <form action="#" method="#" enctype="multipart/form-data">
-                      @csrf
-                      <div class="modal-body">
-                          <div class="container">
-                              <div class="mb-3 row">
-                                <div class="mb-3 row">
-                                  <label for="ListName" class="col-sm-4 col-form-label">List Name</label>
-                                  <div class="col-sm-8">
-                                    <select class="form-select" aria-label="Default select example">
-                                      <option selected>Discussion List</option>
-                                      <option value="1">example 1</option>
-                                      <option value="2">example 2</option>
-                                      <option value="3">example 3</option>
-                                    </select>
-                                  </div>
+                    </div>
+                </div>
+                <!--modal quick add time-->
+                <div class="modal fade" id="exampleModalAddCalendar" tabindex="-1"
+                    aria-labelledby="exampleModalAddCalendar" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" style="text-align: center;" id="exampleModalAddCalendar">Add
+                                    Calendar event
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <form action="#" method="#" enctype="multipart/form-data">
+                                @csrf
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <form action="#" method="#" enctype="multipart/form-data">
+                                            <div class="row mb-3">
+                                                <div class="col-5">
+                                                    <label for="inputEmail4" class="form-label"></label>
+                                                    <select name="status" class="form-control">
+                                                        <option selected>Enter Group Project</option>
+                                                        <option class="form-select" aria-label="Disabled select example"
+                                                            disabled>
+                                                            DINKES
+                                                           <option value="">Project ABCD</option>
+                                                        </option>
+                                                        <option class="form-select"
+                                                            aria-label="Disabled select example"disabled>
+                                                            DISBUDPAR
+                                                        <option value="">Project DEFG</option>
+                                                        <option value="">Project EFGH</option>
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-5">
+                                                    <label for="inputEmail4" class="form-label">Item Title</label>
+                                                    <input type="text" name="#" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
+                                <center class="mb-3">
+                                    <button type="Submit" class="btn btn-success col-4 ms-3">Quick Add</button>
+                                    <button class="btn btn-primary col-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalAddRecordFull"
+                                        style=" float: right; margin-right: 15px;">Full
+                                        Add Form</button>
+                                </center>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- akhir add Quick add -->
+                <!-- add full add calendar event -->
+                <div class="modal fade" id="exampleModalAddRecordFull" tabindex="-1"
+                    aria-labelledby="exampleModalAddRecordFull" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalAddRecordFull">Add Calendar Event</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <form action="#" method="#" enctype="multipart/form-data">
+                                @csrf
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <form action="#" method="#" enctype="multipart/form-data">
+                                            <div class="row mb-3">
+                                                <label for="inputPassword3" class="col-sm-3 col-form-label">Title</label>
+                                                <input type="text" id="appt" name="appt" class="col-lg-6"
+                                                    style="margin-left: -2%;">
+                                            </div>
+                                            <div class="row col-lg-3">
+                                                <a href="#appt"><i class="bi bi-pencil-square"
+                                                        style="color: black"></i></a>
+                                            </div>
+                                            <div class="d-flex mb-3">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="form-label">Doing</label><br>
+                                                <div class="col-lg-6 ms-5">
+                                                    <textarea class="form-control" style="margin-left: 19%;" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">All
+                                                    day</label>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="inputPassword3" class="col-sm-3 col-form-label">Date
+                                                    From</label>
+                                                <input type="Date" id="appt" name="appt" class="col-lg-6"
+                                                    style="margin-left: -2%;">
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="inputPassword3" class="col-sm-3 col-form-label">Date
+                                                    To</label>
+                                                <input type="Date" id="appt" name="appt" class="col-lg-6"
+                                                    style="margin-left: -2%;">
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label"
+                                                    for="flexSwitchCheckDefault">Recurence</label>
+                                            </div>
 
-                                <div class="mb-3 row">
-                                  <label for="Title" class="col-sm-4 col-form-label">Title</label>
-                                  <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="Title">
-                                  </div>
-                                  <div class="col-sm-1 align-self-center">
-                                  <i class="bi bi-tags-fill"></i>
-                                  </div>
+                                            <div class="d-flex col-lg-6 mb-3">
+                                                <label for="inputEmail4" class="form-label">invite user</label>
+                                                <input type="text" id="appt" name="appt" class="col"
+                                                    style="margin-left: -2%;">
+                                            </div>
+                                            <div class="radio d-flex">
+                                                <label for="inputEmail4" class="form-label">Status</label>
+
+
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">RSVP
+                                                        update</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">Send
+                                                    Notification Email to Me</label>
+                                            </div>
+                                    </div>
                                 </div>
-
-                                <div class="mb-0 row">
-                                  <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-                                    <head>
-                                        <meta charset="utf-8">
-                                        <meta name="viewport" content="width=device-width, initial-scale=1">
-                                        <title>Install and Use CKEditor In Laravel</title>
-                                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-                                    </head>
-                                    <body>
-                                      <div class="card-body">
-                                                        <form method="post" action="" enctype="multipart/form-data">
-                                                            @csrf
-                                                            <div class="form-group">
-                                                                <textarea class="ckeditor form-control" name="wysiwyg-editor"></textarea>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                    </body>
-                                    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
-                                    <script type="text/javascript">
-                                        $(document).ready(function () {
-                                            $('.ckeditor').ckeditor();
-                                        });
-                                    </script>
-                                    </html>
-
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="Submit" class="btn btn-primary">Create</button>
                                 </div>
-
-                                <div class="mb-1 row">
-                                  <label for="Sticky" class="col-sm-3 col-form-label">Sticky</label>
-                                  <div class="form-check form-switch col-sm-8 align-self-center">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckSticky" style="height: 20px; width: 40px;">
-                                  </div>
-                                </div>
-
-                                <div class="mb-3 row">
-                                  <label for="Private" class="col-sm-3 col-form-label">Private</label>
-                                  <div class="form-check form-switch col-sm-8  align-self-center">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckPrivate" style="height: 20px; width: 40px;">
-                                  </div>
-                                </div>
-
-                                <div class="mb-2 row">
-                                  <label for="Notivications" class="col-sm-3 col-form-label">Notifications</label>
-                                  <div class="col-sm-8 align-self-center">
-                                    <i class="bi-person"> No followers</i>
-                                  </div>
-                                </div>
-
-                                <div class="mb-3 row">
-                                  <i class="bi bi-link-45deg"> Attached File</i>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="Submit" class="btn btn-success me-3" style="background-color:#20B15A">Create</button>
-                      </div>
-                  </form>
-
-
-              </div>
-          </div>
-      </div>
-    <!-- end modal add discussion -->
-  </div>    
-
-</section>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end full add calendar event -->
+                <!--card list & task-->
+                <div class="col-lg-12 col-xxl-6 mb-3">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body fs-6 text-sm-start p-8 p-lg-2 pt-0 pt-lg-0">
+                            {{-- halaman calender --}}
+                        </div>
+                    </div>
+                    <!--end card list & task-->
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
