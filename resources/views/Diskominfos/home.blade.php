@@ -21,7 +21,7 @@
 <div class="container px-lg-0">
 <!-- Page Features-->
 <div class="col-lg-12 mb-5 d-flex"> 
-<span class="h5 text-decoration-none text-black fw-bold me-2">Hallo Abcd!</span>
+<span class="h5 text-decoration-none text-black fw-bold me-2">Halo, {{ auth()->user()->name }}!</span>
 <a class="h5 text-decoration-none text-secondary me-auto">Stay Healthy.</a>
 
 <!-- button modal new project -->
@@ -80,27 +80,30 @@
 <!-- Page Features-->
 <div class="row gx-lg-6">
 <!--card Request  -->
-<div class="col-lg-4 col-xxl-5 mb-5">
+<div class="col-lg-4 mb-5">
 <div class="card bg-light border-0 h-100">
     <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-        <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href="/requestapprov"><span class="text-white"><strong>Project request approval</strong></a></i></div>
-            <p class=""><img src="img/list.svg"></i> Creating an online data attendance<a class="p-3"></a><i class="bi bi-three-dots"></i></p>
-        <hr>
-            <p class="text-secondary me-auto"style="font-size:13px">from dinas XYZ<a class="p-2"></a><img src="img/file.svg"/></i></a><img src=" img/pdf.svg"/></i>
-            <p class="text-secondary me-auto" style="font-size:13px">April, 13, 2025</p>
-            <p class=""><img src="img/list.svg"></i> Creating an online data attendance<a class="p-3"></a><i class="bi bi-three-dots"></i></p>
-        <hr>
-            <p class="text-secondary me-auto" style="font-size:13px">from dinas XYZ<a class="p-2"></a><img src="img/file.svg"/></i></a><img src=" img/pdf.svg"/></i>
-            <p class="text-secondary me-auto mb-5" style="font-size:13px">April, 13, 2025</p>
-            <p class="text-secondary me-auto text-center">Full Recap</p>
+        <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="/requestapprov"><span class="text-white"><strong>Project request approval</strong></a></i></div>
+            @foreach ($data as $item)
+            <p class=""><img src="img/list.svg"></i>{{ $item->project_name }}<a class="p-3"></a><i class="bi bi-three-dots"></i></p>
+            <hr>
+                <p class="text-secondary me-auto"style="font-size:13px">from {{ $item->opd_name }}</p> <br>
+                    <img src="img/file.svg"/></i></a><img src=" img/pdf.svg"/></i>
+                <p class="text-secondary me-auto" style="font-size:13px">20 Desember 2022</p>
+                {{-- <p class=""><img src="img/list.svg"></i> {{ $item->project_name }}<a class="p-3"></a><i class="bi bi-three-dots"></i></p>
+            <hr>
+                <p class="text-secondary me-auto" style="font-size:13px">from {{ $item->opd_name }}<a class="p-2"></a><img src="img/file.svg"/></i></a><img src=" img/pdf.svg"/></i>
+                <p class="text-secondary me-auto mb-5" style="font-size:13px">20 Desember 2022</p> --}}
+                {{-- <p class="text-secondary me-auto text-center">Full Recap</p> --}}
+            @endforeach
         </div>
     </div>
 </div>
 <!-- card project -->
-<div class="col-lg-4 col-xxl-5 mb-5">
+<div class="col-lg-4 mb-5">
     <div class="card bg-light border-0 h-100">
         <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-            <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href="requestdiskominfo.html"><span class="text-white"><strong>Project</strong></a></i></div>
+            <div style="width:100%;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="#"><span class="text-white"><strong>Project</strong></a></i></div>
             <hr>
                 <p class=""><img src="img/lingkaran.svg"></i> Projects system atandance<a class="p-3"></a><i class="bi bi-three-dots"></i></p>
                 <p class="text-secondary me-auto bi bi-star" style="font-size:13px"></i> in General Project<a class="p-3"></a><img src="img/project1.svg"></i><a class="p-1"></a><img src="img/project2.svg"></i><a class="p-1"></a><img src="img/project3.svg"></i><a class="p-1"></a><img src="img/project4.svg"></i><a class="p-1"></a><img src="img/project5.svg"></i><a class="p-1"></a><img src="img/project6.svg"></i><a class="p-1"></a><img src="img/project1.svg"></i></p>
@@ -113,10 +116,10 @@
         </div>
     </div>
         <!-- Monitoring Project -->
-        <div class="col-lg-4 col-xxl-5 mb-5">
+        <div class="col-lg-4 mb-5">
             <div class="card bg-light border-0 h-100">
                 <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                    <div style="width:350px;" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href="requestopd.html"><span class="text-white"><strong>Monitoring Project</strong></a></i></div>
+                    <div style="width:100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="#"><span class="text-white"><strong>Monitoring Project</strong></a></i></div>
                         <p><img src="img/lingkaran.svg"></i> Projects system atandance</p>
                         <hr>
                         <p class="text-secondary me-auto bi bi-star" style="font-size:13px"></i> in General Project</p>

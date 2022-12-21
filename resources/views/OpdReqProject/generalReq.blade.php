@@ -1,4 +1,4 @@
-@extends('layout.master') @section('content')
+@extends('layout.masterReq') @section('content')
 
 <!-- Page Content-->
 <section class="pt-3">
@@ -26,36 +26,35 @@
         <div class="col-lg-4 col-xxl-4 mb-5">
             <div class="card bg-light border-0 h-100">
                 <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                    
-                    <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="#"><span class="text-white"><strong>Project ABCD</strong></a></i></div>
+                    @foreach ($data as $item)
+                    <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-center"><a href="/projectReq_details/{{ $item->id }}"><span class="text-white"><strong>{{ $item['project_name'] }}</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="mb-5">{{ $item['description'] }}</p>
                         <div class="mb-5 text-center">
                             <a href="/task_list"><button type="button" class="btn btn-outline-secondary me-md-2"><i
                                         class="bi bi-check-circle" style="font-size:20px mb-5"></i></button></a>
-                            <a href="/discuss"><button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                        class="bi bi-chat" style="font-size:20px mb-5"></i></button></a>
-                            <a href="/milestoneproject"><button type="button"
-                                    class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
-                                        style="font-size:20px mb-5"></i></button></a>
-                            <a href="/timeboardproject"><button type="button"
-                                    class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
-                                        style="font-size:20px mb-5"></i></button></a>
-                            <a href="#"> <button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                        class="bi bi-calendar" style="font-size:20px mb-5"></i></button></a>
-                            <a href="/projectfile"> <button type="button" class="btn btn-outline-secondary me-md-2"><i
-                                        class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button></a>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                    class="bi bi-chat-left-text" style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-flag"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-clock"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i class="bi bi-calendar4"
+                                    style="font-size:20px mb-5"></i></button>
+                            <button type="button" class="btn btn-outline-secondary me-md-2"><i
+                                    class="bi bi-file-earmark-text" style="font-size:20px mb-5"></i></button>
                         </div>
                     </div>
+                    @endforeach
+                    <!-- <hr size="10px" width="50%" style=""> -->
                 </div>
             </div>
 
             <!--card update-->
-            <div class="col-lg-4 col-xxl-4 mb-5">
-                <div class="card bg-light border-0 h-100">
-                    <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
-                                href="#"><span class="text-white"><strong>Project ABCD</strong></a></i></div>
+            {{-- <div class="col-lg-4 col-xxl-4 mb-5">
+              <div class="card bg-light border-0 h-100">
+                  <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
+                      <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href="#"><span class="text-white"><strong>Project ABCD</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="mb-5 text-center">
@@ -74,14 +73,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- card project -->
-            <div class="col-lg-4 col-xxl-4 mb-5">
-                <div class="card bg-light border-0 h-100">
-                    <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
-                        <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a
-                                href=""><span class="text-white"><strong>Project ABCD</strong></a></i></div>
+            {{-- <div class="col-lg-4 col-xxl-4 mb-5">
+              <div class="card bg-light border-0 h-100">
+                  <div class="card-body fs-6 text-sm-start p-2 p-lg-2 pt-0 pt-lg-0">
+                      <div style="width: 100%" class="btn bg-primary bg-gradient rounded-3 mb-3 mt-n3 text-start"><a href=""><span class="text-white"><strong>Project ABCD</strong></a></i></div>
                         <p class="text-end  me-md-2"><i class="bi bi-star me-md-2"></i><i class="bi bi-gear"></i></p>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="mb-5 text-center">
@@ -100,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Modal create project -->
             <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">

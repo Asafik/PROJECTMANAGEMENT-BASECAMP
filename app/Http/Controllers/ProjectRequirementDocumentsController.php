@@ -107,4 +107,9 @@ class ProjectRequirementDocumentsController extends Controller
         $data = project_requirement_documents::all();
         return view('OpdReqProject.projectReqAll', ['data' => $data]);
     }
+
+    public function generalReq(){
+        $data = project_requirement_documents::paginate(1);
+        return view('OpdReqProject.generalReq', ['data' => $data]);
+    }
 }

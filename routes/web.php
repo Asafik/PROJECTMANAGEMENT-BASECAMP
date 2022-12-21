@@ -76,6 +76,12 @@ Route::get('/create',[ProjectListsController::class,'crex`ate'])->middleware('au
 Route::get('/discuss',[ProjectsController::class,'discuss'])->middleware('auth');
 Route::post('ckeditor/upload', 'CKEditorController@upload')->middleware('auth')->name('ckeditor.image-upload');
 
+//route timeboard project
+Route::get('/timeboardproject',[ProjectsController::class,'timeboardproject']);
+
+//route milestone project
+//route timeboard project
+Route::get('/milestoneproject',[ProjectsController::class,'milestoneproject']);
 //route calendar project
 Route::get('/calendar',[ProjectsController::class,'calendar']);
 
@@ -89,22 +95,19 @@ Route::post('/storetask',[ProjectTasksController::class,'store'])->middleware('a
 
 //route project req
 
-Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
-Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
-Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
+// Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');;
+// Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index']);
+// Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create']);
 
-Route::get('/projectReq',[ProjectRequirementDocumentsController::class,'index'])->middleware('auth');
 Route::get('/projectReqSuccess',[ProjectRequestSucessController::class,'index'])->middleware('auth');
 Route::get('/projectReq_create',[ProjectRequirementDocumentsController::class,'create'])->middleware('auth');
 Route::post('/projectReq_store',[ProjectRequirementDocumentsController::class,'store'])->middleware('auth');
 Route::get('/projectReq_details/{id}',[ProjectRequirementDocumentsController::class,'show'])->middleware('auth');
-
 Route::get('/projectReq_edit/{id}',[ProjectRequirementDocumentsController::class,'edit'])->middleware('auth');
 Route::post('/projectReq_update/{id}',[ProjectRequirementDocumentsController::class,'update'])->middleware('auth');
-
 Route::get('/projectReq_all',[ProjectRequirementDocumentsController::class,'all'])->middleware('auth');
 Route::get('/projectReq_delete/{id}',[ProjectRequirementDocumentsController::class,'destroy'])->middleware('auth');
-
+Route::get('/generalReq',[ProjectRequirementDocumentsController::class,'generalReq'])->middleware('auth');
 
 //Auth::routes();
 
@@ -112,7 +115,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //route login
 //Auth::routes();
-// Route::get('/landingpage',[ExternalUsersController::class,'index']);
 Route::get('/login',[ExternalUsersController::class,'login'])->name('login')->middleware('guest');
 Route::post('/login',[ExternalUsersController::class,'authenticate']);
 Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('guest');
@@ -132,6 +134,7 @@ Route::get('/notification',[NotificationController::class,'index'])->middleware(
 
 //route conversation
 Route::get('/conversation',[ConversationController::class,'index'])->middleware('auth');
+Route::get('/conversationchat',[ConversationController::class,'conversationchat']);
 
 //monitoring
 Route::get('/monitoring',[MonitoringController::class,'index'])->middleware('auth');
@@ -154,6 +157,7 @@ Route::get('/requestapprov',[HomeDiskominfosController::class,'create'])->middle
 Route::get('/requestapprovsucess',[HomeDiskominfosController::class,'store']);
 Route::get('/discussion',[ProjectDiscussionsController::class,'create'])->middleware('auth');
 
+
 //sign up/login
 Route::get('pegawai',[PegawaiController::class,'index']);
 Route::get('pegawai/create',[PegawaiController::class,'create']);
@@ -163,4 +167,3 @@ Route::post('pegawai/store',[PegawaiController::class,'store']);
 Route::post('pegawai/store',[PegawaiController::class,'store']);
 
 // Auth::routes(['verify'=>true]);
-

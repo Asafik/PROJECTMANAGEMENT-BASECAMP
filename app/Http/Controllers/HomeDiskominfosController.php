@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\project_requirement_documents;
 use Illuminate\Http\Request;
 
 class HomeDiskominfosController extends Controller
@@ -13,7 +13,8 @@ class HomeDiskominfosController extends Controller
      */
     public function index()
     {
-        return view('Diskominfos.home');
+        $data = project_requirement_documents::paginate(1);
+        return view('Diskominfos.home', ['data' => $data]);
     }
 
     /**
@@ -23,7 +24,8 @@ class HomeDiskominfosController extends Controller
      */
     public function create()
     {
-        return view('Diskominfos.requestapprov');
+        $data = project_requirement_documents::paginate(1);
+        return view('Diskominfos.requestapprov', ['data' => $data]);
     }
 
     /**
@@ -34,7 +36,8 @@ class HomeDiskominfosController extends Controller
      */
     public function store(Request $request)
     {
-        return view('Diskominfos.requestapprovsucess');
+        $data = project_requirement_documents::paginate(1);
+        return view('Diskominfos.requestapprovsucess', ['data' => $data]);
     }
 
     /**

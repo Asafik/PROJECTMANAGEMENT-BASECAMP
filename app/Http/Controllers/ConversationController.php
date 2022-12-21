@@ -81,4 +81,10 @@ class ConversationController extends Controller
     {
         //
     }
+    public function conversationchat()
+    {
+
+        return view('OpdReqProject.conversationChat');
+    }
+
 }
