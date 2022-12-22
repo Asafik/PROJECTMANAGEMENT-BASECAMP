@@ -51,29 +51,9 @@
                                     </div>
                         </div>
                     </div>
-                    <!-- Page Content-->
-                    <section class="pt-3">
-                        <div class="container px-lg-0">
-                            <!-- Page Features-->
-                            <div class="row mb-3">
-                                <div class="col-lg-12 mb-3 d-flex" style="margin-left: -1%;">
-                                    <button type="button" class="btn btn-secondary disabled col-4 me-2"
-                                        data-bs-toggle="button" href=""> Reject</button>
-                                    <button type="button" class="btn btn-secondary disabled col-4 me-2"
-                                        data-bs-toggle="button" href=""> Revisi</button>
-                                    <div class="btn btn-success btn col-4 me-2"><a href="/requestapprovsucess"><span
-                                                class="text-white"><strong>Accept</strong></a></i></div>
-                                </div>
-                            </div>
-                        </div>
+                    
                 </div>
             </div>
         </div>
 </section>
 @endsection
-{{-- <!-- Bootstrap core JS Popover -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>

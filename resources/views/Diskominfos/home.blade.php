@@ -25,7 +25,7 @@
 <a class="h5 text-decoration-none text-secondary me-auto">Stay Healthy.</a>
 
 <!-- button modal new project -->
-<button type="button" class="bi bi-plus-circle btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@New project">  New project</button>
+<button type="button" class="bi bi-plus-circle btn btn-success me-3 border-0" style="background-color:#20B15A ;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@New project">  New project</button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -74,7 +74,7 @@
 </div>
 </div>
 <button type="button" class="bi bi-gear btn btn-primary me-3" data-bs-toggle="button" href=""> Manage System</button>
-<a class="h4 text-decoration-none text-black" href=""><i class="bi bi-gear"></i></a>
+<button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill" style="color: #838492;"></i></button>
 </div>
 
 <!-- Page Features-->

@@ -13,9 +13,9 @@
                         </svg>&nbsp;&nbsp;&nbsp;Project ABCD&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
                     <ul class="dropdown-menu dropdown-menu-" aria-labelledby="navbarDarkDropdownMenuLink"
                         style="width:100%">
-                        <li><a class="dropdown-item" href="/user_profile"> Project DEFG</a></li>
-                        <li><a class="dropdown-item" href="/user_profile"> Project DEFG</a></li>
-                        <li><a class="dropdown-item" href="/user_profile"> Project DEFG</a></li>
+                        <li><a class="dropdown-item" href="#"> Project DEFG</a></li>
+                        <li><a class="dropdown-item" href="#"> Project DEFG</a></li>
+                        <li><a class="dropdown-item" href="#"> Project DEFG</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,10 +43,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-10 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"><i class="bi bi-search"
-                            style="font-size:24px"></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="/sidebar"><i class="bi bi-plus-circle"
-                            style="font-size:24px"></i></a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" data-bs-toggle="modal"
+                    data-bs-target="#SearchOpd"><i class="bi bi-search" style="font-size:24px"></i></a>
+            </li>
+                {{-- <li class="nav-item"><a class="nav-link active" href="/sidebar"><i class="bi bi-plus-circle"
+                            style="font-size:24px"></i></a></li> --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-bookmark"
                             style="font-size:24px"></i></a>
