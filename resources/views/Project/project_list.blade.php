@@ -7,6 +7,11 @@
     <div class="container ">
         <!-- Page Features-->
         <div class="row ">
+          @if (session()->has('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ session('success') }}
+            </div>
+          @endif
             <div class="col-lg-12 mb-5 d-flex">
               <a class="btn btn-secondary-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-funnel-fill"  style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
@@ -50,12 +55,9 @@
                           @foreach ($project_tasks as $project_tasks)
                           <ul>
                                 <p class="fs-9 fw-bold text-start "><p class="" style="text-align: justify; margin-left: 1%; margin-right: 1%"><i class="bi bi-three-dots-vertical" style="margin-right:-2%;"></i><i class="bi bi-three-dots-vertical"style="margin-right: 1%"></i>{{$project_tasks ->title_task }} <mark style="background-color: #D0D9EE; color: #838492;">{{$project_tasks->status}}</mark><button type="button" class="btn btn-warning btn-sm" style="margin-left: 1%; margin-top: 1; color: #fff; ">{{ $project_tasks->priority }}</button><mark style="background-color: #D0D9EE;margin-left: 1%; color: #838492;">due </mark><mark style="color: #FF3D00; background-color: #D0D9EE;">may 30</mark><i class="bi bi-flag-fill btn" style="color : #3766DF"></i><a class="bi bi-chat-left btn" href="discussopd.html"style="color: #A3A4A7; margin-left: -1%;">
-                                <a href="" class="badge bg-danger" style="margin-right:1%;">Edit</a>
-                                <form action="/project_tasks/{{$project_tasks ->title_task }}" method="post" class="d-inline">
-                                @method('delete')
-                                @csrf
-                              <button class="badge bg-danger border-0" onclick="return confirm('Yakin hapus data')" style="margin-right:1%;">Hapus</button>
-                                </form>
+                                <a href="/projectList_edit/{{ $project_tasks->id }}" style="color: orange"><i class="bi bi-pencil"></i></a>
+                                
+                                <a href="/projectList_delete/{{ $project_tasks->id }}" style="color: red" onclick="return confirm('Are you sure want to delete?')"><i class="bi bi-trash"></i></a>
                               </a></p>
                             </ul>
                             @endforeach
@@ -146,8 +148,8 @@
                       <label for="inputEmail4" class="form-label">Status</label>
                       <select name="status" class="form-control">
                         <option value="No Progress">No Progress</option>
-                        <option value="In Progres">In Progres</option>
-                        <option value="Complate">Complate</option>
+                        <option value="In Progres">In Progress</option>
+                        <option value="Complate">Complete</option>
                       </select>
                     </div>
                     <div class="col">

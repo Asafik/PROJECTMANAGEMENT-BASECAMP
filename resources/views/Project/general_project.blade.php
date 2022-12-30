@@ -10,11 +10,8 @@
                 <i class="bi bi-funnel-fill" style="color: #57575A;"></i><strong style="color: #57575A;">Filter</strong>
             </a>
             <!-- button modal new project -->
-            <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3 border-0"
-                data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project"> New
-                project</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <button type="button" style="background-color:#20B15A ;" class="bi bi-plus-circle btn btn-success me-3 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@New project">  New project</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             </div>
             <button class="btn btn-secondary me-3 border-0" style="background-color:#ffff"><i class="bi bi-gear-fill"
                     style="color: #838492;"></i></button>
@@ -102,38 +99,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal create project -->
-            <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="container">
-                                <form action="/store" method="POST" enctype="multipart/form-data">
-                                    @csrf
-                                    <div class="row mb-3">
-                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Project
-                                            Group</label>
-                                        <div class="col-sm-7">
-                                            <input type="text" name="project_grups_id" class="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <button type="button" class="bi bi-plus-circle btn btn-success"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup"
-                                                data-bs-whatever="@New project"></button>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- fitur filter -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
@@ -185,6 +151,83 @@
                 </div>
             </div>
             <!-- end fitur filter -->
+            <!-- Modal create project -->
+<div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+  <div class="container">
+    <form action="/store" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Group</label>
+          <div class="col-sm-7">
+            <input type="text" name="project_grups_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="bi bi-plus-circle btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalProjectGrup" data-bs-whatever="@New project"></button>
+          </div>
+      </div>
+      
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Name</label>
+          <div class="col-sm-7">
+            <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <a href=""></a>
+          </div>
+        </div>
+  
+        <div class="row mb-3" >
+          <label for="inputPassword3" class="col-sm-3 col-form-label">Project Description</label>
+          <div class="col-sm-7">
+            <textarea type="text" name="project_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+          </div>
+        </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+        <a href="project_list"> <button type="submit" class="btn btn-primary">Create</button> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <!-- End Model -->
+  
+    <!--modal project grup-->
+  <div class="modal fade" id="exampleModalProjectGrup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Grup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form action="/store" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Grup Name </label>
+                  <input type="text" name="group_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Grup Description</label>
+                  <textarea type="text" name="group_description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                </div> 
+            </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+    <!--End Modal project grup-->
         </div>
     </div>
 </section>

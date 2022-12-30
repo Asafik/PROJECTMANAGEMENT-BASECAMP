@@ -150,7 +150,7 @@
             <ul class="Page navigation example navbar-nav ms-auto mb-10 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="/projectReq"><i class="bi bi-house"
                             style="font-size:28px"></i></i></a></li>
-                <li class="nav-item"><a class="nav-link active" href="/generalReq"><i class="bi bi-grid"
+                <li class="nav-item"><a class="nav-link active" href="/general_project"><i class="bi bi-grid"
                             style="font-size:28px"></i></i></a></li>
                 <li class="nav-item"><a class="nav-link active" href="/project_list"><i class="bi bi-clipboard-check"
                             style="font-size:28px"></i></i></a></li>

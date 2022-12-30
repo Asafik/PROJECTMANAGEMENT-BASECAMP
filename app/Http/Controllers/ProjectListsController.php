@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\project_lists;
+use App\Models\project_tasks;
 use Illuminate\Http\Request;
 
 class ProjectListsController extends Controller
@@ -80,8 +81,10 @@ class ProjectListsController extends Controller
      * @param  \App\Models\project_lists  $project_lists
      * @return \Illuminate\Http\Response
      */
-    public function destroy(project_lists $project_lists)
+    public function destroy($id)
     {
-        //
+        $data = project_tasks::find($id);
+        $data->delete();
+        return redirect('project_list')->with('success', 'Project List Has Been Deleted!');
     }
 }

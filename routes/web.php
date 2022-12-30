@@ -67,6 +67,7 @@ Route::post('/store',[BoardtimeController::class,'store']);
 //route project list
 Route::get('/project_list',[ProjectListsController::class,'index'])->middleware('auth');
 Route::get('/create',[ProjectListsController::class,'crex`ate'])->middleware('auth');
+Route::get('/projectList_delete/{id}',[ProjectListsController::class,'destroy'])->middleware('auth');
 
 //route discuss
 Route::get('/discuss',[ProjectsController::class,'discuss'])->middleware('auth');
@@ -77,7 +78,6 @@ Route::get('/timeboardproject',[ProjectsController::class,'timeboardproject']);
 
 //route milestone project
 Route::get('/milestoneproject',[ProjectsController::class,'milestoneproject']);
-
 
 //route discuss
 Route::get('/discuss',[ProjectsController::class,'discuss']);
@@ -110,7 +110,6 @@ Route::get('/signup',[ExternalUsersController::class,'signup'])->middleware('gue
 Route::post('/signup',[ExternalUsersController::class,'store']);
 Route::post('/logout',[ExternalUsersController::class,'logout']);
 Route::post('/logout',[ExternalUsersController::class,'logout'])->middleware('auth');
-Route::post('/update/{id}',[ExternalUsersController::class,'update'])->middleware('auth');
 
 //route milestone
 Route::get('/milestone',[ProjectMilestonesController::class,'index'])->middleware('auth');
@@ -127,6 +126,7 @@ Route::get('/monitoring',[MonitoringController::class,'index'])->middleware('aut
 
 //route user
 Route::get('/user_profile',[UsersController::class,'profile'])->middleware('auth');
+Route::post('/update/{id}',[ExternalUsersController::class,'update'])->middleware('auth');
 
 // route task_project
 Route::get('/task_list',[TasksListController::class,'index']);

@@ -47,7 +47,6 @@
           </div>
         </div>
       </nav>
-
       <section class="pt-7">
         <div class="container">
           <div class="row align-items-center">
@@ -67,7 +66,6 @@
                   </form>
                 </div>
               </br>
-              
               <div>
                 <h6 style="margin-left:8%; color: black;"> or sign up with
                   <a class="btn btn-outline shadow-4 border-1 ms-3 square-pill" href="#!">
