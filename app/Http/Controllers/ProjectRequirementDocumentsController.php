@@ -37,15 +37,26 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'project_name'  => ['required', 'max:255'],
-            'project_type'  => ['required', 'min:5', 'max:35'],
-            'description'   => ['required'],
-            'opd_name'      => ['required', 'min:5', 'max:35'],
-            // 'project_files' => ['required'],
+        $this->validate($request, [
+            'project_name'  => 'required', 'max:255',
+            'project_type'  => 'required', 'min:5', 'max:35',
+            'description'   => 'required',
+            'opd_name'      => 'required', 'min:5', 'max:35',
+            'project_files' => 'required', 'mimes:doc, docx, pdf, xls, xlsx, ppt, pptx',
         ]);
 
-        project_requirement_documents::create($validatedData);
+        $project_files = $request->file('project_files');
+        $nama_files = 'FT'.date('Ymdhis').'.'.$request->file('project_files')->getClientOriginalExtension();
+        $project_files->move('project_files/', $nama_files);
+
+        $data = new project_requirement_documents();
+        $data->project_name = $request->project_name;
+        $data->project_type = $request->project_type;
+        $data->description = $request->description;
+        $data->opd_name = $request->opd_name;
+        $data->project_files = $nama_files;
+        $data->save();
+        // project_requirement_documents::create($validatedData, $nama_files);
 
         return redirect('/projectReqSuccess')->with('success', 'Request project added successfully');
     }
@@ -70,9 +81,18 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = project_requirement_documents::find($id);
-        $data->update($request->all());
+        $project_files = $request->file('project_files');
+        $nama_files = 'FT'.date('Ymdhis').'.'.$request->file('project_files')->getClientOriginalExtension();
+        $project_files->move('project_files/', $nama_files);
 
+        $data = project_requirement_documents::where('id', $id)->first();
+        $data->project_name = $request->project_name;
+        $data->project_type = $request->project_type;
+        $data->description = $request->description;
+        $data->opd_name = $request->opd_name;
+        $data->project_files = $nama_files;
+        $data->save();
+    
         return redirect('/projectReqSuccess')->with('success', 'Request Project Has Been Updated!');
     }
 
@@ -85,7 +105,7 @@ class ProjectRequirementDocumentsController extends Controller
      */
     public function edit($id)
     {
-        $data = project_requirement_documents::find($id);
+        $data = project_requirement_documents::where('id', $id)->first();
         return view('OpdReqProject.projectReq_edit', ['data' => $data]);
     }
 

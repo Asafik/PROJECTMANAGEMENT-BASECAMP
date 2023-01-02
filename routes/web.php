@@ -37,6 +37,9 @@ use App\Http\Controllers\ProjectFilesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes([
+    'verify' => true
+]);
 
 Route::get('/',[UsersController::class,'index'])->middleware('guest');
 

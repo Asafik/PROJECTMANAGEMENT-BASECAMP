@@ -33,7 +33,7 @@
                   <p style="margin-top: 2%;"><strong>Syarat dan Ketentuan</strong></p>
                 </div>
 
-                  <form action="/projectReq_update/{{ $data->id }}" method="POST">
+                  <form action="/projectReq_update/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                       <div class="col-sm-4">
@@ -83,8 +83,23 @@
                           @enderror
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
+                        <div class="card text-center btn" style="margin-top: 7%;border-color: #0064AF; margin-bottom:2% ;">
+                          <div class="card-body" >
+                            <h5 class="card-title"><i class="bi bi-download " style="font-size: 50px;color: #0064AF;"></i></h5>
+                            <p class="card-text" style="margin-top: 2%;"><img src="images/pdf.svg" style="width: 4%;"><img src="images/filep.svg" style="width: 4%;margin-left: 2%;"><img src="images/gdrive.svg" style="width: 5%;margin-left: 2%;"><img src="images/addfile.svg" style="width: 5%;margin-left: 2%;"></p>
+                            <input type="file" class="form-control @error('project_files') is-invalid @enderror" id="inputGroupFile01" name="project_files" style="margin-top: 4%; width: 70%; margin-left: 20%;" required value="{{ $data->project_files }}">
+                            @error('project_files')
+                            <div class="invalid-feedback">
+                              {{ $message }}
+                            </div>
+                            @enderror
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {{-- <div class="col-sm-6">
                         <div class="card text-center btn" style="margin-top: 7%;border-color: #0064AF; margin-bottom:2% ;">
                           <div class="card-body" >
                             <h5 class="card-title"><i class="bi bi-download " style="font-size: 50px;color: #0064AF;"></i></h5>
@@ -92,7 +107,7 @@
                             <input type="file" class="form-control" id="inputGroupFile01" style="margin-top: 4%; width: 70%; margin-left: 20%;">
                           </div>
                         </div>
-                      </div>
+                      </div> --}}
                       
                      </div> {{--tutup row dalam form --}}
                     <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;"><span style="color: #fff;">Edit Your Request</button>

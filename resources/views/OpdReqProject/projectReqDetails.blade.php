@@ -27,11 +27,11 @@
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td>{{ $data->project_name }}</td>
-                                    <td>{{ $data->project_type }}</td>
-                                    <td class="col-4">{{ $data->description }}</td>
+                                    <td class="col-3">{{ $data->project_name }}</td>
+                                    <td class="col-2">{{ $data->project_type }}</td>
+                                    <td class="col-3">{{ $data->description }}</td>
                                     <td>{{ $data->opd_name }}</td>
-                                    <td>{{ $data->project_files }}</td>
+                                    <td><a href="project_files/{{ $data->project_files }}" style="color: black"><i class="bi bi-file-earmark-text"></i>Download</a></td>
                                     <td>
                                       <a href="/projectReq_edit/{{ $data->id }}" style="color: blue"><i class="bi bi-pencil"></i></a>
                                       <a href="/projectReq_delete/{{ $data->id }}" style="color: red" onclick="return confirm('Are you sure want to delete?')"><i class="bi bi-trash"></i></a>

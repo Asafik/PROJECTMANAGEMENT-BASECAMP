@@ -33,11 +33,11 @@
                                   @foreach ($data as $item)
                                   <tr>
                                     <td>{{ $no++ }}</td>
-                                    <td>{{ $item->project_name }}</td>
-                                    <td>{{ $item->project_type }}</td>
-                                    <td class="col-4">{{ $item->description }}</td>
+                                    <td class="col-3">{{ $item->project_name }}</td>
+                                    <td class="col-2">{{ $item->project_type }}</td>
+                                    <td class="col-3">{{ $item->description }}</td>
                                     <td>{{ $item->opd_name }}</td>
-                                    <td>{{ $item->project_files }}</td>
+                                    <td><a href="project_files/{{ $item->project_files }}" style="color: black"><i class="bi bi-file-earmark-text"></i>Download</a></td>
                                     <td>
                                         <a href="/projectReq_details/{{ $item->id }}" style="color: orange"><i class="bi bi-eye"></i></a>
                                         <a href="/projectReq_edit/{{ $item->id }}" style="color: blue"><i class="bi bi-pencil"></i></a>
